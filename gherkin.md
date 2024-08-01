@@ -47,6 +47,27 @@ Feature: User Registration
     When I provide the password "Reverse Flash strikes again!!!!"
     Then the user should be informed registration failed
 
+  Scenario: Negative Scenario Null username
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide no username
+    When I provide the password "Riddler and Joker disagree!!!!"
+    Then the user should be informed registration failed
+
+  Scenario: Negative Scenario Null password
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide the username "Batman and Robin unite now!!!!"
+    When I provide no password
+    Then the user should be informed registration failed
+  
+  Scenario: Negative Scenario Null username and password
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide the username "Batman and Robin unite now!!!!"
+    When I provide the password "Riddler and Joker disagree!!!!"
+    Then the user should be informed registration failed
+
 ---
 
 Feature: User Login
@@ -82,6 +103,27 @@ Feature: User Login
     When I pick the option to login
     When I provide the username "Batman and Robin unite now!!!!"
     When I provide the password "Riddler and Joker disagree!!!!"
+    Then the user should not be logged in with the planetarium
+
+  Scenario: Negative Scenario Null username
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide no username
+    When I provide the password “I am the night”
+    Then the user should not be logged in with the planetarium
+
+  Scenario: Negative Scenario Null password
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide the username "Batman"
+    When I provide no password
+    Then the user should not be logged in with the planetarium
+
+  Scenario: Negative Scenario Null username and password
+    Given I am on the landing page
+    When I pick the option to register
+    When I provide no username
+    When I provide no password
     Then the user should not be logged in with the planetarium
 
 ---
@@ -157,6 +199,22 @@ Feature: Adding Planet
     When I click the Submit Planet button
     Then the planet should not be added to the planetarium
 
+  Scenario: Negative Scenario Null planet name without picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Planet
+    When I insert no planet name
+    When I click the Submit Planet button
+    Then the planet should not be added to the planetarium
+
+  Scenario: Negative Scenario Null planet name with picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Planet
+    When I insert no planet name
+    When I click choose File
+    When I choose an image for the planet
+    When I click the Submit Planet button
+    Then the planet should not be added to the planetarium
+
 ---
 
 Feature: Remove Planet
@@ -174,10 +232,17 @@ Feature: Remove Planet
     When I click the Delete button
     Then the planet should be removed from the planetarium
 
-  Scenario: Negative Scenario
+  Scenario: Negative Scenario Invalid planet name
     Given I am on the Planet and Moon viewing page
     When I change the selector to Planet
     When I insert the planet name "Vegeta"
+    When I click the Delete button
+    Then the planet should not be removed from the planetarium
+
+  Scenario: Negative Scenario Null planet name
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Planet
+    When I insert no planet name
     When I click the Delete button
     Then the planet should not be removed from the planetarium
 
@@ -299,6 +364,60 @@ Scenario: Negative Scenario Moon name too long with invalid planet ID and a pict
     When I click the submit moon button
     Then the moon should not be added to the planetarium
 
+  Scenario: Negative Scenario Null Moon name with valid planet ID and a picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert no moon name
+    When I insert the planet ID "1"
+    When I click choose File
+    When I choose an image for the moon
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
+  Scenario: Negative Scenario Null Moon name with valid planet ID and no picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert no moon name
+    When I insert the planet ID "1"
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
+  Scenario: Negative Scenario Valid Moon name with null planet ID and a picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert the Valid moon name
+    When I insert no planet id
+    When I click choose File
+    When I choose an image for the moon
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
+  Scenario: Negative Scenario Valid Moon name with null planet ID and no picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert the Valid moon name
+    When I insert no planet id
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
+  Scenario: Negative Scenario Null Moon name with Null planet ID and a picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert no moon name
+    When I insert no planet id
+    When I click choose File
+    When I choose an image for the moon
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
+  Scenario: Negative Scenario Null Moon name with Null planet ID and no picture
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert no moon name
+    When I insert no planet id
+    When I click the submit moon button
+    Then the moon should not be added to the planetarium
+
 ---
 
 Feature: Remove Moon
@@ -320,5 +439,12 @@ Feature: Remove Moon
     Given I am on the Planet and Moon viewing page
     When I change the selector to Moon
     When I insert the moon name "Vegeta"
+    When I click the delete button
+    Then no moon should be removed from the planetarium
+
+  Scenario: Negative Scenario Null Moon name
+    Given I am on the Planet and Moon viewing page
+    When I change the selector to Moon
+    When I insert no moon name
     When I click the delete button
     Then no moon should be removed from the planetarium
