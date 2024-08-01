@@ -368,7 +368,7 @@ Negative:
 1. get to Planet and Moon viewing page 
 2. change selector to Moon 
 3. insert valid Moon name 
-4. insert valid Planet ID 
+4. insert invalid Planet ID 
 5. click choose File 
 6. choose an image for the moon 
 7. click Submit Moon button 
@@ -376,10 +376,10 @@ Negative:
 **Negative Scenario Valid Moon name with invalid planet ID and no picture**: 
 1. get to Planet and Moon viewing page 
 2. change selector to Moon 
-3. insert too long Moon name 
-4. insert valid Planet ID 
+3. insert valid Moon name 
+4. insert invalid Planet ID 
 5. click Submit Moon button 
-
+-----
 **Negative Scenario Moon name too long with invalid planet ID and a picture**: 
 1. get to Planet and Moon viewing page 
 2. change selector to Moon 
