@@ -42,6 +42,8 @@ Negative:
     - non-unique username = "Batman" 
     - too long username = "Gordon and Clark are friends!!!" 
     - too long password = "Reverse Flash strikes again!!!!" 
+    - null username
+    - null password
 
 # Scenarios 
 **Positive Scenario**: 
@@ -86,6 +88,27 @@ Negative:
 4. provide too long password 
 5. user should be informed registration failed 
 
+**Negative Scenario Null username**: 
+1. get to landing page 
+2. pick option to register 
+3. provide no username
+4. provide valid password 
+5. user should be informed registration failed 
+
+**Negative Scenario Null password**: 
+1. get to landing page 
+2. pick option to register 
+3. provide valid username
+4. provide no password
+5. user should be informed registration failed 
+
+**Negative Scenario Null username and password**: 
+1. get to landing page 
+2. pick option to register 
+3. provide no username
+4. provide no password 
+5. user should be informed registration failed 
+
 # Decision Table
 |Test Case ID|Scenario|Username|Password|Result| 
 |------------|--------|--------|--------|------|
@@ -95,6 +118,9 @@ Negative:
 |4|Negative Scenario|Valid username|Too long password|User not registered|
 |5|Negative Scenario|Too long username|Too long password|User not registered| 
 |6|Negative Scenario|Non-unique username|Too long password|User not registered| 
+|7|Negative Scenario|Null username|Valid password|User not registered| 
+|8|Negative Scenario|Valid username|Null password|User not registered| 
+|9|Negative Scenario|Null username|Null password|User not registered| 
 
 # Use Case 2 
 - Id: 2 
@@ -123,6 +149,8 @@ Negative:
     - too long password = "Reverse Flash strikes again!!!!" 
     - Non-Registered username = "Batman and Robin unite now!!!!" 
     - Non-Registered password = "Riddler and Joker disagree!!!!" 
+    - null username
+    - null password
 
 # Scenarios 
 **Positive Scenario**: 
@@ -153,12 +181,36 @@ Negative:
 4. provide invalid password 
 5. user should not be logged in with the planetarium 
 
+**Negative Scenario Null username**: 
+1. get to landing page 
+2. pick option to register 
+3. provide no username
+4. provide valid password 
+5. user should not be logged in with the planetarium 
+
+**Negative Scenario Null password**: 
+1. get to landing page 
+2. pick option to register 
+3. provide valid username
+4. provide no password
+5. user should not be logged in with the planetarium 
+
+**Negative Scenario Null username and password**: 
+1. get to landing page 
+2. pick option to register 
+3. provide no username
+4. provide no password 
+5. user should not be logged in with the planetarium 
+
 # Decision Table
 |Test Case ID|Scenario|Username|Password|Result| 
 |------------|--------|--------|--------|------| 
-|7|Positive|Registered username|Valid password|Logged In|
-|8|Valid Username and Invalid Password|Registered username|Invalid password|Not Logged In| 
-|9|Invalid Username|Non-Registered username|Valid password|Not Logged In|
+|10|Positive|Registered username|Valid password|Logged In|
+|11|Valid Username and Invalid Password|Registered username|Invalid password|Not Logged In| 
+|12|Invalid Username|Non-Registered username|Valid password|Not Logged In|
+|13|Negative Scenario|Null username|Valid password|User not registered| 
+|14|Negative Scenario|Valid username|Null password|User not registered| 
+|15|Negative Scenario|Null username|Null password|User not registered| 
 
 # Use Case 3 
 - Id: 3 
@@ -186,7 +238,7 @@ Negative:
 # Decision Table
 |Test Case ID|Scenario|Username|Password|Result| 
 |------------|--------|--------|--------|------|  
-|10|Positive|Valid Username|Valid Password|View planets and moons|
+|16|Positive|Valid Username|Valid Password|View planets and moons|
 
 # Use Case 4 
 - Id: 4 
@@ -211,6 +263,7 @@ Negative:
 
     - Invalid Planet Name: “Amphitrite Euphrosyne Virginia!” 
     - Non-Unique Planet Name: “Earth” or “Mars” 
+    - Null planet name
 
 # Scenarios 
 **Positive Scenario Valid Planet name without picture**: 
@@ -255,15 +308,31 @@ Negative:
 5. choose an image for the planet 
 6. click Submit Planet button 
 
+**Negative Scenario Null planet name without picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Planet 
+3. insert no planet name 
+4. click Submit Planet button 
+
+**Negative Scenario Null planet name with picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Planet 
+3. insert no Planet name 
+4. click choose File 
+5. choose an image for the planet 
+6. click Submit Planet button 
+
 # Decision Table
 |Test Case ID|Scenario|Planet Name|Picture|Result| 
 |------------|--------|-----------|-------|------|  
-|11|Positive 1|Valid Name|No|Saved|
-|12|Positive 2|Valid Name|Yes|Saved|
-|13|Negative 1|Too long Name|No|Not Saved|
-|14|Negative 2|Too long Name|Yes|Not Saved|
-|15|Negative 3|Non-Unique Name|No|Not Saved| 
-|16|Negative 4|Non-Unique Name|Yes|Not Saved|
+|17|Positive 1|Valid Name|No|Saved|
+|18|Positive 2|Valid Name|Yes|Saved|
+|19|Negative 1|Too long Name|No|Not Saved|
+|20|Negative 2|Too long Name|Yes|Not Saved|
+|21|Negative 3|Non-Unique Name|No|Not Saved| 
+|22|Negative 4|Non-Unique Name|Yes|Not Saved|
+|23|Negative 5|Null Name|No|Not Saved| 
+|24|Negative 6|Null Name|Yes|Not Saved|
 
 # Use Case 5 
 - Id: 5 
@@ -288,6 +357,7 @@ Positive:
 Negative: 
 
     - Invalid Planet name: “Vegeta” 
+    - Null planet name
 # Scenarios 
 
 **Positive Scenario**: 
@@ -296,17 +366,24 @@ Negative:
 3. insert valid Planet name 
 4. click the Delete button 
 
-**Negative Scenario**: 
+**Negative Scenario Invalid planet name**: 
 1. get to Planet and Moon viewing page 
 2. change selector to Planet 
 3. insert invalid Planet name 
 4. click the Delete button 
 
+**Negative Scenario Null planet name**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Planet 
+3. insert no Planet name 
+4. click the Delete button 
+
 # Decision Table
 |Test Case ID|Scenario|Planet Name|Result| 
 |------------|--------|-----------|------| 
-|17|Positive Scenario|Valid Planet Name|Data Removed|
-|18|Negative Scenario|Invalid Planet Name|Data Not Removed|
+|25|Positive Scenario|Valid Planet Name|Data Removed|
+|26|Negative Scenario|Invalid Planet Name|Data Not Removed|
+|27|Negative Scenario|Invalid No Planet Name|Data Not Removed|
 
 # Use Case 6 
 - Id: 6 
@@ -329,7 +406,9 @@ Positive:
 Negative: 
 
     -Invalid Moon Name: “waxing crescent gibbous Moon!!!” 
-    -Non-Unique Moon Name: “Luna” or “Titan” or “Earth” or “Mars” 
+    -Non-Unique Moon Name: “Luna” or “Titan” or “Earth” or “Mars”
+    -Null moon name
+    -Null planet id 
 
 # Scenarios 
 **Positive Scenario Valid Moon name and planet ID without picture**: 
@@ -428,21 +507,75 @@ Negative:
 4. insert valid Planet ID 
 5. click Submit Moon button 
 
+**Negative Scenario Null moon name with valid planet ID and a picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert no Moon name 
+4. insert valid Planet ID 
+5. click choose File 
+6. choose an image for the moon 
+7. click Submit Moon button 
+
+**Negative Scenario Null moon name with valid planet ID and no picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert Null Moon name 
+4. insert valid Planet ID 
+5. click Submit Moon button 
+
+**Negative Scenario Valid moon name with Null planet ID and a picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert Valid Moon name 
+4. insert no Planet ID 
+5. click choose File 
+6. choose an image for the moon 
+7. click Submit Moon button 
+
+**Negative Scenario Valid moon name with Null planet ID and no picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert Valid Moon name 
+4. insert no Planet ID 
+5. click Submit Moon button 
+
+**Negative Scenario Null moon name with Null planet ID and a picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert no Moon name 
+4. insert no Planet ID 
+5. click choose File 
+6. choose an image for the moon 
+7. click Submit Moon button 
+
+**Negative Scenario Valid moon name with Null planet ID and no picture**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. insert no Moon name 
+4. insert no Planet ID 
+5. click Submit Moon button 
+
 # Decision Table
 |Test Case ID|Scenario|Moon Name|Planet Name|Picture|Result| 
 |------------|--------|---------|-----------|-------|------| 
-|19|Positive 1|Valid Name|Valid Planet|No|Data added|
-|20|Positive 2|Valid Name|Valid Planet|Yes|Data added|
-|21|Negative 1|Too long name|Valid Planet|Yes|Data not added|
-|22|Negative 2|Too Long Name|Valid Planet|No|Data not added|
-|23|Negative 3|Valid Name|Invalid Planet|Yes|Data not added| 
-|24|Negative 4|Valid Name|Invalid Planet|No|Data not added|
-|25|Negative 5|Too Long Name|Invalid Planet|Yes|Data not added|
-|26|Negative 6|Too Long Name|Invalid Planet|No|Data not added|
-|27|Negative 7|Non-Unique Name|Valid Planet|Yes|Data not added|
-|28|Negative 8|Non-Unique Name|Valid Planet|No|Data not added|
-|29|Negative 9|Non-Unique Name|Invalid Planet|Yes|Data not added|
-|30|Negative 10|Non-Unique Name|Invalid Planet|No|Data not added| 
+|28|Positive 1|Valid Name|Valid Planet|No|Data added|
+|29|Positive 2|Valid Name|Valid Planet|Yes|Data added|
+|30|Negative 1|Too long name|Valid Planet|Yes|Data not added|
+|31|Negative 2|Too Long Name|Valid Planet|No|Data not added|
+|32|Negative 3|Valid Name|Invalid Planet|Yes|Data not added| 
+|33|Negative 4|Valid Name|Invalid Planet|No|Data not added|
+|34|Negative 5|Too Long Name|Invalid Planet|Yes|Data not added|
+|35|Negative 6|Too Long Name|Invalid Planet|No|Data not added|
+|36|Negative 7|Non-Unique Name|Valid Planet|Yes|Data not added|
+|37|Negative 8|Non-Unique Name|Valid Planet|No|Data not added|
+|38|Negative 9|Non-Unique Name|Invalid Planet|Yes|Data not added|
+|39|Negative 10|Non-Unique Name|Invalid Planet|No|Data not added| 
+|40|Negative 9|Null Name|Valid Planet|Yes|Data not added|
+|41|Negative 10|Null Name|Valid Planet|No|Data not added|
+|42|Negative 9|Valid Name|Null Planet|Yes|Data not added|
+|43|Negative 10|Valid Name|Null Planet|No|Data not added|  
+|44|Negative 9|Null Name|Null Planet|Yes|Data not added|
+|45|Negative 10|Null Name|Null Planet|No|Data not added|  
 
 # Use Case 7 
 - Id: 7 
@@ -463,6 +596,7 @@ Positive:
 Negative:
 
     - Invalid moon name: “Vegeta” 
+    - Null moon name
 
 # Scenarios 
 **Positive Scenario Valid Moon name**: 
@@ -477,9 +611,15 @@ Negative:
 3. input an invalid moon name 
 4. click the Delete button 
 
+**Negative Scenario Null Moon name**: 
+1. get to Planet and Moon viewing page 
+2. change selector to Moon 
+3. input no moon name 
+4. click the Delete button 
+
 # Decision Table
 |Test Case ID|Scenario|Moon Name|Result| 
 |------------|--------|---------|------| 
-|31|Positive Scenario|Valid Moon Name|Data Removed|
-|32|Negative Scenario|Invalid Moon Name|Data Not Removed|
-
+|46|Positive Scenario|Valid Moon Name|Data Removed|
+|47|Negative Scenario|Invalid Moon Name|Data Not Removed|
+|48|Negative Scenario|Null Moon Name|Data Not Removed|
