@@ -186,7 +186,7 @@
   ### Scenario: Negative Scenario non-unique planet name without picture
     Given I am on the Planet and Moon viewing page
     When I change the selector to Planet
-    When I insert the planet name "Earth"
+    When I insert the planet name "Mars"
     When I click the Submit Planet button
     Then the planet should not be added to the planetarium
 
