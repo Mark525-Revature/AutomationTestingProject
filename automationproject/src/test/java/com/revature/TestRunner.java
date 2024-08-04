@@ -9,9 +9,37 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    features = "classpath:features",
+    glue = "com.revature.step",
+    plugin = {
+        "pretty",
+        "html:src/test/resources/reports/html-report.html",
+        "json:src/test/resources/reports/json-report.json"
+    }
+)
 public class TestRunner {
+    
+    public static WebDriver driver;
+
+    public static WebDriverWait wait;
+
+    public static PlanetariumHome planetariumHome;
+
+    @BeforeClass
+    public static void setup(){
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        planetariumHome = new PlanetariumHome(driver);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    }
+
+    @AfterClass
+    public static void teardown(){
+        driver.quit();
+    }
     
 }
