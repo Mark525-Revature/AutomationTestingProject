@@ -26,7 +26,7 @@ public class Setup {
     }
 
     public static void resetTestDatabase() {
-        Path sql = Path.of("src/test/resources/setup-reset.sql");
+        Path sql = Path.of("automationproject/src/test/resources/setup-reset.sql");
         StringBuilder sqlBuilder = new StringBuilder();
         try (Connection conn = getConnection(); Stream<String> lines = Files.lines(sql)) {
             conn.setAutoCommit(false);
@@ -38,7 +38,7 @@ public class Setup {
                 if (sqlStatement.contains("?")){
                     String type = sqlStatement.contains("moons") ? "moon" : "planet";
                     try(PreparedStatement ps = conn.prepareStatement(sqlStatement)){
-                        byte[] imageData = convertImgToByteArray(String.format("src/test/resources/Celestial-Images/%s-%d.jpg", type, imageCount));
+                        byte[] imageData = convertImgToByteArray(String.format("automationproject/src/test/resources/Celestial-Images/%s-%d.jpg", type, imageCount));
                         ps.setBytes(1, imageData);
                         ps.executeUpdate();
                         imageCount = imageCount == 2 ? 1 : 2;
