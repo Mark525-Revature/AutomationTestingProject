@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-04T05:30:22.445Z",
+        "start_timestamp": "2024-08-06T18:54:07.294Z",
         "line": 15,
         "name": "Registration Positive Scenario",
         "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 188998300,
+              "duration": 86573500,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 138999600,
+              "duration": 57632800,
               "status": "passed"
             },
             "line": 8,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 141999300,
+              "duration": 84583800,
               "status": "passed"
             },
             "line": 9,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 115015400,
+              "duration": 70952500,
               "status": "passed"
             },
             "line": 10,
@@ -73,8 +73,9 @@
           },
           {
             "result": {
-              "duration": 628615700,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully] with username \"Batm...\u003e but was:\u003cAccount creat[ion failed] with username \"Batm...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.step.RegistrationSteps.the_user_should_be_registered(RegistrationSteps.java:46)\r\n\tat ✽.the user should be registered(classpath:features/Registration.feature:11)\r\n",
+              "duration": 574760800,
+              "status": "failed"
             },
             "line": 11,
             "name": "the user should be registered",
@@ -97,7 +98,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:23.739Z",
+        "start_timestamp": "2024-08-06T18:54:08.207Z",
         "line": 28,
         "name": "Registration Username not unique",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -107,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 39998800,
+              "duration": 25037300,
               "status": "passed"
             },
             "line": 20,
@@ -119,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 84982800,
+              "duration": 42240900,
               "status": "passed"
             },
             "line": 21,
@@ -131,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 88999500,
+              "duration": 35134500,
               "status": "passed"
             },
             "line": 22,
@@ -149,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 119000100,
+              "duration": 75330800,
               "status": "passed"
             },
             "line": 23,
@@ -167,7 +168,7 @@
           },
           {
             "result": {
-              "duration": 600170900,
+              "duration": 556628700,
               "status": "passed"
             },
             "line": 24,
@@ -191,7 +192,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:24.681Z",
+        "start_timestamp": "2024-08-06T18:54:08.945Z",
         "line": 41,
         "name": "Registration Username too long",
         "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
@@ -201,7 +202,7 @@
         "steps": [
           {
             "result": {
-              "duration": 43083200,
+              "duration": 21628000,
               "status": "passed"
             },
             "line": 33,
@@ -213,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 63998600,
+              "duration": 33242400,
               "status": "passed"
             },
             "line": 34,
@@ -225,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 78998100,
+              "duration": 64288600,
               "status": "passed"
             },
             "line": 35,
@@ -243,7 +244,7 @@
           },
           {
             "result": {
-              "duration": 72002400,
+              "duration": 62626700,
               "status": "passed"
             },
             "line": 36,
@@ -261,7 +262,7 @@
           },
           {
             "result": {
-              "duration": 577465200,
+              "duration": 542392700,
               "status": "passed"
             },
             "line": 37,
@@ -285,7 +286,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:25.522Z",
+        "start_timestamp": "2024-08-06T18:54:09.672Z",
         "line": 54,
         "name": "Registration Password too long",
         "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
@@ -295,7 +296,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35998900,
+              "duration": 18384200,
               "status": "passed"
             },
             "line": 46,
@@ -307,7 +308,7 @@
           },
           {
             "result": {
-              "duration": 62977000,
+              "duration": 35309500,
               "status": "passed"
             },
             "line": 47,
@@ -319,7 +320,7 @@
           },
           {
             "result": {
-              "duration": 120998000,
+              "duration": 63803200,
               "status": "passed"
             },
             "line": 48,
@@ -337,7 +338,7 @@
           },
           {
             "result": {
-              "duration": 106000600,
+              "duration": 63374800,
               "status": "passed"
             },
             "line": 49,
@@ -355,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 570600000,
+              "duration": 544675100,
               "status": "passed"
             },
             "line": 50,
@@ -379,7 +380,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:26.425Z",
+        "start_timestamp": "2024-08-06T18:54:10.401Z",
         "line": 67,
         "name": "Registration User credentials too long",
         "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
@@ -389,7 +390,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36004900,
+              "duration": 18215900,
               "status": "passed"
             },
             "line": 59,
@@ -401,7 +402,7 @@
           },
           {
             "result": {
-              "duration": 58993400,
+              "duration": 36556200,
               "status": "passed"
             },
             "line": 60,
@@ -413,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 83999100,
+              "duration": 66576300,
               "status": "passed"
             },
             "line": 61,
@@ -431,7 +432,7 @@
           },
           {
             "result": {
-              "duration": 82002800,
+              "duration": 81971400,
               "status": "passed"
             },
             "line": 62,
@@ -449,7 +450,7 @@
           },
           {
             "result": {
-              "duration": 575151300,
+              "duration": 556784400,
               "status": "passed"
             },
             "line": 63,
@@ -473,7 +474,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:27.264Z",
+        "start_timestamp": "2024-08-06T18:54:11.165Z",
         "line": 80,
         "name": "Registration Username not unique and password too long",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -483,7 +484,7 @@
         "steps": [
           {
             "result": {
-              "duration": 32993200,
+              "duration": 23797700,
               "status": "passed"
             },
             "line": 72,
@@ -495,7 +496,7 @@
           },
           {
             "result": {
-              "duration": 56000900,
+              "duration": 34207500,
               "status": "passed"
             },
             "line": 73,
@@ -507,7 +508,7 @@
           },
           {
             "result": {
-              "duration": 59998800,
+              "duration": 40585900,
               "status": "passed"
             },
             "line": 74,
@@ -525,7 +526,7 @@
           },
           {
             "result": {
-              "duration": 83000700,
+              "duration": 71264900,
               "status": "passed"
             },
             "line": 75,
@@ -543,7 +544,7 @@
           },
           {
             "result": {
-              "duration": 567773500,
+              "duration": 38318700,
               "status": "passed"
             },
             "line": 76,
@@ -567,7 +568,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:28.071Z",
+        "start_timestamp": "2024-08-06T18:54:11.374Z",
         "line": 93,
         "name": "Registration Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
@@ -577,7 +578,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35005000,
+              "duration": 9507000,
               "status": "passed"
             },
             "line": 85,
@@ -589,7 +590,7 @@
           },
           {
             "result": {
-              "duration": 55991200,
+              "duration": 50561700,
               "status": "passed"
             },
             "line": 86,
@@ -601,7 +602,7 @@
           },
           {
             "result": {
-              "duration": 38998100,
+              "duration": 23219300,
               "status": "passed"
             },
             "line": 87,
@@ -613,7 +614,7 @@
           },
           {
             "result": {
-              "duration": 75006400,
+              "duration": 63585300,
               "status": "passed"
             },
             "line": 88,
@@ -631,7 +632,7 @@
           },
           {
             "result": {
-              "duration": 567436300,
+              "duration": 547471200,
               "status": "passed"
             },
             "line": 89,
@@ -652,7 +653,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:28.848Z",
+        "start_timestamp": "2024-08-06T18:54:12.072Z",
         "line": 106,
         "name": "Registration Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
@@ -662,7 +663,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35000900,
+              "duration": 18520200,
               "status": "passed"
             },
             "line": 98,
@@ -674,7 +675,7 @@
           },
           {
             "result": {
-              "duration": 59000300,
+              "duration": 36163500,
               "status": "passed"
             },
             "line": 99,
@@ -686,7 +687,7 @@
           },
           {
             "result": {
-              "duration": 86999900,
+              "duration": 62120100,
               "status": "passed"
             },
             "line": 100,
@@ -704,7 +705,7 @@
           },
           {
             "result": {
-              "duration": 39999000,
+              "duration": 21292900,
               "status": "passed"
             },
             "line": 101,
@@ -716,7 +717,7 @@
           },
           {
             "result": {
-              "duration": 583018400,
+              "duration": 38838600,
               "status": "passed"
             },
             "line": 102,
@@ -737,7 +738,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-04T05:30:29.665Z",
+        "start_timestamp": "2024-08-06T18:54:12.253Z",
         "line": 109,
         "name": "Registration Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
@@ -747,7 +748,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34859200,
+              "duration": 17238500,
               "status": "passed"
             },
             "line": 111,
@@ -759,7 +760,7 @@
           },
           {
             "result": {
-              "duration": 61000000,
+              "duration": 45544700,
               "status": "passed"
             },
             "line": 112,
@@ -771,7 +772,7 @@
           },
           {
             "result": {
-              "duration": 39998400,
+              "duration": 24549400,
               "status": "passed"
             },
             "line": 113,
@@ -783,7 +784,7 @@
           },
           {
             "result": {
-              "duration": 41000200,
+              "duration": 22345300,
               "status": "passed"
             },
             "line": 114,
@@ -795,7 +796,7 @@
           },
           {
             "result": {
-              "duration": 565639900,
+              "duration": 536956200,
               "status": "passed"
             },
             "line": 115,
