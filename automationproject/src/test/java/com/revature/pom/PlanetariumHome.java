@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 // Currenlt using this for registration page 
 
@@ -15,6 +16,7 @@ public class PlanetariumHome {
     private WebDriver driver;
 
     private String url = "http://localhost:8080";
+    private String viewingPage = "http://localhost:8080/planetarium";
 
     @FindBy(xpath = "/html/body/div/form/a")
     private WebElement registrationLink;
@@ -31,6 +33,9 @@ public class PlanetariumHome {
     @FindBy(xpath = "/html/body/div/form/input[3]")
     private WebElement loginButton;
 
+    @FindBy(xpath = "//select[@id='locationSelect']")
+    private WebElement dropdown;
+
     public PlanetariumHome(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -39,6 +44,8 @@ public class PlanetariumHome {
     public void goToLandingPage(){
         driver.get(url);
     }
+
+    public void goToViewingPage() { driver.get(viewingPage); }
 
     public void goToRegistrationPage(){
         registrationLink.click();
@@ -65,6 +72,14 @@ public class PlanetariumHome {
     }
 
     public void clickLoginButton() { loginButton.click(); }
+
+    public void enterMoonName(){
+
+    }
+    public void selectMoonFromDropDown() {
+        Select select = new Select(dropdown);
+        select.selectByVisibleText("moon");
+    }
 
     public String getAlertText(){
         WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
