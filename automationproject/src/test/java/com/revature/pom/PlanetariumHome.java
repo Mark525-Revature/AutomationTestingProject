@@ -28,6 +28,9 @@ public class PlanetariumHome {
     @FindBy(xpath = "/html/body/div/form/input[3]")
     private WebElement createButton;
 
+    @FindBy(xpath = "/html/body/div/form/input[3]")
+    private WebElement loginButton;
+
     public PlanetariumHome(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -61,6 +64,8 @@ public class PlanetariumHome {
         createButton.click();
     }
 
+    public void clickLoginButton() { loginButton.click(); }
+
     public String getAlertText(){
         WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
         alertWait.until(ExpectedConditions.alertIsPresent());
@@ -69,4 +74,5 @@ public class PlanetariumHome {
         alert.accept();
         return alertText;
     }
+
 }
