@@ -2,11 +2,13 @@ package com.revature.pom;
 
 import java.time.Duration;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,17 +20,21 @@ public class PlanetariumHome {
     private String url = "http://localhost:8080";
     private String viewingPage = "http://localhost:8080/planetarium";
 
-    @FindBy(xpath = "/html/body/div/form/a")
-    private WebElement registrationLink;
+    // Planet Registraton
 
-    @FindBy(id = "usernameInput")
-    private WebElement usernameInput;
+    @FindBy(id = "locationSelect")
+    private WebElement locationSelect;
 
-    @FindBy(id = "passwordInput")
-    private WebElement passwordInput;
+    @FindBy(id = "planetNameInput")
+    private WebElement planetNameInput;
 
-    @FindBy(xpath = "/html/body/div/form/input[3]")
-    private WebElement createButton;
+    @FindBy(id = "planetImageInput")
+    private WebElement planetImageInput;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/button")
+    private WebElement planetSubmitButton;
+
+    // Planet Registraton
 
     @FindBy(xpath = "/html/body/div/form/input[3]")
     private WebElement loginButton;
@@ -41,46 +47,6 @@ public class PlanetariumHome {
         PageFactory.initElements(driver, this);
     }
 
-    public void goToLandingPage(){
-        driver.get(url);
-    }
-
-    public void goToViewingPage() { driver.get(viewingPage); }
-
-    public void goToRegistrationPage(){
-        registrationLink.click();
-    }
-
-    public void enterUsername(String username){
-        usernameInput.sendKeys(username);
-    }
-
-    public void enterPassword(String password){
-        passwordInput.sendKeys(password);
-    }
-
-    public String getUsername(){
-        return usernameInput.getAttribute("value");
-    }
-
-    public String getPassword(){
-        return passwordInput.getAttribute("value");
-    }
-
-    public void clickCreateButton(){
-        createButton.click();
-    }
-
-    public void clickLoginButton() { loginButton.click(); }
-
-    public void enterMoonName(){
-
-    }
-    public void selectMoonFromDropDown() {
-        Select select = new Select(dropdown);
-        select.selectByVisibleText("moon");
-    }
-
     public String getAlertText(){
         WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
         alertWait.until(ExpectedConditions.alertIsPresent());
@@ -89,5 +55,39 @@ public class PlanetariumHome {
         alert.accept();
         return alertText;
     }
+
+    // Planet Registraton
+    public void goToViewingPage() { driver.get(viewingPage); }
+
+    public void switchDropdownToPlanet(){
+        Select dropdown = new Select(locationSelect);
+        dropdown.selectByValue("planet");
+    }
+
+    public void enterPlanetName(String planetName){
+        planetNameInput.sendKeys(planetName);
+    }
+
+    public void enterPlanetFile(String filePath){
+        planetImageInput.click();
+        planetImageInput.sendKeys(filePath);
+    }
+
+    public void submitPlanet(){
+        planetSubmitButton.click();
+    }
+
+    public String getPlanetOnPage(String planetName){
+        WebElement planet = driver.findElement(By.xpath("//td[text() = " + planetName + "]"));
+        return planet.getText();
+    }
+
+    // Planet Registraton
+
+    public void selectMoonFromDropDown() {
+        Select select = new Select(dropdown);
+        select.selectByVisibleText("moon");
+    }
+
 
 }

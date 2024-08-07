@@ -79,7 +79,7 @@ Feature: PlanetRegistration
 		| Valid Planet name              | Picture for Planets |
 		| Amphitrite Euphrosyne Virginia | planet-1.jpg        |
 
-	@SCRUM-TC-39
+	@SCRUM-TC-39 @JREQ-SCRUM-70
 	Scenario: Planet Registration Negative Scenario Null planet name without picture
 	if a user enters no planet name without a picture no planet is added to the planetarium
 		Given I am on the Planet and Moon viewing page
@@ -88,7 +88,7 @@ Feature: PlanetRegistration
 		When I click the Submit Planet button
 		Then the planet should not be added to the planetarium
 
-	@SCRUM-TC-40
+	@SCRUM-TC-40 @JREQ-SCRUM-71
 	Scenario Outline: Planet Registration Negative Scenario Null planet name with picture
 	if a user enters no planet name with a picture no planet is added to the planetarium
 		Given I am on the Planet and Moon viewing page
