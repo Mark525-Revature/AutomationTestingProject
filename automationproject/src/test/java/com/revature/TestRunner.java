@@ -1,6 +1,7 @@
 package com.revature;
 
 import com.revature.pom.PlanetariumHome;
+import com.revature.pom.PlanetariumLogin;
 import com.revature.pom.PlanetariumRegistration;
 
 import io.cucumber.junit.Cucumber;
@@ -31,6 +32,7 @@ public class TestRunner {
 
     public static PlanetariumHome planetariumHome;
     public static PlanetariumRegistration planetariumRegistration;
+    public static PlanetariumLogin planetariumLogin;
 
     @BeforeClass
     public static void setup(){
@@ -38,6 +40,7 @@ public class TestRunner {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         planetariumHome = new PlanetariumHome(driver);
         planetariumRegistration = new PlanetariumRegistration(driver);
+        planetariumLogin = new PlanetariumLogin(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(2));
     }
 

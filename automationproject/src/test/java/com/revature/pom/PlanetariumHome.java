@@ -57,6 +57,7 @@ public class PlanetariumHome {
     }
 
     // Planet Registraton
+    public void goToViewingPage() { driver.get(viewingPage); }
 
     public void switchDropdownToPlanet(){
         Select dropdown = new Select(locationSelect);
@@ -82,6 +83,11 @@ public class PlanetariumHome {
     }
 
     // Planet Registraton
+
+    public void selectMoonFromDropDown() {
+        Select select = new Select(dropdown);
+        select.selectByVisibleText("moon");
+    }
 
 
 }
