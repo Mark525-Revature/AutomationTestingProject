@@ -21,6 +21,12 @@ public class PlanetariumHome {
     @FindBy(id = "locationSelect")
     private WebElement locationSelect;
 
+    @FindBy(id = "deleteInput")
+    private WebElement deleteInput;
+
+    @FindBy(id = "deleteButton")
+    private WebElement deleteButton;
+
     @FindBy(id = "planetNameInput")
     private WebElement planetNameInput;
 
@@ -60,15 +66,28 @@ public class PlanetariumHome {
         return alertText;
     }
 
+    public String getDeleteInput(){
+        return deleteInput.getAttribute("value");
+    }
+
     // Planet Registraton
 
     public void goToViewingPage() { driver.get(viewingPage); }
+
 
     public void login(){
         driver.get(url);
         usernameInput.sendKeys("Batman");
         passwordInput.sendKeys("I am the night");
         loginButton.click();
+    }
+
+    public void enterCelestialBodyName(String name){
+        deleteInput.sendKeys(name);
+    }
+    
+    public void deleteCelestialBody(){
+        deleteButton.click();
     }
 
     public void switchDropdownToPlanet(){
@@ -113,4 +132,5 @@ public class PlanetariumHome {
             System.out.println("No alert present");
         }
     }
+
 }
