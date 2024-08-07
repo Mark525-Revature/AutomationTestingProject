@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 // Currenlt using this for registration page 
 
@@ -17,6 +18,7 @@ public class PlanetariumHome {
     private WebDriver driver;
 
     private String url = "http://localhost:8080";
+    private String viewingPage = "http://localhost:8080/planetarium";
 
     // Planet Registraton
 
@@ -33,6 +35,12 @@ public class PlanetariumHome {
     private WebElement planetSubmitButton;
 
     // Planet Registraton
+
+    @FindBy(xpath = "/html/body/div/form/input[3]")
+    private WebElement loginButton;
+
+    @FindBy(xpath = "//select[@id='locationSelect']")
+    private WebElement dropdown;
 
     public PlanetariumHome(WebDriver driver){
         this.driver = driver;
