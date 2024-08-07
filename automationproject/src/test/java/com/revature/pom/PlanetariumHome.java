@@ -25,6 +25,12 @@ public class PlanetariumHome {
     @FindBy(id = "locationSelect")
     private WebElement locationSelect;
 
+    @FindBy(id = "deleteInput")
+    private WebElement deleteInput;
+
+    @FindBy(id = "deleteButton")
+    private WebElement deleteButton;
+
     @FindBy(id = "planetNameInput")
     private WebElement planetNameInput;
 
@@ -56,8 +62,20 @@ public class PlanetariumHome {
         return alertText;
     }
 
+    public String getDeleteInput(){
+        return deleteInput.getAttribute("value");
+    }
+
     // Planet Registraton
     public void goToViewingPage() { driver.get(viewingPage); }
+
+    public void enterCelestialBodyName(String name){
+        deleteInput.sendKeys(name);
+    }
+    
+    public void deleteCelestialBody(){
+        deleteButton.click();
+    }
 
     public void switchDropdownToPlanet(){
         Select dropdown = new Select(locationSelect);
@@ -88,6 +106,5 @@ public class PlanetariumHome {
         Select select = new Select(dropdown);
         select.selectByVisibleText("moon");
     }
-
 
 }
