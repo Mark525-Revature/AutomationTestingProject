@@ -30,7 +30,7 @@ public class RemoveMoonStep{
 
     @Then("no moon should be removed from the planetarium")
     public void the_user_should_be_able_to_delete_moon() {
-        TestRunner.planetariumHome.goToViewingPage;
+        TestRunner.planetariumHome.goToViewingPage();
         Assert.assertEquals("Deletion attempt failed: please try again" , TestRunner.planetariumHome.getAlertText());
     }
 
