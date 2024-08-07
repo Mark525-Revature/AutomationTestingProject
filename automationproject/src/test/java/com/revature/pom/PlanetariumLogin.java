@@ -14,7 +14,6 @@ public class PlanetariumLogin{
 
     private String url = "http://localhost:8080";
 
-
     @FindBy(id = "usernameInput")
     private WebElement usernameInput;
 
