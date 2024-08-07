@@ -3,7 +3,672 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-06T18:54:07.294Z",
+        "start_timestamp": "2024-08-07T16:31:23.743Z",
+        "line": 14,
+        "name": "Planet Registration Valid Planet name without picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-valid-planet-name-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:6)\r\n",
+              "duration": 5000700,
+              "status": "pending"
+            },
+            "line": 6,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I insert the planet name \"Amphitrite Euphrosyne Virginia\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the planet should be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-11"
+          },
+          {
+            "name": "@JREQ-SCRUM-21"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:23.880Z",
+        "line": 28,
+        "name": "Planet Registration Invalid Planet name with picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-invalid-planet-name-with-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:18)\r\n",
+              "status": "pending"
+            },
+            "line": 18,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3004000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I insert the planet name \"Amphitrite Euphrosyne Virginia!\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I click choose File",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I choose an image for the planet \"planet-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001500,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-12"
+          },
+          {
+            "name": "@JREQ-SCRUM-25"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:23.899Z",
+        "line": 40,
+        "name": "Planet Registration Invalid Planet name without picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-invalid-planet-name-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:32)\r\n",
+              "duration": 2001400,
+              "status": "pending"
+            },
+            "line": 32,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I insert the planet name \"Amphitrite Euphrosyne Virginia!\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-13"
+          },
+          {
+            "name": "@JREQ-SCRUM-24"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:23.927Z",
+        "line": 54,
+        "name": "Planet Registration Non-unique Planet name with picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-non-unique-planet-name-with-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:44)\r\n",
+              "duration": 2000100,
+              "status": "pending"
+            },
+            "line": 44,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I insert the planet name \"Earth\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I click choose File",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I choose an image for the planet \"planet-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001400,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-14"
+          },
+          {
+            "name": "@JREQ-SCRUM-27"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:23.973Z",
+        "line": 66,
+        "name": "Planet Registration Non-unique Planet name without picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-non-unique-planet-name-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:58)\r\n",
+              "status": "pending"
+            },
+            "line": 58,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I insert the planet name \"Mars\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-15"
+          },
+          {
+            "name": "@JREQ-SCRUM-26"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:23.993Z",
+        "line": 80,
+        "name": "Planet Registration Valid Planet name with picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-valid-planet-name-with-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:70)\r\n",
+              "status": "pending"
+            },
+            "line": 70,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999500,
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "I insert the planet name \"Amphitrite Euphrosyne Virginia\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "I click choose File",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "I choose an image for the planet \"planet-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "the planet should be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-20"
+          },
+          {
+            "name": "@JREQ-SCRUM-22"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:24.007Z",
+        "line": 83,
+        "name": "Planet Registration Negative Scenario Null planet name without picture",
+        "description": "\tif a user enters no planet name without a picture no planet is added to the planetarium",
+        "id": "planetregistration;planet-registration-negative-scenario-null-planet-name-without-picture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:85)\r\n",
+              "status": "pending"
+            },
+            "line": 85,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "I insert no planet name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-39"
+          },
+          {
+            "name": "@JREQ-SCRUM-70"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-07T16:31:24.028Z",
+        "line": 104,
+        "name": "Planet Registration Negative Scenario Null planet name with picture",
+        "description": "\tif a user enters no planet name with a picture no planet is added to the planetarium",
+        "id": "planetregistration;planet-registration-negative-scenario-null-planet-name-with-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page(PlanetRegistrationSteps.java:10)\r\n\tat ✽.I am on the Planet and Moon viewing page(classpath:features/PlanetRegistration.feature:94)\r\n",
+              "duration": 1001000,
+              "status": "pending"
+            },
+            "line": 94,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "I change the selector to Planet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "I insert no planet name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "I click choose File",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "I choose an image for the planet planet-1.jpg",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "I click the Submit Planet button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "the planet should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-40"
+          },
+          {
+            "name": "@JREQ-SCRUM-71"
+          }
+        ]
+      }
+    ],
+    "name": "PlanetRegistration",
+    "description": "",
+    "id": "planetregistration",
+    "keyword": "Feature",
+    "uri": "classpath:features/PlanetRegistration.feature",
+    "tags": [
+      {
+        "name": "@PlanetRegistration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-07T16:31:24.055Z",
         "line": 15,
         "name": "Registration Positive Scenario",
         "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
@@ -13,7 +678,7 @@
         "steps": [
           {
             "result": {
-              "duration": 86573500,
+              "duration": 116999500,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +690,7 @@
           },
           {
             "result": {
-              "duration": 57632800,
+              "duration": 193998700,
               "status": "passed"
             },
             "line": 8,
@@ -37,7 +702,7 @@
           },
           {
             "result": {
-              "duration": 84583800,
+              "duration": 90989500,
               "status": "passed"
             },
             "line": 9,
@@ -55,7 +720,7 @@
           },
           {
             "result": {
-              "duration": 70952500,
+              "duration": 100999400,
               "status": "passed"
             },
             "line": 10,
@@ -74,7 +739,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully] with username \"Batm...\u003e but was:\u003cAccount creat[ion failed] with username \"Batm...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.step.RegistrationSteps.the_user_should_be_registered(RegistrationSteps.java:46)\r\n\tat ✽.the user should be registered(classpath:features/Registration.feature:11)\r\n",
-              "duration": 574760800,
+              "duration": 154000800,
               "status": "failed"
             },
             "line": 11,
@@ -98,7 +763,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:08.207Z",
+        "start_timestamp": "2024-08-07T16:31:24.740Z",
         "line": 28,
         "name": "Registration Username not unique",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -108,7 +773,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25037300,
+              "duration": 48999800,
               "status": "passed"
             },
             "line": 20,
@@ -120,7 +785,7 @@
           },
           {
             "result": {
-              "duration": 42240900,
+              "duration": 85999200,
               "status": "passed"
             },
             "line": 21,
@@ -132,7 +797,7 @@
           },
           {
             "result": {
-              "duration": 35134500,
+              "duration": 62002400,
               "status": "passed"
             },
             "line": 22,
@@ -150,7 +815,7 @@
           },
           {
             "result": {
-              "duration": 75330800,
+              "duration": 75998100,
               "status": "passed"
             },
             "line": 23,
@@ -168,7 +833,7 @@
           },
           {
             "result": {
-              "duration": 556628700,
+              "duration": 608481800,
               "status": "passed"
             },
             "line": 24,
@@ -192,7 +857,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:08.945Z",
+        "start_timestamp": "2024-08-07T16:31:25.625Z",
         "line": 41,
         "name": "Registration Username too long",
         "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
@@ -202,7 +867,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21628000,
+              "duration": 51998000,
               "status": "passed"
             },
             "line": 33,
@@ -214,7 +879,7 @@
           },
           {
             "result": {
-              "duration": 33242400,
+              "duration": 66000300,
               "status": "passed"
             },
             "line": 34,
@@ -226,7 +891,7 @@
           },
           {
             "result": {
-              "duration": 64288600,
+              "duration": 58999900,
               "status": "passed"
             },
             "line": 35,
@@ -244,7 +909,7 @@
           },
           {
             "result": {
-              "duration": 62626700,
+              "duration": 65992900,
               "status": "passed"
             },
             "line": 36,
@@ -262,7 +927,7 @@
           },
           {
             "result": {
-              "duration": 542392700,
+              "duration": 594481400,
               "status": "passed"
             },
             "line": 37,
@@ -286,7 +951,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:09.672Z",
+        "start_timestamp": "2024-08-07T16:31:26.469Z",
         "line": 54,
         "name": "Registration Password too long",
         "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
@@ -296,7 +961,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18384200,
+              "duration": 44000700,
               "status": "passed"
             },
             "line": 46,
@@ -308,7 +973,7 @@
           },
           {
             "result": {
-              "duration": 35309500,
+              "duration": 79999700,
               "status": "passed"
             },
             "line": 47,
@@ -320,7 +985,7 @@
           },
           {
             "result": {
-              "duration": 63803200,
+              "duration": 65997300,
               "status": "passed"
             },
             "line": 48,
@@ -338,7 +1003,7 @@
           },
           {
             "result": {
-              "duration": 63374800,
+              "duration": 62001200,
               "status": "passed"
             },
             "line": 49,
@@ -356,7 +1021,7 @@
           },
           {
             "result": {
-              "duration": 544675100,
+              "duration": 572245200,
               "status": "passed"
             },
             "line": 50,
@@ -380,7 +1045,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:10.401Z",
+        "start_timestamp": "2024-08-07T16:31:27.301Z",
         "line": 67,
         "name": "Registration User credentials too long",
         "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
@@ -390,7 +1055,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18215900,
+              "duration": 57016200,
               "status": "passed"
             },
             "line": 59,
@@ -402,7 +1067,7 @@
           },
           {
             "result": {
-              "duration": 36556200,
+              "duration": 72999500,
               "status": "passed"
             },
             "line": 60,
@@ -414,7 +1079,7 @@
           },
           {
             "result": {
-              "duration": 66576300,
+              "duration": 73999100,
               "status": "passed"
             },
             "line": 61,
@@ -432,7 +1097,7 @@
           },
           {
             "result": {
-              "duration": 81971400,
+              "duration": 79002000,
               "status": "passed"
             },
             "line": 62,
@@ -450,7 +1115,7 @@
           },
           {
             "result": {
-              "duration": 556784400,
+              "duration": 585072800,
               "status": "passed"
             },
             "line": 63,
@@ -474,7 +1139,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:11.165Z",
+        "start_timestamp": "2024-08-07T16:31:28.174Z",
         "line": 80,
         "name": "Registration Username not unique and password too long",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -484,7 +1149,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23797700,
+              "duration": 49002800,
               "status": "passed"
             },
             "line": 72,
@@ -496,7 +1161,7 @@
           },
           {
             "result": {
-              "duration": 34207500,
+              "duration": 63998000,
               "status": "passed"
             },
             "line": 73,
@@ -508,7 +1173,7 @@
           },
           {
             "result": {
-              "duration": 40585900,
+              "duration": 40998700,
               "status": "passed"
             },
             "line": 74,
@@ -526,7 +1191,7 @@
           },
           {
             "result": {
-              "duration": 71264900,
+              "duration": 71996500,
               "status": "passed"
             },
             "line": 75,
@@ -544,7 +1209,7 @@
           },
           {
             "result": {
-              "duration": 38318700,
+              "duration": 574116900,
               "status": "passed"
             },
             "line": 76,
@@ -568,7 +1233,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:11.374Z",
+        "start_timestamp": "2024-08-07T16:31:28.979Z",
         "line": 93,
         "name": "Registration Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
@@ -578,7 +1243,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9507000,
+              "duration": 46691400,
               "status": "passed"
             },
             "line": 85,
@@ -590,7 +1255,7 @@
           },
           {
             "result": {
-              "duration": 50561700,
+              "duration": 75000100,
               "status": "passed"
             },
             "line": 86,
@@ -602,7 +1267,7 @@
           },
           {
             "result": {
-              "duration": 23219300,
+              "duration": 46002400,
               "status": "passed"
             },
             "line": 87,
@@ -614,7 +1279,7 @@
           },
           {
             "result": {
-              "duration": 63585300,
+              "duration": 70999400,
               "status": "passed"
             },
             "line": 88,
@@ -632,7 +1297,7 @@
           },
           {
             "result": {
-              "duration": 547471200,
+              "duration": 587289700,
               "status": "passed"
             },
             "line": 89,
@@ -653,7 +1318,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:12.072Z",
+        "start_timestamp": "2024-08-07T16:31:29.810Z",
         "line": 106,
         "name": "Registration Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
@@ -663,7 +1328,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18520200,
+              "duration": 39172800,
               "status": "passed"
             },
             "line": 98,
@@ -675,7 +1340,7 @@
           },
           {
             "result": {
-              "duration": 36163500,
+              "duration": 74997900,
               "status": "passed"
             },
             "line": 99,
@@ -687,7 +1352,7 @@
           },
           {
             "result": {
-              "duration": 62120100,
+              "duration": 86004500,
               "status": "passed"
             },
             "line": 100,
@@ -705,7 +1370,7 @@
           },
           {
             "result": {
-              "duration": 21292900,
+              "duration": 46999900,
               "status": "passed"
             },
             "line": 101,
@@ -717,7 +1382,7 @@
           },
           {
             "result": {
-              "duration": 38838600,
+              "duration": 586982200,
               "status": "passed"
             },
             "line": 102,
@@ -738,7 +1403,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-06T18:54:12.253Z",
+        "start_timestamp": "2024-08-07T16:31:30.651Z",
         "line": 109,
         "name": "Registration Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
@@ -748,7 +1413,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17238500,
+              "duration": 55001700,
               "status": "passed"
             },
             "line": 111,
@@ -760,7 +1425,7 @@
           },
           {
             "result": {
-              "duration": 45544700,
+              "duration": 67999500,
               "status": "passed"
             },
             "line": 112,
@@ -772,7 +1437,7 @@
           },
           {
             "result": {
-              "duration": 24549400,
+              "duration": 44998200,
               "status": "passed"
             },
             "line": 113,
@@ -784,7 +1449,7 @@
           },
           {
             "result": {
-              "duration": 22345300,
+              "duration": 40021000,
               "status": "passed"
             },
             "line": 114,
@@ -796,7 +1461,7 @@
           },
           {
             "result": {
-              "duration": 536956200,
+              "duration": 591826400,
               "status": "passed"
             },
             "line": 115,
