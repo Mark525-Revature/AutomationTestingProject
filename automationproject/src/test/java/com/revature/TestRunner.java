@@ -1,5 +1,5 @@
 package com.revature;
-
+//import com.revature.Setup;
 import com.revature.pom.PlanetariumHome;
 import com.revature.pom.PlanetariumLogin;
 import com.revature.pom.PlanetariumRegistration;
@@ -36,6 +36,7 @@ public class TestRunner {
 
     @BeforeClass
     public static void setup(){
+        //Setup.resetTestDatabase();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         planetariumHome = new PlanetariumHome(driver);
