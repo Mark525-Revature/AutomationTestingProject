@@ -10,12 +10,12 @@ public class LoginSteps {
     }
     @Then("the user should be logged in with the planetarium")
     public void the_user_should_be_logged_in_with_the_planetarium() {
-        TestRunner.planetariumLogin.clickLoginButton();
+        TestRunner.planetariumLogin.clickLoginButtonValid();
         Assert.assertEquals("Home", TestRunner.driver.getTitle());
     }
     @Then("the user should not be logged in with the planetarium")
     public void the_user_should_not_be_logged_in_with_the_planetarium() {
-        TestRunner.planetariumLogin.clickLoginButton();
+        TestRunner.planetariumLogin.clickLoginButtonInvalid();
         Assert.assertEquals("login attempt failed: please try again" , TestRunner.planetariumHome.getAlertText());
     }
 }
