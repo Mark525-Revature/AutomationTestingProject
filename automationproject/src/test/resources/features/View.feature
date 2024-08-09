@@ -11,4 +11,4 @@ Feature: View
 
 	Examples: 
 		| valid username                 | valid password                 |
-		| Batman and Robin unite now!!!! | Riddler and Joker disagree!!!! |
+		| Batman| I am the night |
