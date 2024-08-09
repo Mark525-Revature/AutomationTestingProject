@@ -50,7 +50,18 @@ public class PlanetariumHome {
 
     @FindBy(xpath = "//tr")
     private List<WebElement> tableData;
-    
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/input[1]")
+    private WebElement moonNameInput;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/input[2]")
+    private WebElement planetIdInput;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/button")
+    private WebElement moonSubmitButton;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/input[3]")
+    private WebElement moonImageInput;
 
     public PlanetariumHome(WebDriver driver){
         this.driver = driver;
@@ -100,7 +111,7 @@ public class PlanetariumHome {
     }
 
     public void enterPlanetFile(String string){
-        String filePath = "C:\\Users\\riley\\OneDrive\\Desktop\\GroupProj\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        String filePath = "C:\\Users\\Juan\\Desktop\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
         planetImageInput.sendKeys(filePath);
     }
 
@@ -117,7 +128,26 @@ public class PlanetariumHome {
 
     public void selectMoonFromDropDown() {
         Select select = new Select(dropdown);
-        select.selectByVisibleText("Moon");
+        select.selectByIndex(1);
+        select.selectByIndex(0);
+    }
+    public void enterMoonName(String moonName){
+        moonNameInput.sendKeys(moonName);
+    }
+
+    public void enterPlanetId(String planetId){
+        planetIdInput.sendKeys(planetId);
+    }
+
+    public void submitMoon()
+    {
+        moonSubmitButton.click();
+        handleAlert();
+    }
+
+    public void enterMoonFile(String string){
+        String filePath = "C:\\Users\\Juan\\Desktop\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        moonImageInput.sendKeys(filePath);
     }
 
     // Moon
