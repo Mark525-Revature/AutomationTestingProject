@@ -3,17 +3,2009 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T21:56:10.409Z",
+        "start_timestamp": "2024-08-08T19:36:56.635Z",
         "line": 14,
-        "name": "Planet Registration Valid Planet name without picture",
+        "name": "Login Valid login credentials",
         "description": "",
-        "id": "planetregistration;planet-registration-valid-planet-name-without-picture;;2",
+        "id": "login;login-valid-login-credentials;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 508999100,
+              "duration": 38266400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44241700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43553800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I provide the password \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Home]\u003e but was:\u003c[Planetarium Login]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_with_the_planetarium(LoginSteps.java:14)\r\n\tat ✽.the user should be logged in with the planetarium(classpath:features/Login.feature:10)\r\n",
+              "duration": 83066600,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the user should be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-7"
+          },
+          {
+            "name": "@JREQ-SCRUM-13"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:56.889Z",
+        "line": 27,
+        "name": "Login Invalid login credentials with Registered Username",
+        "description": "\tRegistered Username and Invalid Password",
+        "id": "login;login-invalid-login-credentials-with-registered-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39116800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63607000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57386400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31117100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should not be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_not_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-8"
+          },
+          {
+            "name": "@JREQ-SCRUM-14"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:57.087Z",
+        "line": 40,
+        "name": "Login Invalid login credentials with Non-Registered Username",
+        "description": "\tN0n-registered Username and valid Password",
+        "id": "login;login-invalid-login-credentials-with-non-registered-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13953400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52994100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I provide the username \"Gordon and Clark are friends!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gordon and Clark are friends!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51968000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37111800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the user should not be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_not_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-9"
+          },
+          {
+            "name": "@JREQ-SCRUM-15"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:57.251Z",
+        "line": 53,
+        "name": "Login Negative Scenario Null username",
+        "description": "\tgiven no username and a valid password a user should not be able to log in to the planetarium",
+        "id": "login;login-negative-scenario-null-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12044600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26080400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39288200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I provide the password \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 544202900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the user should not be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_not_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-36"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:57.876Z",
+        "line": 66,
+        "name": "Login Negative Scenario Null password",
+        "description": "\tgiven Valid username and no password a user should not be able to log in to the planetarium",
+        "id": "login;login-negative-scenario-null-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14951000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35521100,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33032000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38870700,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "the user should not be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_not_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-37"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:58.002Z",
+        "line": 69,
+        "name": "Login Negative Scenario Null username and password",
+        "description": "\tgiven no username and no password a user should not be able to log in to the planetarium",
+        "id": "login;login-negative-scenario-null-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13952800,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I pick the option to login",
+            "match": {
+              "location": "com.revature.step.LoginSteps.i_pick_the_option_to_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24167300,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30896200,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43934800,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the user should not be logged in with the planetarium",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_should_not_be_logged_in_with_the_planetarium()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SCRUM-TC-38"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "classpath:features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:36:58.136Z",
+        "line": 15,
+        "name": "Moon Registration Valid Moon name with valid Planet ID and without picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-valid-moon-name-with-valid-planet-id-and-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29107500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Given I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.given_I_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95691600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I insert the planet ID \"1\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click the Submit Moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the moon should be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-18"
+          },
+          {
+            "name": "@JREQ-SCRUM-35"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:58.273Z",
+        "line": 30,
+        "name": "Moon Registration Invalid Moon name with valid Planet ID and picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-invalid-moon-name-with-valid-planet-id-and-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 187848600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 202642800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "I insert the planet ID \"1\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "When I click choose File",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "When I choose an image for the moon \"moon-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I click the Submit Moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "the moon should be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-19"
+          },
+          {
+            "name": "@JREQ-SCRUM-38"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:58.669Z",
+        "line": 45,
+        "name": "Moon Registration Valid Moon name with valid Planet ID and picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-valid-moon-name-with-valid-planet-id-and-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 134539300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131921000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "I insert the planet ID \"1\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I choose an image for the moon \"moon-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I click the Submit Moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "the moon should be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-21"
+          },
+          {
+            "name": "@JREQ-SCRUM-36"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:58.940Z",
+        "line": 58,
+        "name": "Moon Registration Invalid Moon name with valid Planet ID and without picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-invalid-moon-name-with-valid-planet-id-and-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168085500,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 192288400,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 52,
+            "name": "I insert the planet ID \"1\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-22"
+          },
+          {
+            "name": "@JREQ-SCRUM-39"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:59.306Z",
+        "line": 73,
+        "name": "Moon Registration Valid Moon name with invalid Planet ID and picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-valid-moon-name-with-invalid-planet-id-and-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106947600,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134189400,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 65,
+            "name": "I insert the planet ID \"0\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996400,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "I choose an image for the moon \"\u003cPicture of moons\u003e\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-23"
+          },
+          {
+            "name": "@JREQ-SCRUM-40"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:59.551Z",
+        "line": 86,
+        "name": "Moon Registration Valid Moon name with invalid Planet ID and without picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-valid-moon-name-with-invalid-planet-id-and-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 170886200,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 122084000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I insert the moon name \"waxing crescent gibbous Moon!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"waxing crescent gibbous Moon!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 80,
+            "name": "I insert the planet ID \"0\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-24"
+          },
+          {
+            "name": "@JREQ-SCRUM-41"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:36:59.847Z",
+        "line": 101,
+        "name": "Moon Registration Invalid Moon name with invalid Planet ID and picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-invalid-moon-name-with-invalid-planet-id-and-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 127427900,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149279600,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996600,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I insert the moon name \"\u003cInvalid Moon name\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cInvalid Moon name\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 93,
+            "name": "I insert the planet ID \"0\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "I choose an image for the moon \"moon-1.jpg\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-25"
+          },
+          {
+            "name": "@JREQ-SCRUM-42"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:00.129Z",
+        "line": 114,
+        "name": "Moon Registration Invalid Moon name with invalid Planet ID and without picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-invalid-moon-name-with-invalid-planet-id-and-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124479600,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116985500,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I insert the moon name \"\u003cinvalid Moon Name\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinvalid Moon Name\u003e\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 108,
+            "name": "I insert the planet ID \"0\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 109,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 110,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-26"
+          },
+          {
+            "name": "@JREQ-SCRUM-43"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:00.374Z",
+        "line": 127,
+        "name": "Moon Registration Non-Unique Moon name with valid Planet ID and without picture",
+        "description": "",
+        "id": "moonregistration;moon-registration-non-unique-moon-name-with-valid-planet-id-and-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 117787200,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 117990400,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I insert the moon name \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 121,
+            "name": "I insert the planet ID \"1\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 122,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 123,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-27"
+          },
+          {
+            "name": "@JREQ-SCRUM-45"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:00.613Z",
+        "line": 143,
+        "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and a picture",
+        "description": "\tif User provides no moon name and a valid planet id with a picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-null-moon-name-with-valid-planet-id-and-a-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115132200,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135415600,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 134,
+            "name": "I insert no moon name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 135,
+            "name": "I insert the planet ID 1",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 136,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 137,
+            "name": "I choose an image for the moon \u003cPicture for Moons\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 138,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 139,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-42"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:00.868Z",
+        "line": 157,
+        "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and no picture",
+        "description": "\tif User provides no moon name and a valid planet id with no picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-null-moon-name-with-valid-planet-id-and-no-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 143591000,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123130600,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 150,
+            "name": "I insert no moon name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 151,
+            "name": "I insert the planet ID 1",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 152,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 153,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-43"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:01.138Z",
+        "line": 173,
+        "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and a picture",
+        "description": "\tif User provides a Valid moon name and no  planet id with a picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-valid-moon-name-with-null-planet-id-and-a-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124149400,
+              "status": "passed"
+            },
+            "line": 162,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 206145000,
+              "status": "passed"
+            },
+            "line": 163,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 164,
+            "name": "I insert the planet name waxing crescent gibbous Moon!!",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 165,
+            "name": "I insert no planet id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 166,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 167,
+            "name": "I choose an image for the moon \u003cPicture for Moons\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 168,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 169,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-44"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:01.472Z",
+        "line": 187,
+        "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and no picture",
+        "description": "\tif User provides a Valid moon name and no planet id with no picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-valid-moon-name-with-null-planet-id-and-no-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109312400,
+              "status": "passed"
+            },
+            "line": 178,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182206900,
+              "status": "passed"
+            },
+            "line": 179,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 180,
+            "name": "I insert the moon name waxing crescent gibbous Moon!!",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 181,
+            "name": "I insert no planet id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 182,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 183,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-45"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:01.768Z",
+        "line": 203,
+        "name": "Moon Registration Negative Scenario null Moon name with null planet ID and a picture",
+        "description": "\tif User provides no moon name and no planet id with a picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-null-moon-name-with-null-planet-id-and-a-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113858500,
+              "status": "passed"
+            },
+            "line": 192,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118354300,
+              "status": "passed"
+            },
+            "line": 193,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 194,
+            "name": "I insert no moon name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 195,
+            "name": "I insert no planet id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 196,
+            "name": "I click choose File",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 197,
+            "name": "I choose an image for the moon \u003cPicture for Moons\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 198,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 199,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-46"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:02.010Z",
+        "line": 206,
+        "name": "Moon Registration Negative Scenario null Moon name with null planet ID and no picture",
+        "description": "\tif User provides no moon name and no planet id with no picture no moon should be added to the planetarium",
+        "id": "moonregistration;moon-registration-negative-scenario-null-moon-name-with-null-planet-id-and-no-picture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 121219700,
+              "status": "passed"
+            },
+            "line": 208,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197464800,
+              "status": "passed"
+            },
+            "line": 209,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 210,
+            "name": "I insert no moon name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 211,
+            "name": "I insert no planet id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 212,
+            "name": "I click the submit moon button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 213,
+            "name": "the moon should not be added to the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRegistration"
+          },
+          {
+            "name": "@SCRUM-TC-47"
+          }
+        ]
+      }
+    ],
+    "name": "MoonRegistration",
+    "description": "",
+    "id": "moonregistration",
+    "keyword": "Feature",
+    "uri": "classpath:features/MoonRegistration.feature",
+    "tags": [
+      {
+        "name": "@MoonRegistration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:37:02.330Z",
+        "line": 14,
+        "name": "Moon Removal Valid Moon name",
+        "description": "",
+        "id": "moonremoval;moon-removal-valid-moon-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113193900,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +2017,277 @@
           },
           {
             "result": {
-              "duration": 273004200,
+              "duration": 212422400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I insert the moon name \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21120200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the delete button",
+            "match": {
+              "location": "com.revature.step.RemoveMoonStep.i_click_the_delete_moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[Failed to delete moon with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.step.RemoveMoonStep.the_user_should_be_able_to_delete_moons(RemoveMoonStep.java:33)\r\n\tat ✽.the moon should be removed from the planetarium(classpath:features/MoonRemoval.feature:10)\r\n",
+              "duration": 527448800,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the moon should be removed from the planetarium",
+            "match": {
+              "location": "com.revature.step.RemoveMoonStep.the_user_should_be_able_to_delete_moons()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-31"
+          },
+          {
+            "name": "@JREQ-SCRUM-50"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:03.208Z",
+        "line": 26,
+        "name": "Moon Removal Invalid Moon name",
+        "description": "",
+        "id": "moonremoval;moon-removal-invalid-moon-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 122875200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141729300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I insert the moon name \"Vegeta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vegeta\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.MoonRegistrationSteps.i_insert_the_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20930600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click the delete button",
+            "match": {
+              "location": "com.revature.step.RemoveMoonStep.i_click_the_delete_moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40939400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "no moon should be removed from the planetarium",
+            "match": {
+              "location": "com.revature.step.RemoveMoonStep.the_user_should_not_be_able_to_delete_moon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-32"
+          },
+          {
+            "name": "@JREQ-SCRUM-52"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:03.537Z",
+        "line": 29,
+        "name": "Moon Removal Negative Scenario Null Moon name",
+        "description": "\tif User provides no moon name then no moon should be removed from the planetarium",
+        "id": "moonremoval;moon-removal-negative-scenario-null-moon-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 188371800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124582900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I change the selector to Moon",
+            "match": {
+              "location": "com.revature.step.MoonRegistrationSteps.i_change_the_selector_to_Moon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "I insert no moon name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I click the Delete button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "no moon should be removed from the planetarium",
+            "match": {
+              "location": "com.revature.step.RemoveMoonStep.the_user_should_not_be_able_to_delete_moon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MoonRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-48"
+          },
+          {
+            "name": "@JREQ-SCRUM-80"
+          }
+        ]
+      }
+    ],
+    "name": "MoonRemoval",
+    "description": "",
+    "id": "moonremoval",
+    "keyword": "Feature",
+    "uri": "classpath:features/MoonRemoval.feature",
+    "tags": [
+      {
+        "name": "@MoonRemoval",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:37:03.855Z",
+        "line": 14,
+        "name": "Planet Registration Valid Planet name without picture",
+        "description": "",
+        "id": "planetregistration;planet-registration-valid-planet-name-without-picture;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 121381600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152208400,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +2299,7 @@
           },
           {
             "result": {
-              "duration": 391997500,
+              "duration": 145592300,
               "status": "passed"
             },
             "line": 8,
@@ -55,7 +2317,7 @@
           },
           {
             "result": {
-              "duration": 2161179800,
+              "duration": 2071528900,
               "status": "passed"
             },
             "line": 9,
@@ -67,8 +2329,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c6\u003e but was:\u003c5\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:60)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
-              "duration": 19093800,
+              "error_message": "java.lang.AssertionError: expected:\u003c6\u003e but was:\u003c5\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:57)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
+              "duration": 3986700,
               "status": "failed"
             },
             "line": 10,
@@ -92,7 +2354,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:13.899Z",
+        "start_timestamp": "2024-08-08T19:37:06.356Z",
         "line": 28,
         "name": "Planet Registration Invalid Planet name with picture",
         "description": "",
@@ -102,7 +2364,7 @@
         "steps": [
           {
             "result": {
-              "duration": 252005600,
+              "duration": 118389900,
               "status": "passed"
             },
             "line": 18,
@@ -114,7 +2376,7 @@
           },
           {
             "result": {
-              "duration": 235001700,
+              "duration": 200116400,
               "status": "passed"
             },
             "line": 19,
@@ -126,7 +2388,7 @@
           },
           {
             "result": {
-              "duration": 131000500,
+              "duration": 56304900,
               "status": "passed"
             },
             "line": 20,
@@ -144,8 +2406,9 @@
           },
           {
             "result": {
-              "duration": 305997400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\\Users\\riley\\OneDrive\\Desktop\\GroupProj\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\planet-1.jpg\n  (Session info: chrome\u003d127.0.6533.90)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [42f8f6a5bd4ebb6a3c03114f8679a9b6, sendKeysToElement {value\u003d[Ljava.lang.CharSequence;@7d17ee50, id\u003df.EE98DF88D0233BCFAC41D75A36A63282.d.A3E1ADAAD47231D519BC7F80F8C3D448.e.428}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\hwake\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62191/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (42f8f6a5bd4ebb6a3c03114f8679a9b6)] -\u003e xpath: /html/body/div[1]/div[2]/input[2]]\nSession ID: 42f8f6a5bd4ebb6a3c03114f8679a9b6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:104)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/PlanetRegistration.feature:21)\r\n",
+              "duration": 14221300,
+              "status": "failed"
             },
             "line": 21,
             "name": "I click choose File",
@@ -156,7 +2419,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "I choose an image for the planet \"planet-1.jpg\"",
@@ -173,8 +2436,7 @@
           },
           {
             "result": {
-              "duration": 588672400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "I click the Submit Planet button",
@@ -185,8 +2447,7 @@
           },
           {
             "result": {
-              "duration": 9999000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "the planet should not be added to the planetarium",
@@ -209,7 +2470,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:15.440Z",
+        "start_timestamp": "2024-08-08T19:37:06.749Z",
         "line": 40,
         "name": "Planet Registration Invalid Planet name without picture",
         "description": "",
@@ -219,7 +2480,7 @@
         "steps": [
           {
             "result": {
-              "duration": 233999800,
+              "duration": 118392800,
               "status": "passed"
             },
             "line": 32,
@@ -231,7 +2492,7 @@
           },
           {
             "result": {
-              "duration": 256001100,
+              "duration": 194283900,
               "status": "passed"
             },
             "line": 33,
@@ -243,7 +2504,7 @@
           },
           {
             "result": {
-              "duration": 257000800,
+              "duration": 55222800,
               "status": "passed"
             },
             "line": 34,
@@ -261,7 +2522,7 @@
           },
           {
             "result": {
-              "duration": 2146450800,
+              "duration": 2068503500,
               "status": "passed"
             },
             "line": 35,
@@ -273,7 +2534,7 @@
           },
           {
             "result": {
-              "duration": 21005200,
+              "duration": 8234500,
               "status": "passed"
             },
             "line": 36,
@@ -297,7 +2558,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:18.372Z",
+        "start_timestamp": "2024-08-08T19:37:09.195Z",
         "line": 54,
         "name": "Planet Registration Non-unique Planet name with picture",
         "description": "",
@@ -307,7 +2568,7 @@
         "steps": [
           {
             "result": {
-              "duration": 356011800,
+              "duration": 115076700,
               "status": "passed"
             },
             "line": 44,
@@ -319,7 +2580,7 @@
           },
           {
             "result": {
-              "duration": 265001600,
+              "duration": 129991900,
               "status": "passed"
             },
             "line": 45,
@@ -331,7 +2592,7 @@
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 112312400,
               "status": "passed"
             },
             "line": 46,
@@ -349,8 +2610,9 @@
           },
           {
             "result": {
-              "duration": 301999400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\\Users\\riley\\OneDrive\\Desktop\\GroupProj\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\planet-1.jpg\n  (Session info: chrome\u003d127.0.6533.90)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [42f8f6a5bd4ebb6a3c03114f8679a9b6, sendKeysToElement {value\u003d[Ljava.lang.CharSequence;@3b353651, id\u003df.EE98DF88D0233BCFAC41D75A36A63282.d.66016741596D68558264B9630C7F4CC7.e.479}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\hwake\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62191/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (42f8f6a5bd4ebb6a3c03114f8679a9b6)] -\u003e xpath: /html/body/div[1]/div[2]/input[2]]\nSession ID: 42f8f6a5bd4ebb6a3c03114f8679a9b6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:104)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/PlanetRegistration.feature:47)\r\n",
+              "duration": 12064700,
+              "status": "failed"
             },
             "line": 47,
             "name": "I click choose File",
@@ -361,7 +2623,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 48,
             "name": "I choose an image for the planet \"planet-1.jpg\"",
@@ -378,8 +2640,7 @@
           },
           {
             "result": {
-              "duration": 692999200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 49,
             "name": "I click the Submit Planet button",
@@ -390,8 +2651,7 @@
           },
           {
             "result": {
-              "duration": 53002100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 50,
             "name": "the planet should not be added to the planetarium",
@@ -414,7 +2674,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:20.175Z",
+        "start_timestamp": "2024-08-08T19:37:09.569Z",
         "line": 66,
         "name": "Planet Registration Non-unique Planet name without picture",
         "description": "",
@@ -424,7 +2684,7 @@
         "steps": [
           {
             "result": {
-              "duration": 684997800,
+              "duration": 112384000,
               "status": "passed"
             },
             "line": 58,
@@ -436,7 +2696,7 @@
           },
           {
             "result": {
-              "duration": 379000700,
+              "duration": 128049900,
               "status": "passed"
             },
             "line": 59,
@@ -448,7 +2708,7 @@
           },
           {
             "result": {
-              "duration": 530001600,
+              "duration": 98882600,
               "status": "passed"
             },
             "line": 60,
@@ -466,7 +2726,7 @@
           },
           {
             "result": {
-              "duration": 2176641400,
+              "duration": 2078662800,
               "status": "passed"
             },
             "line": 61,
@@ -478,7 +2738,7 @@
           },
           {
             "result": {
-              "duration": 16001000,
+              "duration": 8646800,
               "status": "passed"
             },
             "line": 62,
@@ -502,7 +2762,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:23.977Z",
+        "start_timestamp": "2024-08-08T19:37:11.997Z",
         "line": 80,
         "name": "Planet Registration Valid Planet name with picture",
         "description": "",
@@ -512,7 +2772,7 @@
         "steps": [
           {
             "result": {
-              "duration": 338002400,
+              "duration": 125967200,
               "status": "passed"
             },
             "line": 70,
@@ -524,7 +2784,7 @@
           },
           {
             "result": {
-              "duration": 254998400,
+              "duration": 130218200,
               "status": "passed"
             },
             "line": 71,
@@ -536,7 +2796,7 @@
           },
           {
             "result": {
-              "duration": 436002600,
+              "duration": 112858000,
               "status": "passed"
             },
             "line": 72,
@@ -554,8 +2814,9 @@
           },
           {
             "result": {
-              "duration": 51997800,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\\Users\\riley\\OneDrive\\Desktop\\GroupProj\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\planet-1.jpg\n  (Session info: chrome\u003d127.0.6533.90)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [42f8f6a5bd4ebb6a3c03114f8679a9b6, sendKeysToElement {value\u003d[Ljava.lang.CharSequence;@684e8c9d, id\u003df.EE98DF88D0233BCFAC41D75A36A63282.d.79716CAE78F493451947C7AA7AE2F380.e.527}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\hwake\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62191/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (42f8f6a5bd4ebb6a3c03114f8679a9b6)] -\u003e xpath: /html/body/div[1]/div[2]/input[2]]\nSession ID: 42f8f6a5bd4ebb6a3c03114f8679a9b6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:104)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/PlanetRegistration.feature:73)\r\n",
+              "duration": 21098500,
+              "status": "failed"
             },
             "line": 73,
             "name": "I click choose File",
@@ -566,7 +2827,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 74,
             "name": "I choose an image for the planet \"planet-1.jpg\"",
@@ -583,8 +2844,7 @@
           },
           {
             "result": {
-              "duration": 2114376700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 75,
             "name": "I click the Submit Planet button",
@@ -595,8 +2855,7 @@
           },
           {
             "result": {
-              "duration": 10993200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 76,
             "name": "the planet should be added to the planetarium",
@@ -619,7 +2878,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:27.193Z",
+        "start_timestamp": "2024-08-08T19:37:12.391Z",
         "line": 83,
         "name": "Planet Registration Negative Scenario Null planet name without picture",
         "description": "\tif a user enters no planet name without a picture no planet is added to the planetarium",
@@ -629,7 +2888,7 @@
         "steps": [
           {
             "result": {
-              "duration": 229997200,
+              "duration": 121320900,
               "status": "passed"
             },
             "line": 85,
@@ -641,7 +2900,7 @@
           },
           {
             "result": {
-              "duration": 188002600,
+              "duration": 142165800,
               "status": "passed"
             },
             "line": 86,
@@ -653,7 +2912,7 @@
           },
           {
             "result": {
-              "duration": 235001100,
+              "duration": 106801000,
               "status": "passed"
             },
             "line": 87,
@@ -665,7 +2924,7 @@
           },
           {
             "result": {
-              "duration": 2098423700,
+              "duration": 2066041900,
               "status": "passed"
             },
             "line": 88,
@@ -677,7 +2936,7 @@
           },
           {
             "result": {
-              "duration": 10962300,
+              "duration": 5187600,
               "status": "passed"
             },
             "line": 89,
@@ -701,7 +2960,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T21:56:29.960Z",
+        "start_timestamp": "2024-08-08T19:37:14.833Z",
         "line": 104,
         "name": "Planet Registration Negative Scenario Null planet name with picture",
         "description": "\tif a user enters no planet name with a picture no planet is added to the planetarium",
@@ -711,7 +2970,7 @@
         "steps": [
           {
             "result": {
-              "duration": 229999700,
+              "duration": 126534400,
               "status": "passed"
             },
             "line": 94,
@@ -723,7 +2982,7 @@
           },
           {
             "result": {
-              "duration": 187080400,
+              "duration": 132110900,
               "status": "passed"
             },
             "line": 95,
@@ -735,7 +2994,7 @@
           },
           {
             "result": {
-              "duration": 237461600,
+              "duration": 29078400,
               "status": "passed"
             },
             "line": 96,
@@ -747,8 +3006,9 @@
           },
           {
             "result": {
-              "duration": 45002300,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\\Users\\riley\\OneDrive\\Desktop\\GroupProj\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\planet-1.jpg\n  (Session info: chrome\u003d127.0.6533.90)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [42f8f6a5bd4ebb6a3c03114f8679a9b6, sendKeysToElement {value\u003d[Ljava.lang.CharSequence;@198536f6, id\u003df.EE98DF88D0233BCFAC41D75A36A63282.d.4406B48F07EAF5650498F8FBD9E4AC98.e.578}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\hwake\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62191/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (42f8f6a5bd4ebb6a3c03114f8679a9b6)] -\u003e xpath: /html/body/div[1]/div[2]/input[2]]\nSession ID: 42f8f6a5bd4ebb6a3c03114f8679a9b6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:104)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/PlanetRegistration.feature:97)\r\n",
+              "duration": 95761800,
+              "status": "failed"
             },
             "line": 97,
             "name": "I click choose File",
@@ -759,7 +3019,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 98,
             "name": "I choose an image for the planet planet-1.jpg",
@@ -776,8 +3036,7 @@
           },
           {
             "result": {
-              "duration": 567068800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 99,
             "name": "I click the Submit Planet button",
@@ -788,8 +3047,7 @@
           },
           {
             "result": {
-              "duration": 12078300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 100,
             "name": "the planet should not be added to the planetarium",
@@ -820,6 +3078,1199 @@
     "tags": [
       {
         "name": "@PlanetRegistration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:37:15.219Z",
+        "line": 14,
+        "name": "Planet Removal Valid Planet name",
+        "description": "",
+        "id": "planetremoval;planet-removal-valid-planet-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115763900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131778500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I change the selector to Planet",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_change_the_selector_to_Planet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143049600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I insert the planet name \"Amphitrite Euphrosyne Virginia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amphitrite Euphrosyne Virginia\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.revature.step.PlanetRegistrationSteps.i_insert_the_planet_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I click the Delete button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the planet should be removed from the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-16"
+          },
+          {
+            "name": "@JREQ-SCRUM-30"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:15.614Z",
+        "line": 26,
+        "name": "Planet Removal Invalid Planet name",
+        "description": "",
+        "id": "planetremoval;planet-removal-invalid-planet-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113240300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 145244200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I change the selector to Planet",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_change_the_selector_to_Planet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111774900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I insert the planet name \"Vegeta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vegeta\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.revature.step.PlanetRegistrationSteps.i_insert_the_planet_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I click the Delete button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "the planet should not be removed from the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-17"
+          },
+          {
+            "name": "@JREQ-SCRUM-32"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:15.987Z",
+        "line": 29,
+        "name": "Planet Removal Negative Scenario Null planet name",
+        "description": "\tIf user enters no planet name then no planets are removed",
+        "id": "planetremoval;planet-removal-negative-scenario-null-planet-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116822300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I am on the Planet and Moon viewing page",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_am_on_the_Planet_and_Moon_viewing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 126105600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I change the selector to Planet",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_change_the_selector_to_Planet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22032600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I insert no planet name",
+            "match": {
+              "location": "com.revature.step.PlanetRegistrationSteps.i_insert_no_planet_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "I click the Delete button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the planet should not be removed from the planetarium",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PlanetRemoval"
+          },
+          {
+            "name": "@SCRUM-TC-41"
+          }
+        ]
+      }
+    ],
+    "name": "PlanetRemoval",
+    "description": "",
+    "id": "planetremoval",
+    "keyword": "Feature",
+    "uri": "classpath:features/PlanetRemoval.feature",
+    "tags": [
+      {
+        "name": "@PlanetRemoval",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:37:16.254Z",
+        "line": 15,
+        "name": "Registration Positive Scenario",
+        "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
+        "id": "registration;registration-positive-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69329000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 46842700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57017900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55097700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully] with username \"Batm...\u003e but was:\u003cAccount creat[ion failed] with username \"Batm...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.step.RegistrationSteps.the_user_should_be_registered(RegistrationSteps.java:46)\r\n\tat ✽.the user should be registered(classpath:features/Registration.feature:11)\r\n",
+              "duration": 559852100,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "the user should be registered",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_registered()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-1"
+          },
+          {
+            "name": "@JREQ-SCRUM-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:17.044Z",
+        "line": 28,
+        "name": "Registration Username not unique",
+        "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-not-unique;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 55936300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37959000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29921100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59880900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 550261400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-2"
+          },
+          {
+            "name": "@JREQ-SCRUM-5"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:17.780Z",
+        "line": 41,
+        "name": "Registration Username too long",
+        "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21926500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35963000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55024800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide the username \"Gordon and Clark are friends!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gordon and Clark are friends!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53015800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38109600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-3"
+          },
+          {
+            "name": "@JREQ-SCRUM-6"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:17.987Z",
+        "line": 54,
+        "name": "Registration Password too long",
+        "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
+        "id": "registration;registration-password-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22169100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37873800,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59352800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52959000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36086200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-4"
+          },
+          {
+            "name": "@JREQ-SCRUM-7"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:18.197Z",
+        "line": 67,
+        "name": "Registration User credentials too long",
+        "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
+        "id": "registration;registration-user-credentials-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18309200,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33146200,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57914200,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I provide the username \"Gordon and Clark are friends!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gordon and Clark are friends!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54329800,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37070000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-5"
+          },
+          {
+            "name": "@JREQ-SCRUM-8"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:18.400Z",
+        "line": 80,
+        "name": "Registration Username not unique and password too long",
+        "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-not-unique-and-password-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19018500,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33893100,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33695900,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57997500,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43004300,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-6"
+          },
+          {
+            "name": "@JREQ-SCRUM-9"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:18.589Z",
+        "line": 93,
+        "name": "Registration Negative Scenario Null username",
+        "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26912000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67596400,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27015200,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61035300,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 546352300,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-33"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:19.323Z",
+        "line": 106,
+        "name": "Registration Negative Scenario Null password",
+        "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15577100,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44768000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61853100,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21926100,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33956400,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-34"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-08T19:37:19.504Z",
+        "line": 109,
+        "name": "Registration Negative Scenario Null username and password",
+        "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18110000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33822500,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22003300,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23046800,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36721100,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-35"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/Registration.feature",
+    "tags": [
+      {
+        "name": "@Registration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-08T19:37:19.642Z",
+        "line": 14,
+        "name": "Planets and Moons View Valid login credentials",
+        "description": "\tViewing the Planets and Moons",
+        "id": "view;planets-and-moons-view-valid-login-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 17940200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58057100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54982900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20988400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be sent to the page with planets and moons",
+            "match": {
+              "location": "com.revature.step.ViewPlanetAndMoon.the_user_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@View"
+          },
+          {
+            "name": "@SCRUM-TC-10"
+          },
+          {
+            "name": "@JREQ-SCRUM-18"
+          }
+        ]
+      }
+    ],
+    "name": "View",
+    "description": "",
+    "id": "view",
+    "keyword": "Feature",
+    "uri": "classpath:features/View.feature",
+    "tags": [
+      {
+        "name": "@View",
         "type": "Tag",
         "location": {
           "line": 1,

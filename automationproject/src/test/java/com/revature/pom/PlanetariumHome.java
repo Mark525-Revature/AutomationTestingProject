@@ -117,7 +117,7 @@ public class PlanetariumHome {
 
     public void selectMoonFromDropDown() {
         Select select = new Select(dropdown);
-        select.selectByVisibleText("moon");
+        select.selectByVisibleText("Moon");
     }
 
     // Moon
