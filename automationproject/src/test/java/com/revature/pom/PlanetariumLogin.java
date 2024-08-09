@@ -50,9 +50,13 @@ public class PlanetariumLogin{
         return passwordInput.getAttribute("value");
     }
 
-    public void clickLoginButton() { 
+    public void clickLoginButtonInvalid() { 
         loginButton.click(); 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+    }
+
+    public void clickLoginButtonValid(){
+        loginButton.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         wait.until(ExpectedConditions.urlContains("/planetarium"));
     }
 
