@@ -111,7 +111,7 @@ public class PlanetariumHome {
     }
 
     public void enterPlanetFile(String string){
-        String filePath = "C:\\Users\\Juan\\Desktop\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
         planetImageInput.sendKeys(filePath);
     }
 
@@ -146,7 +146,7 @@ public class PlanetariumHome {
     }
 
     public void enterMoonFile(String string){
-        String filePath = "C:\\Users\\Juan\\Desktop\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
         moonImageInput.sendKeys(filePath);
     }
 
