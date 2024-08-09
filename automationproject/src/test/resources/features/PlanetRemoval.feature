@@ -3,7 +3,7 @@ Feature: PlanetRemoval
 
 	@SCRUM-TC-16 @JREQ-SCRUM-30
 	Scenario Outline: Planet Removal Valid Planet name
-		Given I am on the Planet and Moon viewing pagefor deleting things
+		Given I am on the Planet and Moon viewing page for deleting things
 		When I change the selector to Planet
 		When I insert the planet name "<Valid Planet name>" to delete
 		When I click the Delete button
