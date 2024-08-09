@@ -172,8 +172,10 @@ public class PlanetariumHome {
     }
 
     public void waitForCelestialBodyToBeCreated(){
+        List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
+        int length = planetTable.size() + 1;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
     }
 
 }
