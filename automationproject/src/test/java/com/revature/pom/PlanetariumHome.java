@@ -1,8 +1,11 @@
 package com.revature.pom;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -111,13 +114,16 @@ public class PlanetariumHome {
     }
 
     public void enterPlanetFile(String string){
-        String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
-        planetImageInput.sendKeys(filePath);
+        // String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        // planetImageInput.sendKeys(filePath);
+        Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", string);
+        planetImageInput.sendKeys(filePath.toAbsolutePath().toString());
     }
 
     public void submitPlanet(){
         planetSubmitButton.click();
         handleAlert();
+        waitForCelestialBodyToBeCreated();
     }
 
     public int getTableLength() {
@@ -146,21 +152,28 @@ public class PlanetariumHome {
     }
 
     public void enterMoonFile(String string){
-        String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
-        moonImageInput.sendKeys(filePath);
+        // String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
+        // moonImageInput.sendKeys(filePath);
+        Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", string);
+        planetImageInput.sendKeys(filePath.toAbsolutePath().toString());
     }
 
     // Moon
 
     public void handleAlert() {
         try {
-            WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(2));
+            WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(1));
             alertWait.until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             alert.accept();
         } catch (TimeoutException e){
             System.out.println("No alert present");
         }
+    }
+
+    public void waitForCelestialBodyToBeCreated(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr")));
     }
 
 }
