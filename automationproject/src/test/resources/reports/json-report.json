@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-11T21:29:36.848Z",
+        "start_timestamp": "2024-08-11T21:33:05.347Z",
         "line": 14,
         "name": "Login Valid login credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25995700,
+              "duration": 34001800,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,6 @@
           },
           {
             "result": {
-              "duration": 503300,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 44003500,
+              "duration": 42004900,
               "status": "passed"
             },
             "line": 8,
@@ -55,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 49002000,
+              "duration": 58513800,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 54227000,
+              "duration": 51511200,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +96,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:37.058Z",
+        "start_timestamp": "2024-08-11T21:33:05.565Z",
         "line": 27,
         "name": "Login Invalid login credentials with Registered Username",
         "description": "\tRegistered Username and Invalid Password",
@@ -107,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25001800,
+              "duration": 102520900,
               "status": "passed"
             },
             "line": 19,
@@ -130,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 127556700,
+              "duration": 74001700,
               "status": "passed"
             },
             "line": 21,
@@ -148,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 74057400,
+              "duration": 69207600,
               "status": "passed"
             },
             "line": 22,
@@ -166,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 28822600,
+              "duration": 29999700,
               "status": "passed"
             },
             "line": 23,
@@ -190,7 +189,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:37.319Z",
+        "start_timestamp": "2024-08-11T21:33:05.846Z",
         "line": 40,
         "name": "Login Invalid login credentials with Non-Registered Username",
         "description": "\tN0n-registered Username and valid Password",
@@ -200,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12000200,
+              "duration": 11998700,
               "status": "passed"
             },
             "line": 32,
@@ -223,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 68518700,
+              "duration": 81335500,
               "status": "passed"
             },
             "line": 34,
@@ -241,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 75003400,
+              "duration": 82516800,
               "status": "passed"
             },
             "line": 35,
@@ -259,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 551958600,
+              "duration": 545017900,
               "status": "passed"
             },
             "line": 36,
@@ -283,7 +282,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:38.031Z",
+        "start_timestamp": "2024-08-11T21:33:06.571Z",
         "line": 53,
         "name": "Login Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to log in to the planetarium",
@@ -293,7 +292,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16001100,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 45,
@@ -316,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 24998500,
+              "duration": 27999900,
               "status": "passed"
             },
             "line": 47,
@@ -328,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 46511300,
+              "duration": 49050800,
               "status": "passed"
             },
             "line": 48,
@@ -346,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 27000900,
+              "duration": 23999200,
               "status": "passed"
             },
             "line": 49,
@@ -367,7 +366,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:38.150Z",
+        "start_timestamp": "2024-08-11T21:33:06.687Z",
         "line": 66,
         "name": "Login Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to log in to the planetarium",
@@ -377,7 +376,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12001700,
+              "duration": 10999700,
               "status": "passed"
             },
             "line": 58,
@@ -400,7 +399,7 @@
           },
           {
             "result": {
-              "duration": 35002200,
+              "duration": 42001200,
               "status": "passed"
             },
             "line": 60,
@@ -418,7 +417,7 @@
           },
           {
             "result": {
-              "duration": 25023600,
+              "duration": 30083500,
               "status": "passed"
             },
             "line": 61,
@@ -430,7 +429,7 @@
           },
           {
             "result": {
-              "duration": 25001300,
+              "duration": 529699200,
               "status": "passed"
             },
             "line": 62,
@@ -451,7 +450,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:38.249Z",
+        "start_timestamp": "2024-08-11T21:33:07.303Z",
         "line": 69,
         "name": "Login Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to log in to the planetarium",
@@ -461,7 +460,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10999900,
+              "duration": 14000400,
               "status": "passed"
             },
             "line": 71,
@@ -484,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 20998000,
+              "duration": 21999900,
               "status": "passed"
             },
             "line": 73,
@@ -496,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 21738600,
+              "duration": 19504900,
               "status": "passed"
             },
             "line": 74,
@@ -508,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 542728200,
+              "duration": 530097900,
               "status": "passed"
             },
             "line": 75,
@@ -549,7 +548,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-11T21:29:38.849Z",
+        "start_timestamp": "2024-08-11T21:33:07.891Z",
         "line": 14,
         "name": "Planet Removal Valid Planet name",
         "description": "",
@@ -559,7 +558,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107981000,
+              "duration": 107508400,
               "status": "passed"
             },
             "line": 6,
@@ -571,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 187658400,
+              "duration": 279721600,
               "status": "passed"
             },
             "line": 7,
@@ -583,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 65225900,
+              "duration": 91036300,
               "status": "passed"
             },
             "line": 8,
@@ -601,7 +600,7 @@
           },
           {
             "result": {
-              "duration": 17998300,
+              "duration": 23000700,
               "status": "passed"
             },
             "line": 9,
@@ -613,7 +612,7 @@
           },
           {
             "result": {
-              "duration": 17015200,
+              "duration": 20000000,
               "status": "passed"
             },
             "line": 10,
@@ -637,7 +636,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:39.248Z",
+        "start_timestamp": "2024-08-11T21:33:08.415Z",
         "line": 26,
         "name": "Planet Removal Invalid Planet name",
         "description": "",
@@ -647,7 +646,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109085800,
+              "duration": 127441900,
               "status": "passed"
             },
             "line": 18,
@@ -659,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 108105700,
+              "duration": 94509600,
               "status": "passed"
             },
             "line": 19,
@@ -671,7 +670,7 @@
           },
           {
             "result": {
-              "duration": 130000200,
+              "duration": 119513800,
               "status": "passed"
             },
             "line": 20,
@@ -689,7 +688,7 @@
           },
           {
             "result": {
-              "duration": 15524300,
+              "duration": 21508300,
               "status": "passed"
             },
             "line": 21,
@@ -701,7 +700,7 @@
           },
           {
             "result": {
-              "duration": 512899000,
+              "duration": 4999600,
               "status": "passed"
             },
             "line": 22,
@@ -725,7 +724,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:29:40.129Z",
+        "start_timestamp": "2024-08-11T21:33:08.785Z",
         "line": 29,
         "name": "Planet Removal Negative Scenario Null planet name",
         "description": "\tIf user enters no planet name then no planets are removed",
@@ -735,7 +734,7 @@
         "steps": [
           {
             "result": {
-              "duration": 111898600,
+              "duration": 125019300,
               "status": "passed"
             },
             "line": 31,
@@ -747,7 +746,7 @@
           },
           {
             "result": {
-              "duration": 53004900,
+              "duration": 160544400,
               "status": "passed"
             },
             "line": 32,
@@ -759,7 +758,7 @@
           },
           {
             "result": {
-              "duration": 18360200,
+              "duration": 18999800,
               "status": "passed"
             },
             "line": 33,
@@ -771,7 +770,7 @@
           },
           {
             "result": {
-              "duration": 115541800,
+              "duration": 15998900,
               "status": "passed"
             },
             "line": 34,
@@ -783,7 +782,7 @@
           },
           {
             "result": {
-              "duration": 2999200,
+              "duration": 5000600,
               "status": "passed"
             },
             "line": 35,
@@ -812,6 +811,108 @@
     "tags": [
       {
         "name": "@PlanetRemoval",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-11T21:33:09.114Z",
+        "line": 14,
+        "name": "Planets and Moons View Valid login credentials",
+        "description": "\tViewing the Planets and Moons",
+        "id": "view;planets-and-moons-view-valid-login-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13000500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39060600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48665200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I provide the password \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 537515000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be sent to the page with planets and moons",
+            "match": {
+              "location": "com.revature.step.ViewPlanetAndMoon.the_user_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@View"
+          },
+          {
+            "name": "@SCRUM-TC-10"
+          },
+          {
+            "name": "@JREQ-SCRUM-18"
+          }
+        ]
+      }
+    ],
+    "name": "View",
+    "description": "",
+    "id": "view",
+    "keyword": "Feature",
+    "uri": "classpath:features/View.feature",
+    "tags": [
+      {
+        "name": "@View",
         "type": "Tag",
         "location": {
           "line": 1,
