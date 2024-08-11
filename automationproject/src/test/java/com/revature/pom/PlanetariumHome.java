@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -127,6 +128,7 @@ public class PlanetariumHome {
     }
 
     public int getTableLength() {
+        tableData = driver.findElements(By.xpath("//tr"));
         return tableData.size();
     }
 
@@ -172,8 +174,24 @@ public class PlanetariumHome {
     }
 
     public void waitForCelestialBodyToBeCreated(){
+        List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
+        int length = planetTable.size() + 1;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
+    }
+
+    public Boolean getPlanetInfo(){
+        try{
+            if(driver.findElements(By.xpath("//tr//td[contains(text(),"+ getDeleteInput() +")]")).size() > 0){
+                return false;
+            }
+        }
+        catch(NoSuchElementException e){
+            return true;
+        }
+        finally{
+            return true;
+        }
     }
 
 }
