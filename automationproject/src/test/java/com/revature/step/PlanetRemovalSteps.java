@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 
 public class PlanetRemovalSteps {
-    int cBodyCount;
+    //int cBodyCount;
 
     @Given("I am on the Planet and Moon viewing page for deleting things")
     public void I_am_on_the_Planet_and_Moon_viewing_page(){
@@ -31,13 +31,13 @@ public class PlanetRemovalSteps {
     }
     @When("I click the Delete button")
     public void i_click_the_delete_button(){
-        cBodyCount = TestRunner.planetariumHome.getTableLength();
+        //cBodyCount = TestRunner.planetariumHome.getPlanetTableInfo();
         TestRunner.planetariumHome.deleteCelestialBody();
     }
 
     @Then("the planet should be removed from the planetarium")
     public void the_planet_should_be_removed_from_the_planetarium(){
-        Assert.assertEquals(TestRunner.planetariumHome.getTableLength(), cBodyCount - 1);
+        Assert.assertTrue(TestRunner.planetariumHome.getPlanetInfo());
     }
 
     @Then("the planet should not be removed from the planetarium")
