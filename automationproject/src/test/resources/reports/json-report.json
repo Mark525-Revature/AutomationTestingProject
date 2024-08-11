@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-11T21:33:05.347Z",
+        "start_timestamp": "2024-08-11T21:37:37.586Z",
         "line": 14,
         "name": "Login Valid login credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34001800,
+              "duration": 29004500,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 42004900,
+              "duration": 46506600,
               "status": "passed"
             },
             "line": 8,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 58513800,
+              "duration": 51001800,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 51511200,
+              "duration": 51504500,
               "status": "passed"
             },
             "line": 10,
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:05.565Z",
+        "start_timestamp": "2024-08-11T21:37:37.803Z",
         "line": 27,
         "name": "Login Invalid login credentials with Registered Username",
         "description": "\tRegistered Username and Invalid Password",
@@ -106,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 102520900,
+              "duration": 78554500,
               "status": "passed"
             },
             "line": 19,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 74001700,
+              "duration": 70022900,
               "status": "passed"
             },
             "line": 21,
@@ -147,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 69207600,
+              "duration": 74999400,
               "status": "passed"
             },
             "line": 22,
@@ -165,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 29999700,
+              "duration": 26509000,
               "status": "passed"
             },
             "line": 23,
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:05.846Z",
+        "start_timestamp": "2024-08-11T21:37:38.059Z",
         "line": 40,
         "name": "Login Invalid login credentials with Non-Registered Username",
         "description": "\tN0n-registered Username and valid Password",
@@ -199,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11998700,
+              "duration": 9999500,
               "status": "passed"
             },
             "line": 32,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 81335500,
+              "duration": 72003100,
               "status": "passed"
             },
             "line": 34,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 82516800,
+              "duration": 64134200,
               "status": "passed"
             },
             "line": 35,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 545017900,
+              "duration": 544269700,
               "status": "passed"
             },
             "line": 36,
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:06.571Z",
+        "start_timestamp": "2024-08-11T21:37:38.752Z",
         "line": 53,
         "name": "Login Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to log in to the planetarium",
@@ -292,7 +292,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10000000,
+              "duration": 9000500,
               "status": "passed"
             },
             "line": 45,
@@ -315,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 27999900,
+              "duration": 22000500,
               "status": "passed"
             },
             "line": 47,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 49050800,
+              "duration": 47002900,
               "status": "passed"
             },
             "line": 48,
@@ -345,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 23999200,
+              "duration": 538126900,
               "status": "passed"
             },
             "line": 49,
@@ -366,7 +366,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:06.687Z",
+        "start_timestamp": "2024-08-11T21:37:39.373Z",
         "line": 66,
         "name": "Login Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to log in to the planetarium",
@@ -376,7 +376,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10999700,
+              "duration": 11999700,
               "status": "passed"
             },
             "line": 58,
@@ -399,7 +399,7 @@
           },
           {
             "result": {
-              "duration": 42001200,
+              "duration": 33999800,
               "status": "passed"
             },
             "line": 60,
@@ -417,7 +417,7 @@
           },
           {
             "result": {
-              "duration": 30083500,
+              "duration": 24221600,
               "status": "passed"
             },
             "line": 61,
@@ -429,7 +429,7 @@
           },
           {
             "result": {
-              "duration": 529699200,
+              "duration": 540052300,
               "status": "passed"
             },
             "line": 62,
@@ -450,7 +450,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:07.303Z",
+        "start_timestamp": "2024-08-11T21:37:39.984Z",
         "line": 69,
         "name": "Login Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to log in to the planetarium",
@@ -460,7 +460,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14000400,
+              "duration": 15000700,
               "status": "passed"
             },
             "line": 71,
@@ -483,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 21999900,
+              "duration": 21227800,
               "status": "passed"
             },
             "line": 73,
@@ -495,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 19504900,
+              "duration": 20002400,
               "status": "passed"
             },
             "line": 74,
@@ -507,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 530097900,
+              "duration": 540466900,
               "status": "passed"
             },
             "line": 75,
@@ -548,7 +548,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-11T21:33:07.891Z",
+        "start_timestamp": "2024-08-11T21:37:40.585Z",
         "line": 14,
         "name": "Planet Removal Valid Planet name",
         "description": "",
@@ -558,7 +558,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107508400,
+              "duration": 113036000,
               "status": "passed"
             },
             "line": 6,
@@ -570,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 279721600,
+              "duration": 67038300,
               "status": "passed"
             },
             "line": 7,
@@ -582,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 91036300,
+              "duration": 141082700,
               "status": "passed"
             },
             "line": 8,
@@ -600,7 +600,7 @@
           },
           {
             "result": {
-              "duration": 23000700,
+              "duration": 19000700,
               "status": "passed"
             },
             "line": 9,
@@ -612,7 +612,7 @@
           },
           {
             "result": {
-              "duration": 20000000,
+              "duration": 18002300,
               "status": "passed"
             },
             "line": 10,
@@ -636,7 +636,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:08.415Z",
+        "start_timestamp": "2024-08-11T21:37:40.946Z",
         "line": 26,
         "name": "Planet Removal Invalid Planet name",
         "description": "",
@@ -646,7 +646,7 @@
         "steps": [
           {
             "result": {
-              "duration": 127441900,
+              "duration": 105513200,
               "status": "passed"
             },
             "line": 18,
@@ -658,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 94509600,
+              "duration": 169509000,
               "status": "passed"
             },
             "line": 19,
@@ -670,7 +670,7 @@
           },
           {
             "result": {
-              "duration": 119513800,
+              "duration": 27508700,
               "status": "passed"
             },
             "line": 20,
@@ -688,7 +688,7 @@
           },
           {
             "result": {
-              "duration": 21508300,
+              "duration": 16001200,
               "status": "passed"
             },
             "line": 21,
@@ -724,7 +724,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-11T21:33:08.785Z",
+        "start_timestamp": "2024-08-11T21:37:41.272Z",
         "line": 29,
         "name": "Planet Removal Negative Scenario Null planet name",
         "description": "\tIf user enters no planet name then no planets are removed",
@@ -734,7 +734,7 @@
         "steps": [
           {
             "result": {
-              "duration": 125019300,
+              "duration": 115813200,
               "status": "passed"
             },
             "line": 31,
@@ -746,7 +746,7 @@
           },
           {
             "result": {
-              "duration": 160544400,
+              "duration": 52001900,
               "status": "passed"
             },
             "line": 32,
@@ -758,7 +758,7 @@
           },
           {
             "result": {
-              "duration": 18999800,
+              "duration": 18532900,
               "status": "passed"
             },
             "line": 33,
@@ -770,7 +770,7 @@
           },
           {
             "result": {
-              "duration": 15998900,
+              "duration": 83018400,
               "status": "passed"
             },
             "line": 34,
@@ -782,7 +782,7 @@
           },
           {
             "result": {
-              "duration": 5000600,
+              "duration": 5515500,
               "status": "passed"
             },
             "line": 35,
@@ -823,17 +823,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-11T21:33:09.114Z",
-        "line": 14,
-        "name": "Planets and Moons View Valid login credentials",
-        "description": "\tViewing the Planets and Moons",
-        "id": "view;planets-and-moons-view-valid-login-credentials;;2",
+        "start_timestamp": "2024-08-11T21:37:41.551Z",
+        "line": 15,
+        "name": "Registration Positive Scenario",
+        "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
+        "id": "registration;registration-positive-scenario;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13000500,
+              "duration": 17001100,
               "status": "passed"
             },
             "line": 7,
@@ -845,7 +845,840 @@
           },
           {
             "result": {
-              "duration": 39060600,
+              "duration": 55286500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68542800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68525400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 549597000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should be registered",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_registered()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-1"
+          },
+          {
+            "name": "@JREQ-SCRUM-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:42.315Z",
+        "line": 28,
+        "name": "Registration Username not unique",
+        "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-not-unique;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31511400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33999300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78171800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 539887500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-2"
+          },
+          {
+            "name": "@JREQ-SCRUM-5"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:43.016Z",
+        "line": 41,
+        "name": "Registration Username too long",
+        "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18004200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30507100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67999200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide the username \"Gordon and Clark are friends!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gordon and Clark are friends!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65509700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 544961700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-3"
+          },
+          {
+            "name": "@JREQ-SCRUM-6"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:43.745Z",
+        "line": 54,
+        "name": "Registration Password too long",
+        "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
+        "id": "registration;registration-password-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15507200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31000500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67027400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81003600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32550700,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-4"
+          },
+          {
+            "name": "@JREQ-SCRUM-7"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:43.975Z",
+        "line": 67,
+        "name": "Registration User credentials too long",
+        "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
+        "id": "registration;registration-user-credentials-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14000300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32152700,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70530500,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I provide the username \"Gordon and Clark are friends!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gordon and Clark are friends!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84509000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 550079600,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-5"
+          },
+          {
+            "name": "@JREQ-SCRUM-8"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:44.728Z",
+        "line": 80,
+        "name": "Registration Username not unique and password too long",
+        "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-username-not-unique-and-password-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18997800,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32554300,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33999800,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I provide the username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76537700,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I provide the password \"Reverse Flash strikes again!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reverse Flash strikes again!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000100,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-6"
+          },
+          {
+            "name": "@JREQ-SCRUM-9"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:44.925Z",
+        "line": 93,
+        "name": "Registration Negative Scenario Null username",
+        "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15015800,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39531100,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23999700,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70526500,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I provide the password \"Riddler and Joker disagree!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Riddler and Joker disagree!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_password_Riddler_and_Joker_disagree(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 552969600,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-33"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:45.631Z",
+        "line": 106,
+        "name": "Registration Negative Scenario Null password",
+        "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10003200,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41526700,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65853100,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I provide the username \"Batman and Robin unite now!!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman and Robin unite now!!!!\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.i_provide_the_username_Batman_and_Robin_unite_now(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20085400,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000300,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-34"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-11T21:37:45.804Z",
+        "line": 109,
+        "name": "Registration Negative Scenario Null username and password",
+        "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
+        "id": "registration;registration-negative-scenario-null-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000400,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31056000,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I pick the option to register",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_pick_the_option_to_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17999100,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "I provide no username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20000200,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "I provide no password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_provide_no_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000600,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "the user should be informed registration failed",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_should_be_informed_registration_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@SCRUM-TC-35"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/Registration.feature",
+    "tags": [
+      {
+        "name": "@Registration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-11T21:37:45.924Z",
+        "line": 14,
+        "name": "Planets and Moons View Valid login credentials",
+        "description": "\tViewing the Planets and Moons",
+        "id": "view;planets-and-moons-view-valid-login-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19003200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38090000,
               "status": "passed"
             },
             "line": 8,
@@ -863,7 +1696,7 @@
           },
           {
             "result": {
-              "duration": 48665200,
+              "duration": 49226200,
               "status": "passed"
             },
             "line": 9,
@@ -881,7 +1714,7 @@
           },
           {
             "result": {
-              "duration": 537515000,
+              "duration": 29514500,
               "status": "passed"
             },
             "line": 10,
