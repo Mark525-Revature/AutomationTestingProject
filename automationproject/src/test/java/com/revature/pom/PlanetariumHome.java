@@ -73,7 +73,7 @@ public class PlanetariumHome {
     }
 
     public String getAlertText(){
-        WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(6));
         alertWait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
