@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 public class PlanetRemovalSteps {
     //int cBodyCount;
 
-    @Given("I am on the Planet and Moon viewing page for deleting things")
+    @Given("I am on the Planet and Moon viewing page for deleting things!")
     public void I_am_on_the_Planet_and_Moon_viewing_page(){
         TestRunner.planetariumHome.login();
     }

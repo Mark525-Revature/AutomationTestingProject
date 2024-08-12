@@ -20,7 +20,7 @@ public class MoonRegistrationSteps {
         TestRunner.planetariumHome.selectMoonFromDropDown();
     }
 
-    @When("I insert the moon name {string}")
+    //@When("I insert the moon name {string}")
     public void i_insert_the_moon_name(String string) {
         TestRunner.planetariumHome.enterMoonName(string);
     }

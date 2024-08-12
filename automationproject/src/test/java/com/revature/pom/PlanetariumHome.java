@@ -112,9 +112,6 @@ public class PlanetariumHome {
     public void switchDropdownToPlanet(){
         Select dropdown = new Select(locationSelect);
         dropdown.selectByValue("planet");
-        /* planetNameInput = driver.findElement(By.id("planetNameInput"));
-        planetImageInput = driver.findElement(By.id("planetImageInput"));
-        planetSubmitButton = driver.findElement(By.xpath("/html/body/div[1]/div[2]/button")); */
     }
 
     public void selectMoonFromDropDown() {
@@ -196,16 +193,17 @@ public class PlanetariumHome {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
     }
 
-    public Boolean getPlanetInfo(){
+    public Boolean getPlanetInfo() {
         try{
-            if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() != 0){
+            Thread.sleep(2000);
+            if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() == 0){
                 return true;
             }
             else{
                 return false;
             }
         }
-        catch(NoSuchElementException e){
+        catch(NoSuchElementException|InterruptedException e){
             return true;
         }
     }

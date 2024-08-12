@@ -9,18 +9,17 @@ import io.cucumber.java.en.When;
 public class MoonRemovalSteps {
     int moonCount;
 
-    @Given("I am on the Planet and Moon viewing page for deleting things ")
+    @Given("I am on the Planet and Moon viewing page for deleting things")
     public void I_am_on_the_Planet_and_Moon_viewing_page(){
         TestRunner.planetariumHome.login();
     }
 
-    @When("I change the selector to Moon ")
+    //@When("I change the selector to Moon")
     public void i_change_the_selector_to_Delete_Moon() {
-        TestRunner.planetariumHome.switchDropdownToPlanet();
         TestRunner.planetariumHome.selectMoonFromDropDown();
     }
 
-    @When("I insert the moon name {string} ")
+    @When("I insert the moon name {string}")
     public void i_insert_the_delete_moon_name(String celestialBodyName) {
         TestRunner.planetariumHome.enterCelestialBodyName(celestialBodyName);
     }
