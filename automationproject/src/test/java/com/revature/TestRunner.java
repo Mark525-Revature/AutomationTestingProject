@@ -17,6 +17,8 @@ import java.time.Duration;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "classpath:features",
+    // features = {"classpath:features/Login.feature",
+    //             "classpath:features/PlanetRegistration.feature"},
     glue = "com.revature.step",
     plugin = {
         "pretty",

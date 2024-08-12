@@ -121,8 +121,9 @@ public class PlanetariumHome {
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("moonNameInput")));
     }
 
-    public void enterPlanetName(String planetName){
+    public void enterPlanetName(String planetName) {
         planetNameInput.sendKeys(planetName);
+        // Thread.sleep(5000);
     }
 
     public void enterPlanetFile(String string){
@@ -160,8 +161,7 @@ public class PlanetariumHome {
         moonImageInput.sendKeys(filePath.toAbsolutePath().toString());
     }
 
-    public void submitMoon()
-    {
+    public void submitMoon() {
         moonSubmitButton.click();
         handleAlert();
         waitForMoonToBeCreated();
@@ -180,10 +180,12 @@ public class PlanetariumHome {
     }
 
     public void waitForCelestialBodyToBeCreated(){
-        List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
-        int length = planetTable.size() + 1;
+        // List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
+        // int length = planetTable.size() + 1;
+        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+        // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr//td[contains(text(),'" + planetNameInput.getText() + "')]")));
     }
 
     public void waitForMoonToBeCreated(){
