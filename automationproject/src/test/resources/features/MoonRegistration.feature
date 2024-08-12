@@ -5,20 +5,20 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Valid Moon name with valid Planet ID and without picture
 		Given Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Valid Planet ID Number>"
 		When I click the submit moon button
 		Then the moon should be added to the planetarium
 
 	Examples: 
 		| Valid Moon Name                | Valid Planet ID Number |
-		| waxing crescent gibbous Moon!! | 1                      |
+		| New Moon						 | 1                      |
 
 	@SCRUM-TC-21 @JREQ-SCRUM-36
 	Scenario Outline: Moon Registration Valid Moon name with valid Planet ID and picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Valid Planet ID Number>"
 		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
@@ -33,7 +33,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Invalid Moon name with valid Planet ID and picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Invalid Moon Name>"
+		When I insert the moon name "<Invalid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Valid Planet ID Number>"
 		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
@@ -48,7 +48,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Invalid Moon name with valid Planet ID and without picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Invalid Moon Name>"
+		When I insert the moon name "<Invalid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Valid Planet ID Number>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -61,7 +61,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Valid Moon name with invalid Planet ID and picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Invalid Planet ID Number>"
 		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
@@ -76,7 +76,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Valid Moon name with invalid Planet ID and without picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Invalid Planet ID Number>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -89,7 +89,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Invalid Moon name with invalid Planet ID and picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Invalid Moon name>"
+		When I insert the moon name "<Invalid Moon name>" for Moon Creation
 		When I insert the planet ID "<Invalid Planet ID Number>"
 		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
@@ -104,7 +104,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Invalid Moon name with invalid Planet ID and without picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<invalid Moon Name>"
+		When I insert the moon name "<invalid Moon Name>" for Moon Creation
 		When I insert the planet ID "<Invalid Planet ID Number>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -117,7 +117,7 @@ Feature: MoonRegistration
 	Scenario Outline: Moon Registration Non-Unique Moon name with valid Planet ID and without picture
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Non-Unique Moon Name>"
+		When I insert the moon name "<Non-Unique Moon Name>" for Moon Creation
 		When I insert the planet ID "<Valid Planet ID Number>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -161,7 +161,7 @@ Feature: MoonRegistration
 	if User provides a Valid moon name and no  planet id with a picture no moon should be added to the planetarium
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert no planet id
 		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
@@ -177,7 +177,7 @@ Feature: MoonRegistration
 	if User provides a Valid moon name and no planet id with no picture no moon should be added to the planetarium
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
-		When I insert the moon name "<Valid Moon Name>"
+		When I insert the moon name "<Valid Moon Name>" for Moon Creation
 		When I insert no planet id
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium

@@ -11,7 +11,7 @@ Feature: PlanetRegistration
 
 	Examples: 
 		| Valid Planet name              |
-		| Amphitrite Euphrosyne Virginia |
+		| Amphitrite Euphrosyne Virginib |
 
 	@SCRUM-TC-12 @JREQ-SCRUM-25
 	Scenario Outline: Planet Registration Invalid Planet name with picture

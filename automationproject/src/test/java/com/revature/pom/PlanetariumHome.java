@@ -1,7 +1,5 @@
 package com.revature.pom;
 
-import static org.junit.Assert.fail;
-
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
@@ -61,7 +59,6 @@ public class PlanetariumHome {
     @FindBy(xpath = "//div[@id='inputContainer']/input[@id='orbitedPlanetInput']")
     private WebElement planetIdInput;
 
-    //@FindBy(id = "moonImageInput")
     @FindBy(xpath = "//div[@id='inputContainer']/input[@id='moonImageInput']")
     private WebElement moonImageInput;
 
@@ -76,97 +73,79 @@ public class PlanetariumHome {
         PageFactory.initElements(driver, this);
     }
 
-    public String getAlertText(){
-        WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(6));
-        alertWait.until(ExpectedConditions.alertIsPresent());
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        alert.accept();
-        return alertText;
-    }
-
-    public String getDeleteInput(){
-        return deleteInput.getAttribute("value");
-    }
-
-    // Planet Registraton
-
-    public void goToViewingPage() { driver.get(viewingPage); }
-
-
     public void login(){
         driver.get(url);
         usernameInput.sendKeys("Batman");
         passwordInput.sendKeys("I am the night");
         loginButton.click();
     }
-
+    
+    public void goToViewingPage() { driver.get(viewingPage); }
+    
+    // Planet and Moon Deletion
     public void enterCelestialBodyName(String name){
         deleteInput.sendKeys(name);
+    }
+    
+    public String getDeleteInput(){
+        return deleteInput.getAttribute("value");
     }
     
     public void deleteCelestialBody(){
         deleteButton.click();
     }
-
+    
     public void switchDropdownToPlanet(){
         Select dropdown = new Select(locationSelect);
         dropdown.selectByValue("planet");
     }
-
+    
     public void selectMoonFromDropDown() {
         Select dropdown = new Select(locationSelect);
         dropdown.selectByValue("moon");
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("moonNameInput")));
     }
-
+    
+    // Planet Creation
     public void enterPlanetName(String planetName){
         planetNameInput.sendKeys(planetName);
     }
-
+    
     public void enterPlanetFile(String string){
-        // String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
-        // planetImageInput.sendKeys(filePath);
         Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", string);
         planetImageInput.sendKeys(filePath.toAbsolutePath().toString());
     }
-
+    
     public void submitPlanet(){
         planetSubmitButton.click();
         handleAlert();
         waitForCelestialBodyToBeCreated();
     }
-
-    public int getTableLength() {
-        tableData = driver.findElements(By.xpath("//tr"));
-        return tableData.size();
-    }
-
-    // Moon
-
+    
+    // Moon Creation
     public void enterMoonName(String moonName){
         moonNameInput.sendKeys(moonName);
     }
-
+    
     public void enterPlanetId(String planetId){
         planetIdInput.sendKeys(planetId);
     }
-
+    
     public void enterMoonFile(String string){
-        // String filePath = "C:\\Users\\hwake\\Revature\\New Project\\automationproject\\AutomationTestingProject\\automationproject\\src\\test\\resources\\Celestial-Images\\" + string;
-        // moonImageInput.sendKeys(filePath);
         Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", string);
         moonImageInput.sendKeys(filePath.toAbsolutePath().toString());
     }
-
+    
     public void submitMoon()
     {
         moonSubmitButton.click();
         handleAlert();
         waitForMoonToBeCreated();
     }
-    // Moon
+    
+    public int getTableLength() {
+        tableData = driver.findElements(By.xpath("//tr"));
+        return tableData.size();
+    }
 
     public void handleAlert() {
         try {
@@ -179,11 +158,22 @@ public class PlanetariumHome {
         }
     }
 
+    public String getAlertText(){
+        WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        alertWait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        alert.accept();
+        return alertText;
+    }
+
     public void waitForCelestialBodyToBeCreated(){
-        List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
-        int length = planetTable.size() + 1;
+        // List<WebElement> planetTable = driver.findElements(By.xpath("//tr//td[contains(text(),'planet')]"));
+        // int length = planetTable.size() + 1;
+        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+        // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr["+ length +"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr//td[contains(text(),'" + planetNameInput.getText() + "')]")));
     }
 
     public void waitForMoonToBeCreated(){
