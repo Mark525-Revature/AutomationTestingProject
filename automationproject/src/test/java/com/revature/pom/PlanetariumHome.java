@@ -195,14 +195,14 @@ public class PlanetariumHome {
 
     public Boolean getPlanetInfo(){
         try{
-            if(driver.findElements(By.xpath("//tr//td[contains(text(),"+ getDeleteInput() +")]")).size() > 0){
+            if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() != 0){
                 return false;
+            }
+            else{
+                return true;
             }
         }
         catch(NoSuchElementException e){
-            return true;
-        }
-        finally{
             return true;
         }
     }

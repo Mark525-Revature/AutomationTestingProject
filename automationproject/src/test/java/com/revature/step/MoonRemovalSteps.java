@@ -16,6 +16,7 @@ public class MoonRemovalSteps {
 
     @When("I change the selector to Moon ")
     public void i_change_the_selector_to_Delete_Moon() {
+        TestRunner.planetariumHome.switchDropdownToPlanet();
         TestRunner.planetariumHome.selectMoonFromDropDown();
     }
 
@@ -31,8 +32,9 @@ public class MoonRemovalSteps {
     }
 
     @Then("the moon should be removed from the planetarium")
-    public void the_user_should_be_able_to_delete_moons() {
+    public void the_user_should_be_able_to_delete_moons() throws InterruptedException {
         //Assert.assertEquals(moonCount - 1, TestRunner.planetariumHome.getTableLength());
+        Thread.sleep(3000);
         Assert.assertTrue(TestRunner.planetariumHome.getPlanetInfo());
     }
 
