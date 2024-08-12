@@ -1,5 +1,7 @@
 package com.revature.pom;
 
+import static org.junit.Assert.fail;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
@@ -31,7 +33,8 @@ public class PlanetariumHome {
     @FindBy(id = "deleteInput")
     private WebElement deleteInput;
 
-    @FindBy(id = "deleteButton")
+    //@FindBy(id = "deleteButton")
+    @FindBy(xpath = "//div[@id='deleteContainer']//button[@id='deleteButton']")
     private WebElement deleteButton;
 
     @FindBy(id = "usernameInput")
@@ -196,10 +199,10 @@ public class PlanetariumHome {
     public Boolean getPlanetInfo(){
         try{
             if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() != 0){
-                return false;
+                return true;
             }
             else{
-                return true;
+                return false;
             }
         }
         catch(NoSuchElementException e){
