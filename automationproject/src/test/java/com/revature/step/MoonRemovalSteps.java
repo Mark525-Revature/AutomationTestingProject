@@ -26,7 +26,7 @@ public class MoonRemovalSteps {
 
     @When("I click the delete button")
     public void i_click_the_delete_moon() {
-        moonCount = TestRunner.planetariumHome.getTableLength();
+        //moonCount = TestRunner.planetariumHome.getTableLength();
         TestRunner.planetariumHome.deleteCelestialBody();
     }
 

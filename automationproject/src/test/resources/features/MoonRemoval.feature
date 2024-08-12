@@ -10,8 +10,8 @@ Feature: MoonRemoval
 		Then the moon should be removed from the planetarium
 
 		Examples:
-			| Valid Moon Name |
-			| Titan           |
+			| Valid Moon Name               |
+			| waxing crescent gibbous Moon!!|
 
 	@SCRUM-TC-32 @JREQ-SCRUM-52
 	Scenario Outline: Moon Removal Invalid Moon name
