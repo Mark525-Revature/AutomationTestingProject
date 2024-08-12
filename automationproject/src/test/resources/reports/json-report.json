@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:20:27.489Z",
+        "start_timestamp": "2024-08-12T12:51:38.718Z",
         "line": 14,
         "name": "Login Valid login credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27001600,
+              "duration": 27997200,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 44000300,
+              "duration": 46993300,
               "status": "passed"
             },
             "line": 8,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 51510100,
+              "duration": 47509500,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 51012300,
+              "duration": 50991900,
               "status": "passed"
             },
             "line": 10,
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:27.715Z",
+        "start_timestamp": "2024-08-12T12:51:38.942Z",
         "line": 27,
         "name": "Login Invalid login credentials with Registered Username",
         "description": "\tRegistered Username and Invalid Password",
@@ -106,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18512000,
+              "duration": 18506600,
               "status": "passed"
             },
             "line": 19,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 133073400,
+              "duration": 132499300,
               "status": "passed"
             },
             "line": 21,
@@ -147,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 71118800,
+              "duration": 70501500,
               "status": "passed"
             },
             "line": 22,
@@ -165,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 28001800,
+              "duration": 24999000,
               "status": "passed"
             },
             "line": 23,
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:27.973Z",
+        "start_timestamp": "2024-08-12T12:51:39.195Z",
         "line": 40,
         "name": "Login Invalid login credentials with Non-Registered Username",
         "description": "\tN0n-registered Username and valid Password",
@@ -199,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8997900,
+              "duration": 13001100,
               "status": "passed"
             },
             "line": 32,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 78511500,
+              "duration": 75504200,
               "status": "passed"
             },
             "line": 34,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 78510100,
+              "duration": 69506300,
               "status": "passed"
             },
             "line": 35,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 23000900,
+              "duration": 24994800,
               "status": "passed"
             },
             "line": 36,
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:28.167Z",
+        "start_timestamp": "2024-08-12T12:51:39.380Z",
         "line": 53,
         "name": "Login Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to log in to the planetarium",
@@ -292,7 +292,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8997400,
+              "duration": 8999500,
               "status": "passed"
             },
             "line": 45,
@@ -315,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 22001500,
+              "duration": 19997800,
               "status": "passed"
             },
             "line": 47,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 45510000,
+              "duration": 45506800,
               "status": "passed"
             },
             "line": 48,
@@ -345,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 22998800,
+              "duration": 23997800,
               "status": "passed"
             },
             "line": 49,
@@ -366,7 +366,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:28.270Z",
+        "start_timestamp": "2024-08-12T12:51:39.481Z",
         "line": 66,
         "name": "Login Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to log in to the planetarium",
@@ -376,7 +376,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9996700,
+              "duration": 7998000,
               "status": "passed"
             },
             "line": 58,
@@ -399,7 +399,7 @@
           },
           {
             "result": {
-              "duration": 32004500,
+              "duration": 31996000,
               "status": "passed"
             },
             "line": 60,
@@ -417,7 +417,7 @@
           },
           {
             "result": {
-              "duration": 30517200,
+              "duration": 27999000,
               "status": "passed"
             },
             "line": 61,
@@ -429,7 +429,7 @@
           },
           {
             "result": {
-              "duration": 23990100,
+              "duration": 23507300,
               "status": "passed"
             },
             "line": 62,
@@ -450,7 +450,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:28.369Z",
+        "start_timestamp": "2024-08-12T12:51:39.574Z",
         "line": 69,
         "name": "Login Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to log in to the planetarium",
@@ -460,7 +460,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9999400,
+              "duration": 6998200,
               "status": "passed"
             },
             "line": 71,
@@ -483,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 20999500,
+              "duration": 21997400,
               "status": "passed"
             },
             "line": 73,
@@ -495,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 23478800,
+              "duration": 19996100,
               "status": "passed"
             },
             "line": 74,
@@ -507,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 22555800,
+              "duration": 547850100,
               "status": "passed"
             },
             "line": 75,
@@ -548,7 +548,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:20:28.448Z",
+        "start_timestamp": "2024-08-12T12:51:40.175Z",
         "line": 15,
         "name": "Moon Registration Valid Moon name with valid Planet ID and without picture",
         "description": "",
@@ -558,7 +558,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16999600,
+              "duration": 19998000,
               "status": "passed"
             },
             "line": 6,
@@ -570,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 175224700,
+              "duration": 205797500,
               "status": "passed"
             },
             "line": 7,
@@ -582,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 66692500,
+              "duration": 62500300,
               "status": "passed"
             },
             "line": 8,
@@ -600,7 +600,7 @@
           },
           {
             "result": {
-              "duration": 22467700,
+              "duration": 23996300,
               "status": "passed"
             },
             "line": 9,
@@ -618,7 +618,7 @@
           },
           {
             "result": {
-              "duration": 1062130500,
+              "duration": 1056988600,
               "status": "passed"
             },
             "line": 10,
@@ -631,7 +631,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: expected:\u003c6\u003e but was:\u003c5\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_be_added_to_the_planetarium(MoonRegistrationSteps.java:57)\r\n\tat ✽.the moon should be added to the planetarium(classpath:features/MoonRegistration.feature:11)\r\n",
-              "duration": 3991700,
+              "duration": 4506500,
               "status": "failed"
             },
             "line": 11,
@@ -655,7 +655,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:29.809Z",
+        "start_timestamp": "2024-08-12T12:51:41.559Z",
         "line": 30,
         "name": "Moon Registration Valid Moon name with valid Planet ID and picture",
         "description": "",
@@ -665,7 +665,7 @@
         "steps": [
           {
             "result": {
-              "duration": 131359900,
+              "duration": 111509300,
               "status": "passed"
             },
             "line": 19,
@@ -677,7 +677,7 @@
           },
           {
             "result": {
-              "duration": 148117300,
+              "duration": 165515600,
               "status": "passed"
             },
             "line": 20,
@@ -689,7 +689,7 @@
           },
           {
             "result": {
-              "duration": 65146400,
+              "duration": 60510100,
               "status": "passed"
             },
             "line": 21,
@@ -707,7 +707,7 @@
           },
           {
             "result": {
-              "duration": 21998700,
+              "duration": 24004800,
               "status": "passed"
             },
             "line": 22,
@@ -725,20 +725,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:23)\r\n",
-              "duration": 1063119000,
-              "status": "failed"
-            },
-            "line": 23,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 14993700,
+              "status": "passed"
             },
             "line": 24,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -755,7 +743,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1053457900,
+              "status": "passed"
             },
             "line": 25,
             "name": "I click the submit moon button",
@@ -766,7 +755,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3999200,
+              "status": "passed"
             },
             "line": 26,
             "name": "the moon should be added to the planetarium",
@@ -789,7 +779,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:31.247Z",
+        "start_timestamp": "2024-08-12T12:51:42.998Z",
         "line": 45,
         "name": "Moon Registration Invalid Moon name with valid Planet ID and picture",
         "description": "",
@@ -799,7 +789,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123657400,
+              "duration": 112365200,
               "status": "passed"
             },
             "line": 34,
@@ -811,7 +801,7 @@
           },
           {
             "result": {
-              "duration": 147953300,
+              "duration": 183014800,
               "status": "passed"
             },
             "line": 35,
@@ -823,7 +813,7 @@
           },
           {
             "result": {
-              "duration": 74000000,
+              "duration": 63108200,
               "status": "passed"
             },
             "line": 36,
@@ -841,7 +831,7 @@
           },
           {
             "result": {
-              "duration": 23005900,
+              "duration": 21997000,
               "status": "passed"
             },
             "line": 37,
@@ -859,20 +849,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:38)\r\n",
-              "duration": 1056047300,
-              "status": "failed"
-            },
-            "line": 38,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 11998700,
+              "status": "passed"
             },
             "line": 39,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -889,7 +867,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 552446700,
+              "status": "passed"
             },
             "line": 40,
             "name": "I click the submit moon button",
@@ -900,7 +879,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2999700,
+              "status": "passed"
             },
             "line": 41,
             "name": "the moon should not be added to the planetarium",
@@ -923,7 +903,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:32.679Z",
+        "start_timestamp": "2024-08-12T12:51:43.949Z",
         "line": 58,
         "name": "Moon Registration Invalid Moon name with valid Planet ID and without picture",
         "description": "",
@@ -933,7 +913,7 @@
         "steps": [
           {
             "result": {
-              "duration": 129227600,
+              "duration": 113158500,
               "status": "passed"
             },
             "line": 49,
@@ -945,7 +925,7 @@
           },
           {
             "result": {
-              "duration": 148030200,
+              "duration": 226354000,
               "status": "passed"
             },
             "line": 50,
@@ -957,7 +937,7 @@
           },
           {
             "result": {
-              "duration": 70055000,
+              "duration": 62994800,
               "status": "passed"
             },
             "line": 51,
@@ -975,7 +955,7 @@
           },
           {
             "result": {
-              "duration": 21999400,
+              "duration": 22503800,
               "status": "passed"
             },
             "line": 52,
@@ -993,7 +973,7 @@
           },
           {
             "result": {
-              "duration": 1051074700,
+              "duration": 1052492800,
               "status": "passed"
             },
             "line": 53,
@@ -1005,7 +985,7 @@
           },
           {
             "result": {
-              "duration": 3000600,
+              "duration": 2999100,
               "status": "passed"
             },
             "line": 54,
@@ -1029,7 +1009,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:34.104Z",
+        "start_timestamp": "2024-08-12T12:51:45.431Z",
         "line": 73,
         "name": "Moon Registration Valid Moon name with invalid Planet ID and picture",
         "description": "",
@@ -1039,7 +1019,7 @@
         "steps": [
           {
             "result": {
-              "duration": 120038700,
+              "duration": 111837900,
               "status": "passed"
             },
             "line": 62,
@@ -1051,7 +1031,7 @@
           },
           {
             "result": {
-              "duration": 144518600,
+              "duration": 244647500,
               "status": "passed"
             },
             "line": 63,
@@ -1063,7 +1043,7 @@
           },
           {
             "result": {
-              "duration": 73516300,
+              "duration": 69192000,
               "status": "passed"
             },
             "line": 64,
@@ -1081,7 +1061,7 @@
           },
           {
             "result": {
-              "duration": 21998900,
+              "duration": 20996600,
               "status": "passed"
             },
             "line": 65,
@@ -1099,20 +1079,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:66)\r\n",
-              "duration": 1059105100,
-              "status": "failed"
-            },
-            "line": 66,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 9998500,
+              "status": "passed"
             },
             "line": 67,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -1129,7 +1097,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 537667800,
+              "status": "passed"
             },
             "line": 68,
             "name": "I click the submit moon button",
@@ -1140,7 +1109,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3998600,
+              "status": "passed"
             },
             "line": 69,
             "name": "the moon should not be added to the planetarium",
@@ -1163,7 +1133,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:35.527Z",
+        "start_timestamp": "2024-08-12T12:51:46.433Z",
         "line": 86,
         "name": "Moon Registration Valid Moon name with invalid Planet ID and without picture",
         "description": "",
@@ -1173,7 +1143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 124032600,
+              "duration": 112507600,
               "status": "passed"
             },
             "line": 77,
@@ -1185,7 +1155,7 @@
           },
           {
             "result": {
-              "duration": 149069900,
+              "duration": 170001000,
               "status": "passed"
             },
             "line": 78,
@@ -1197,7 +1167,7 @@
           },
           {
             "result": {
-              "duration": 76070700,
+              "duration": 68512400,
               "status": "passed"
             },
             "line": 79,
@@ -1215,7 +1185,7 @@
           },
           {
             "result": {
-              "duration": 22585900,
+              "duration": 23995200,
               "status": "passed"
             },
             "line": 80,
@@ -1233,7 +1203,7 @@
           },
           {
             "result": {
-              "duration": 1047875800,
+              "duration": 1052372100,
               "status": "passed"
             },
             "line": 81,
@@ -1245,7 +1215,7 @@
           },
           {
             "result": {
-              "duration": 2999400,
+              "duration": 3000300,
               "status": "passed"
             },
             "line": 82,
@@ -1269,7 +1239,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:36.952Z",
+        "start_timestamp": "2024-08-12T12:51:47.865Z",
         "line": 101,
         "name": "Moon Registration Invalid Moon name with invalid Planet ID and picture",
         "description": "",
@@ -1279,7 +1249,7 @@
         "steps": [
           {
             "result": {
-              "duration": 119109700,
+              "duration": 120804600,
               "status": "passed"
             },
             "line": 90,
@@ -1291,7 +1261,7 @@
           },
           {
             "result": {
-              "duration": 148513400,
+              "duration": 187914300,
               "status": "passed"
             },
             "line": 91,
@@ -1303,7 +1273,7 @@
           },
           {
             "result": {
-              "duration": 54507800,
+              "duration": 47992800,
               "status": "passed"
             },
             "line": 92,
@@ -1321,7 +1291,7 @@
           },
           {
             "result": {
-              "duration": 21999200,
+              "duration": 20999900,
               "status": "passed"
             },
             "line": 93,
@@ -1339,20 +1309,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:94)\r\n",
-              "duration": 1055814000,
-              "status": "failed"
-            },
-            "line": 94,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 11361400,
+              "status": "passed"
             },
             "line": 95,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -1369,7 +1327,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 539503200,
+              "status": "passed"
             },
             "line": 96,
             "name": "I click the submit moon button",
@@ -1380,7 +1339,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4000000,
+              "status": "passed"
             },
             "line": 97,
             "name": "the moon should not be added to the planetarium",
@@ -1403,7 +1363,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:38.357Z",
+        "start_timestamp": "2024-08-12T12:51:48.801Z",
         "line": 114,
         "name": "Moon Registration Invalid Moon name with invalid Planet ID and without picture",
         "description": "",
@@ -1413,7 +1373,7 @@
         "steps": [
           {
             "result": {
-              "duration": 132036700,
+              "duration": 125488800,
               "status": "passed"
             },
             "line": 105,
@@ -1425,7 +1385,7 @@
           },
           {
             "result": {
-              "duration": 149414600,
+              "duration": 240540600,
               "status": "passed"
             },
             "line": 106,
@@ -1437,7 +1397,7 @@
           },
           {
             "result": {
-              "duration": 51001000,
+              "duration": 49939600,
               "status": "passed"
             },
             "line": 107,
@@ -1455,7 +1415,7 @@
           },
           {
             "result": {
-              "duration": 23002600,
+              "duration": 22019200,
               "status": "passed"
             },
             "line": 108,
@@ -1473,7 +1433,7 @@
           },
           {
             "result": {
-              "duration": 1047463600,
+              "duration": 1047975700,
               "status": "passed"
             },
             "line": 109,
@@ -1485,7 +1445,7 @@
           },
           {
             "result": {
-              "duration": 3000600,
+              "duration": 2999200,
               "status": "passed"
             },
             "line": 110,
@@ -1509,7 +1469,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:39.765Z",
+        "start_timestamp": "2024-08-12T12:51:50.291Z",
         "line": 127,
         "name": "Moon Registration Non-Unique Moon name with valid Planet ID and without picture",
         "description": "",
@@ -1519,7 +1479,7 @@
         "steps": [
           {
             "result": {
-              "duration": 134647900,
+              "duration": 129280000,
               "status": "passed"
             },
             "line": 118,
@@ -1531,7 +1491,7 @@
           },
           {
             "result": {
-              "duration": 150095600,
+              "duration": 79878500,
               "status": "passed"
             },
             "line": 119,
@@ -1543,7 +1503,7 @@
           },
           {
             "result": {
-              "duration": 28991500,
+              "duration": 125249400,
               "status": "passed"
             },
             "line": 120,
@@ -1561,7 +1521,7 @@
           },
           {
             "result": {
-              "duration": 22008300,
+              "duration": 22012600,
               "status": "passed"
             },
             "line": 121,
@@ -1579,7 +1539,7 @@
           },
           {
             "result": {
-              "duration": 1042723200,
+              "duration": 1055488300,
               "status": "passed"
             },
             "line": 122,
@@ -1591,7 +1551,7 @@
           },
           {
             "result": {
-              "duration": 2000300,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 123,
@@ -1615,7 +1575,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:41.147Z",
+        "start_timestamp": "2024-08-12T12:51:51.709Z",
         "line": 143,
         "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and a picture",
         "description": "\tif User provides no moon name and a valid planet id with a picture no moon should be added to the planetarium",
@@ -1625,7 +1585,7 @@
         "steps": [
           {
             "result": {
-              "duration": 131177300,
+              "duration": 127509500,
               "status": "passed"
             },
             "line": 132,
@@ -1637,7 +1597,7 @@
           },
           {
             "result": {
-              "duration": 149288000,
+              "duration": 186006200,
               "status": "passed"
             },
             "line": 133,
@@ -1649,7 +1609,7 @@
           },
           {
             "result": {
-              "duration": 19999200,
+              "duration": 20000100,
               "status": "passed"
             },
             "line": 134,
@@ -1661,7 +1621,7 @@
           },
           {
             "result": {
-              "duration": 22999700,
+              "duration": 23081600,
               "status": "passed"
             },
             "line": 135,
@@ -1679,20 +1639,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:136)\r\n",
-              "duration": 1057719600,
-              "status": "failed"
-            },
-            "line": 136,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 9648100,
+              "status": "passed"
             },
             "line": 137,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -1709,7 +1657,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 536451500,
+              "status": "passed"
             },
             "line": 138,
             "name": "I click the submit moon button",
@@ -1720,7 +1669,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5999700,
+              "status": "passed"
             },
             "line": 139,
             "name": "the moon should not be added to the planetarium",
@@ -1740,7 +1690,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:42.533Z",
+        "start_timestamp": "2024-08-12T12:51:52.621Z",
         "line": 157,
         "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and no picture",
         "description": "\tif User provides no moon name and a valid planet id with no picture no moon should be added to the planetarium",
@@ -1750,7 +1700,7 @@
         "steps": [
           {
             "result": {
-              "duration": 134101700,
+              "duration": 118494400,
               "status": "passed"
             },
             "line": 148,
@@ -1762,7 +1712,7 @@
           },
           {
             "result": {
-              "duration": 149514900,
+              "duration": 206098500,
               "status": "passed"
             },
             "line": 149,
@@ -1774,7 +1724,7 @@
           },
           {
             "result": {
-              "duration": 19505200,
+              "duration": 17508600,
               "status": "passed"
             },
             "line": 150,
@@ -1786,7 +1736,7 @@
           },
           {
             "result": {
-              "duration": 24000100,
+              "duration": 24996400,
               "status": "passed"
             },
             "line": 151,
@@ -1804,7 +1754,7 @@
           },
           {
             "result": {
-              "duration": 1050882200,
+              "duration": 1044730200,
               "status": "passed"
             },
             "line": 152,
@@ -1816,7 +1766,7 @@
           },
           {
             "result": {
-              "duration": 3000300,
+              "duration": 2999300,
               "status": "passed"
             },
             "line": 153,
@@ -1837,7 +1787,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:43.915Z",
+        "start_timestamp": "2024-08-12T12:51:54.039Z",
         "line": 173,
         "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and a picture",
         "description": "\tif User provides a Valid moon name and no  planet id with a picture no moon should be added to the planetarium",
@@ -1847,7 +1797,7 @@
         "steps": [
           {
             "result": {
-              "duration": 135337700,
+              "duration": 137046200,
               "status": "passed"
             },
             "line": 162,
@@ -1859,7 +1809,7 @@
           },
           {
             "result": {
-              "duration": 150090200,
+              "duration": 239009800,
               "status": "passed"
             },
             "line": 163,
@@ -1871,7 +1821,7 @@
           },
           {
             "result": {
-              "duration": 73750400,
+              "duration": 64515200,
               "status": "passed"
             },
             "line": 164,
@@ -1889,7 +1839,7 @@
           },
           {
             "result": {
-              "duration": 19007600,
+              "duration": 20005800,
               "status": "passed"
             },
             "line": 165,
@@ -1901,20 +1851,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:166)\r\n",
-              "duration": 1061215300,
-              "status": "failed"
-            },
-            "line": 166,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 9998500,
+              "status": "passed"
             },
             "line": 167,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -1931,7 +1869,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 536978000,
+              "status": "passed"
             },
             "line": 168,
             "name": "I click the submit moon button",
@@ -1942,8 +1881,8 @@
           },
           {
             "result": {
-              "duration": 999500,
-              "status": "skipped"
+              "duration": 3998900,
+              "status": "passed"
             },
             "line": 169,
             "name": "the moon should not be added to the planetarium",
@@ -1963,7 +1902,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:45.358Z",
+        "start_timestamp": "2024-08-12T12:51:55.052Z",
         "line": 187,
         "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and no picture",
         "description": "\tif User provides a Valid moon name and no planet id with no picture no moon should be added to the planetarium",
@@ -1973,7 +1912,7 @@
         "steps": [
           {
             "result": {
-              "duration": 141333900,
+              "duration": 125411600,
               "status": "passed"
             },
             "line": 178,
@@ -1985,7 +1924,7 @@
           },
           {
             "result": {
-              "duration": 150620500,
+              "duration": 245245800,
               "status": "passed"
             },
             "line": 179,
@@ -1997,7 +1936,7 @@
           },
           {
             "result": {
-              "duration": 73171700,
+              "duration": 64055200,
               "status": "passed"
             },
             "line": 180,
@@ -2015,7 +1954,7 @@
           },
           {
             "result": {
-              "duration": 20519000,
+              "duration": 18997600,
               "status": "passed"
             },
             "line": 181,
@@ -2027,7 +1966,7 @@
           },
           {
             "result": {
-              "duration": 1052061600,
+              "duration": 1044025400,
               "status": "passed"
             },
             "line": 182,
@@ -2039,7 +1978,7 @@
           },
           {
             "result": {
-              "duration": 2999600,
+              "duration": 3999600,
               "status": "passed"
             },
             "line": 183,
@@ -2060,7 +1999,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:46.800Z",
+        "start_timestamp": "2024-08-12T12:51:56.555Z",
         "line": 203,
         "name": "Moon Registration Negative Scenario null Moon name with null planet ID and a picture",
         "description": "\tif User provides no moon name and no planet id with a picture no moon should be added to the planetarium",
@@ -2070,7 +2009,7 @@
         "steps": [
           {
             "result": {
-              "duration": 134513300,
+              "duration": 130750300,
               "status": "passed"
             },
             "line": 192,
@@ -2082,7 +2021,7 @@
           },
           {
             "result": {
-              "duration": 148179100,
+              "duration": 238995900,
               "status": "passed"
             },
             "line": 193,
@@ -2094,7 +2033,7 @@
           },
           {
             "result": {
-              "duration": 17999900,
+              "duration": 16998000,
               "status": "passed"
             },
             "line": 194,
@@ -2106,7 +2045,7 @@
           },
           {
             "result": {
-              "duration": 21004000,
+              "duration": 19153600,
               "status": "passed"
             },
             "line": 195,
@@ -2118,20 +2057,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#planetImageInput\"}\n  (Session info: chrome\u003d127.0.6533.100)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dc1f6d60b98f214386c0c5815a36bcab, findElement {value\u003dplanetImageInput, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Snyde\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: dc1f6d60b98f214386c0c5815a36bcab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.revature.pom.PlanetariumHome.enterPlanetFile(PlanetariumHome.java:131)\r\n\tat com.revature.step.PlanetRegistrationSteps.i_click_choose_File(PlanetRegistrationSteps.java:36)\r\n\tat ✽.I click choose File(classpath:features/MoonRegistration.feature:196)\r\n",
-              "duration": 1002883900,
-              "status": "failed"
-            },
-            "line": 196,
-            "name": "I click choose File",
-            "match": {
-              "location": "com.revature.step.PlanetRegistrationSteps.i_click_choose_File()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 11997900,
+              "status": "passed"
             },
             "line": 197,
             "name": "I choose an image for the moon \"moon-1.jpg\"",
@@ -2148,7 +2075,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 535011100,
+              "status": "passed"
             },
             "line": 198,
             "name": "I click the submit moon button",
@@ -2159,7 +2087,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2999700,
+              "status": "passed"
             },
             "line": 199,
             "name": "the moon should not be added to the planetarium",
@@ -2179,7 +2108,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:48.128Z",
+        "start_timestamp": "2024-08-12T12:51:57.512Z",
         "line": 206,
         "name": "Moon Registration Negative Scenario null Moon name with null planet ID and no picture",
         "description": "\tif User provides no moon name and no planet id with no picture no moon should be added to the planetarium",
@@ -2189,7 +2118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 140598100,
+              "duration": 123490700,
               "status": "passed"
             },
             "line": 208,
@@ -2201,7 +2130,7 @@
           },
           {
             "result": {
-              "duration": 147220200,
+              "duration": 226387700,
               "status": "passed"
             },
             "line": 209,
@@ -2213,7 +2142,7 @@
           },
           {
             "result": {
-              "duration": 20016200,
+              "duration": 16998000,
               "status": "passed"
             },
             "line": 210,
@@ -2225,7 +2154,7 @@
           },
           {
             "result": {
-              "duration": 19999600,
+              "duration": 18997900,
               "status": "passed"
             },
             "line": 211,
@@ -2237,7 +2166,7 @@
           },
           {
             "result": {
-              "duration": 1054414900,
+              "duration": 1047701400,
               "status": "passed"
             },
             "line": 212,
@@ -2249,7 +2178,7 @@
           },
           {
             "result": {
-              "duration": 3000400,
+              "duration": 2999000,
               "status": "passed"
             },
             "line": 213,
@@ -2290,7 +2219,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:20:49.516Z",
+        "start_timestamp": "2024-08-12T12:51:58.950Z",
         "line": 14,
         "name": "Moon Removal Valid Moon name",
         "description": "",
@@ -2300,7 +2229,7 @@
         "steps": [
           {
             "result": {
-              "duration": 132030900,
+              "duration": 112757100,
               "status": "passed"
             },
             "line": 6,
@@ -2312,7 +2241,7 @@
           },
           {
             "result": {
-              "duration": 81005900,
+              "duration": 172484700,
               "status": "passed"
             },
             "line": 7,
@@ -2324,7 +2253,7 @@
           },
           {
             "result": {
-              "duration": 92533600,
+              "duration": 24517100,
               "status": "passed"
             },
             "line": 8,
@@ -2342,7 +2271,7 @@
           },
           {
             "result": {
-              "duration": 21311300,
+              "duration": 20997600,
               "status": "passed"
             },
             "line": 9,
@@ -2354,7 +2283,7 @@
           },
           {
             "result": {
-              "duration": 2999500,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 10,
@@ -2378,7 +2307,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:49.848Z",
+        "start_timestamp": "2024-08-12T12:51:59.287Z",
         "line": 26,
         "name": "Moon Removal Invalid Moon name",
         "description": "",
@@ -2388,7 +2317,7 @@
         "steps": [
           {
             "result": {
-              "duration": 136513300,
+              "duration": 137274200,
               "status": "passed"
             },
             "line": 18,
@@ -2400,7 +2329,7 @@
           },
           {
             "result": {
-              "duration": 134513900,
+              "duration": 230314700,
               "status": "passed"
             },
             "line": 19,
@@ -2412,7 +2341,7 @@
           },
           {
             "result": {
-              "duration": 40514300,
+              "duration": 26009200,
               "status": "passed"
             },
             "line": 20,
@@ -2430,7 +2359,7 @@
           },
           {
             "result": {
-              "duration": 19001000,
+              "duration": 15998600,
               "status": "passed"
             },
             "line": 21,
@@ -2442,7 +2371,7 @@
           },
           {
             "result": {
-              "duration": 4001400,
+              "duration": 4745000,
               "status": "passed"
             },
             "line": 22,
@@ -2466,7 +2395,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:50.184Z",
+        "start_timestamp": "2024-08-12T12:51:59.703Z",
         "line": 29,
         "name": "Moon Removal Negative Scenario Null Moon name",
         "description": "\tif User provides no moon name then no moon should be removed from the planetarium",
@@ -2476,7 +2405,7 @@
         "steps": [
           {
             "result": {
-              "duration": 132518200,
+              "duration": 124489900,
               "status": "passed"
             },
             "line": 31,
@@ -2488,7 +2417,7 @@
           },
           {
             "result": {
-              "duration": 136034400,
+              "duration": 186026200,
               "status": "passed"
             },
             "line": 32,
@@ -2500,7 +2429,7 @@
           },
           {
             "result": {
-              "duration": 27993800,
+              "duration": 19989700,
               "status": "passed"
             },
             "line": 33,
@@ -2512,7 +2441,7 @@
           },
           {
             "result": {
-              "duration": 18000900,
+              "duration": 14000100,
               "status": "passed"
             },
             "line": 34,
@@ -2524,7 +2453,7 @@
           },
           {
             "result": {
-              "duration": 3000200,
+              "duration": 3999700,
               "status": "passed"
             },
             "line": 35,
@@ -2568,7 +2497,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:20:50.502Z",
+        "start_timestamp": "2024-08-12T12:52:00.053Z",
         "line": 14,
         "name": "Planet Registration Valid Planet name without picture",
         "description": "",
@@ -2578,7 +2507,7 @@
         "steps": [
           {
             "result": {
-              "duration": 133054400,
+              "duration": 131947900,
               "status": "passed"
             },
             "line": 6,
@@ -2590,7 +2519,7 @@
           },
           {
             "result": {
-              "duration": 47997600,
+              "duration": 205218800,
               "status": "passed"
             },
             "line": 7,
@@ -2602,7 +2531,7 @@
           },
           {
             "result": {
-              "duration": 100518000,
+              "duration": 62994700,
               "status": "passed"
             },
             "line": 8,
@@ -2620,7 +2549,7 @@
           },
           {
             "result": {
-              "duration": 1054686600,
+              "duration": 1060902900,
               "status": "passed"
             },
             "line": 9,
@@ -2632,8 +2561,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c6\u003e but was:\u003c5\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:57)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
-              "duration": 2999500,
+              "error_message": "java.lang.AssertionError: expected:\u003c7\u003e but was:\u003c6\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:57)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
+              "duration": 2999600,
               "status": "failed"
             },
             "line": 10,
@@ -2657,7 +2586,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:51.845Z",
+        "start_timestamp": "2024-08-12T12:52:01.523Z",
         "line": 28,
         "name": "Planet Registration Invalid Planet name with picture",
         "description": "",
@@ -2667,7 +2596,7 @@
         "steps": [
           {
             "result": {
-              "duration": 141087700,
+              "duration": 120501800,
               "status": "passed"
             },
             "line": 18,
@@ -2679,7 +2608,7 @@
           },
           {
             "result": {
-              "duration": 48003700,
+              "duration": 203142500,
               "status": "passed"
             },
             "line": 19,
@@ -2691,7 +2620,7 @@
           },
           {
             "result": {
-              "duration": 100140900,
+              "duration": 65447700,
               "status": "passed"
             },
             "line": 20,
@@ -2709,7 +2638,7 @@
           },
           {
             "result": {
-              "duration": 12044300,
+              "duration": 10998400,
               "status": "passed"
             },
             "line": 21,
@@ -2721,6 +2650,7 @@
           },
           {
             "result": {
+              "duration": 1001300,
               "status": "passed"
             },
             "line": 22,
@@ -2738,7 +2668,7 @@
           },
           {
             "result": {
-              "duration": 536038900,
+              "duration": 549070500,
               "status": "passed"
             },
             "line": 23,
@@ -2750,7 +2680,7 @@
           },
           {
             "result": {
-              "duration": 4000800,
+              "duration": 4997800,
               "status": "passed"
             },
             "line": 24,
@@ -2774,7 +2704,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:52.689Z",
+        "start_timestamp": "2024-08-12T12:52:02.482Z",
         "line": 40,
         "name": "Planet Registration Invalid Planet name without picture",
         "description": "",
@@ -2784,7 +2714,7 @@
         "steps": [
           {
             "result": {
-              "duration": 119194600,
+              "duration": 115014500,
               "status": "passed"
             },
             "line": 32,
@@ -2796,7 +2726,7 @@
           },
           {
             "result": {
-              "duration": 50050400,
+              "duration": 209184000,
               "status": "passed"
             },
             "line": 33,
@@ -2808,7 +2738,7 @@
           },
           {
             "result": {
-              "duration": 119439100,
+              "duration": 62017000,
               "status": "passed"
             },
             "line": 34,
@@ -2826,7 +2756,7 @@
           },
           {
             "result": {
-              "duration": 1056427200,
+              "duration": 1040841000,
               "status": "passed"
             },
             "line": 35,
@@ -2838,7 +2768,7 @@
           },
           {
             "result": {
-              "duration": 3030700,
+              "duration": 1999500,
               "status": "passed"
             },
             "line": 36,
@@ -2862,7 +2792,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:54.039Z",
+        "start_timestamp": "2024-08-12T12:52:03.912Z",
         "line": 54,
         "name": "Planet Registration Non-unique Planet name with picture",
         "description": "",
@@ -2872,7 +2802,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123569900,
+              "duration": 128492000,
               "status": "passed"
             },
             "line": 44,
@@ -2884,7 +2814,7 @@
           },
           {
             "result": {
-              "duration": 48988500,
+              "duration": 165033700,
               "status": "passed"
             },
             "line": 45,
@@ -2896,7 +2826,7 @@
           },
           {
             "result": {
-              "duration": 29512400,
+              "duration": 25995100,
               "status": "passed"
             },
             "line": 46,
@@ -2914,7 +2844,7 @@
           },
           {
             "result": {
-              "duration": 67010300,
+              "duration": 8999600,
               "status": "passed"
             },
             "line": 47,
@@ -2943,7 +2873,7 @@
           },
           {
             "result": {
-              "duration": 539023400,
+              "duration": 549747700,
               "status": "passed"
             },
             "line": 49,
@@ -2955,7 +2885,7 @@
           },
           {
             "result": {
-              "duration": 2999800,
+              "duration": 1999200,
               "status": "passed"
             },
             "line": 50,
@@ -2979,7 +2909,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:54.852Z",
+        "start_timestamp": "2024-08-12T12:52:04.798Z",
         "line": 66,
         "name": "Planet Registration Non-unique Planet name without picture",
         "description": "",
@@ -2989,7 +2919,7 @@
         "steps": [
           {
             "result": {
-              "duration": 121131300,
+              "duration": 120147400,
               "status": "passed"
             },
             "line": 58,
@@ -3001,7 +2931,7 @@
           },
           {
             "result": {
-              "duration": 54004000,
+              "duration": 175512700,
               "status": "passed"
             },
             "line": 59,
@@ -3013,7 +2943,7 @@
           },
           {
             "result": {
-              "duration": 28506200,
+              "duration": 25996900,
               "status": "passed"
             },
             "line": 60,
@@ -3031,7 +2961,7 @@
           },
           {
             "result": {
-              "duration": 1112079100,
+              "duration": 1045895300,
               "status": "passed"
             },
             "line": 61,
@@ -3043,7 +2973,7 @@
           },
           {
             "result": {
-              "duration": 4000300,
+              "duration": 2999600,
               "status": "passed"
             },
             "line": 62,
@@ -3067,7 +2997,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:56.173Z",
+        "start_timestamp": "2024-08-12T12:52:06.170Z",
         "line": 80,
         "name": "Planet Registration Valid Planet name with picture",
         "description": "",
@@ -3077,7 +3007,7 @@
         "steps": [
           {
             "result": {
-              "duration": 122327400,
+              "duration": 131020200,
               "status": "passed"
             },
             "line": 70,
@@ -3089,7 +3019,7 @@
           },
           {
             "result": {
-              "duration": 50510200,
+              "duration": 47999200,
               "status": "passed"
             },
             "line": 71,
@@ -3101,7 +3031,7 @@
           },
           {
             "result": {
-              "duration": 96024300,
+              "duration": 164048100,
               "status": "passed"
             },
             "line": 72,
@@ -3119,7 +3049,7 @@
           },
           {
             "result": {
-              "duration": 9999200,
+              "duration": 10999800,
               "status": "passed"
             },
             "line": 73,
@@ -3148,7 +3078,7 @@
           },
           {
             "result": {
-              "duration": 1043227000,
+              "duration": 1044174100,
               "status": "passed"
             },
             "line": 75,
@@ -3160,7 +3090,7 @@
           },
           {
             "result": {
-              "duration": 2999600,
+              "duration": 2999400,
               "status": "passed"
             },
             "line": 76,
@@ -3184,7 +3114,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:57.499Z",
+        "start_timestamp": "2024-08-12T12:52:07.572Z",
         "line": 83,
         "name": "Planet Registration Negative Scenario Null planet name without picture",
         "description": "\tif a user enters no planet name without a picture no planet is added to the planetarium",
@@ -3194,7 +3124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 116597900,
+              "duration": 130029800,
               "status": "passed"
             },
             "line": 85,
@@ -3206,7 +3136,7 @@
           },
           {
             "result": {
-              "duration": 164030700,
+              "duration": 46997000,
               "status": "passed"
             },
             "line": 86,
@@ -3218,7 +3148,7 @@
           },
           {
             "result": {
-              "duration": 18992400,
+              "duration": 20503600,
               "status": "passed"
             },
             "line": 87,
@@ -3230,7 +3160,7 @@
           },
           {
             "result": {
-              "duration": 1062009700,
+              "duration": 1152800100,
               "status": "passed"
             },
             "line": 88,
@@ -3242,7 +3172,7 @@
           },
           {
             "result": {
-              "duration": 2000200,
+              "duration": 2999300,
               "status": "passed"
             },
             "line": 89,
@@ -3266,7 +3196,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:20:58.864Z",
+        "start_timestamp": "2024-08-12T12:52:08.927Z",
         "line": 104,
         "name": "Planet Registration Negative Scenario Null planet name with picture",
         "description": "\tif a user enters no planet name with a picture no planet is added to the planetarium",
@@ -3276,7 +3206,7 @@
         "steps": [
           {
             "result": {
-              "duration": 135649400,
+              "duration": 129501400,
               "status": "passed"
             },
             "line": 94,
@@ -3288,7 +3218,7 @@
           },
           {
             "result": {
-              "duration": 166031600,
+              "duration": 213440500,
               "status": "passed"
             },
             "line": 95,
@@ -3300,7 +3230,7 @@
           },
           {
             "result": {
-              "duration": 17000100,
+              "duration": 15997800,
               "status": "passed"
             },
             "line": 96,
@@ -3312,7 +3242,7 @@
           },
           {
             "result": {
-              "duration": 11000100,
+              "duration": 8998300,
               "status": "passed"
             },
             "line": 97,
@@ -3341,7 +3271,7 @@
           },
           {
             "result": {
-              "duration": 545293000,
+              "duration": 546531300,
               "status": "passed"
             },
             "line": 99,
@@ -3353,7 +3283,7 @@
           },
           {
             "result": {
-              "duration": 2999500,
+              "duration": 2999800,
               "status": "passed"
             },
             "line": 100,
@@ -3397,7 +3327,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:20:59.746Z",
+        "start_timestamp": "2024-08-12T12:52:09.846Z",
         "line": 14,
         "name": "Planet Removal Valid Planet name",
         "description": "",
@@ -3407,7 +3337,7 @@
         "steps": [
           {
             "result": {
-              "duration": 133205500,
+              "duration": 140001300,
               "status": "passed"
             },
             "line": 6,
@@ -3419,7 +3349,7 @@
           },
           {
             "result": {
-              "duration": 163033500,
+              "duration": 168489300,
               "status": "passed"
             },
             "line": 7,
@@ -3431,7 +3361,7 @@
           },
           {
             "result": {
-              "duration": 75061800,
+              "duration": 68497600,
               "status": "passed"
             },
             "line": 8,
@@ -3449,7 +3379,7 @@
           },
           {
             "result": {
-              "duration": 15018400,
+              "duration": 13998700,
               "status": "passed"
             },
             "line": 9,
@@ -3461,7 +3391,7 @@
           },
           {
             "result": {
-              "duration": 14515300,
+              "duration": 14001400,
               "status": "passed"
             },
             "line": 10,
@@ -3485,7 +3415,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:00.150Z",
+        "start_timestamp": "2024-08-12T12:52:10.255Z",
         "line": 26,
         "name": "Planet Removal Invalid Planet name",
         "description": "",
@@ -3495,7 +3425,7 @@
         "steps": [
           {
             "result": {
-              "duration": 137533700,
+              "duration": 108495900,
               "status": "passed"
             },
             "line": 18,
@@ -3507,7 +3437,7 @@
           },
           {
             "result": {
-              "duration": 168146400,
+              "duration": 52501000,
               "status": "passed"
             },
             "line": 19,
@@ -3519,7 +3449,7 @@
           },
           {
             "result": {
-              "duration": 30408500,
+              "duration": 135505200,
               "status": "passed"
             },
             "line": 20,
@@ -3537,7 +3467,7 @@
           },
           {
             "result": {
-              "duration": 17000100,
+              "duration": 14406100,
               "status": "passed"
             },
             "line": 21,
@@ -3549,7 +3479,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 512331000,
               "status": "passed"
             },
             "line": 22,
@@ -3573,7 +3503,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:00.507Z",
+        "start_timestamp": "2024-08-12T12:52:11.082Z",
         "line": 29,
         "name": "Planet Removal Negative Scenario Null planet name",
         "description": "\tIf user enters no planet name then no planets are removed",
@@ -3583,7 +3513,7 @@
         "steps": [
           {
             "result": {
-              "duration": 124700500,
+              "duration": 113040200,
               "status": "passed"
             },
             "line": 31,
@@ -3595,7 +3525,7 @@
           },
           {
             "result": {
-              "duration": 49115000,
+              "duration": 191910400,
               "status": "passed"
             },
             "line": 32,
@@ -3607,7 +3537,7 @@
           },
           {
             "result": {
-              "duration": 18000200,
+              "duration": 16998200,
               "status": "passed"
             },
             "line": 33,
@@ -3619,7 +3549,7 @@
           },
           {
             "result": {
-              "duration": 82236200,
+              "duration": 15997200,
               "status": "passed"
             },
             "line": 34,
@@ -3631,7 +3561,7 @@
           },
           {
             "result": {
-              "duration": 3000600,
+              "duration": 3000400,
               "status": "passed"
             },
             "line": 35,
@@ -3672,7 +3602,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:21:00.786Z",
+        "start_timestamp": "2024-08-12T12:52:11.424Z",
         "line": 15,
         "name": "Registration Positive Scenario",
         "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
@@ -3682,7 +3612,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15999200,
+              "duration": 16998600,
               "status": "passed"
             },
             "line": 7,
@@ -3694,7 +3624,7 @@
           },
           {
             "result": {
-              "duration": 65508800,
+              "duration": 42495900,
               "status": "passed"
             },
             "line": 8,
@@ -3706,7 +3636,7 @@
           },
           {
             "result": {
-              "duration": 78442000,
+              "duration": 65993400,
               "status": "passed"
             },
             "line": 9,
@@ -3724,7 +3654,7 @@
           },
           {
             "result": {
-              "duration": 71009000,
+              "duration": 65500500,
               "status": "passed"
             },
             "line": 10,
@@ -3742,7 +3672,7 @@
           },
           {
             "result": {
-              "duration": 534884000,
+              "duration": 536640200,
               "status": "passed"
             },
             "line": 11,
@@ -3766,7 +3696,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:01.554Z",
+        "start_timestamp": "2024-08-12T12:52:12.156Z",
         "line": 28,
         "name": "Registration Username not unique",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -3776,7 +3706,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18999500,
+              "duration": 16069800,
               "status": "passed"
             },
             "line": 20,
@@ -3788,7 +3718,7 @@
           },
           {
             "result": {
-              "duration": 32000800,
+              "duration": 29995700,
               "status": "passed"
             },
             "line": 21,
@@ -3800,7 +3730,7 @@
           },
           {
             "result": {
-              "duration": 37020000,
+              "duration": 29997000,
               "status": "passed"
             },
             "line": 22,
@@ -3818,7 +3748,7 @@
           },
           {
             "result": {
-              "duration": 84000300,
+              "duration": 77230100,
               "status": "passed"
             },
             "line": 23,
@@ -3836,7 +3766,7 @@
           },
           {
             "result": {
-              "duration": 32077000,
+              "duration": 542315900,
               "status": "passed"
             },
             "line": 24,
@@ -3860,7 +3790,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:01.761Z",
+        "start_timestamp": "2024-08-12T12:52:12.855Z",
         "line": 41,
         "name": "Registration Username too long",
         "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
@@ -3870,7 +3800,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15000400,
+              "duration": 9998500,
               "status": "passed"
             },
             "line": 33,
@@ -3882,7 +3812,7 @@
           },
           {
             "result": {
-              "duration": 36999700,
+              "duration": 37502000,
               "status": "passed"
             },
             "line": 34,
@@ -3894,7 +3824,7 @@
           },
           {
             "result": {
-              "duration": 76415700,
+              "duration": 68047300,
               "status": "passed"
             },
             "line": 35,
@@ -3912,7 +3842,7 @@
           },
           {
             "result": {
-              "duration": 69508000,
+              "duration": 64062300,
               "status": "passed"
             },
             "line": 36,
@@ -3930,7 +3860,7 @@
           },
           {
             "result": {
-              "duration": 31001100,
+              "duration": 533748100,
               "status": "passed"
             },
             "line": 37,
@@ -3954,7 +3884,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:01.991Z",
+        "start_timestamp": "2024-08-12T12:52:13.572Z",
         "line": 54,
         "name": "Registration Password too long",
         "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
@@ -3964,7 +3894,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14000200,
+              "duration": 18996600,
               "status": "passed"
             },
             "line": 46,
@@ -3976,7 +3906,7 @@
           },
           {
             "result": {
-              "duration": 38237700,
+              "duration": 29996500,
               "status": "passed"
             },
             "line": 47,
@@ -3988,7 +3918,7 @@
           },
           {
             "result": {
-              "duration": 71960600,
+              "duration": 66109500,
               "status": "passed"
             },
             "line": 48,
@@ -4006,7 +3936,7 @@
           },
           {
             "result": {
-              "duration": 67273500,
+              "duration": 67993700,
               "status": "passed"
             },
             "line": 49,
@@ -4024,7 +3954,7 @@
           },
           {
             "result": {
-              "duration": 30150500,
+              "duration": 30659200,
               "status": "passed"
             },
             "line": 50,
@@ -4048,7 +3978,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:02.216Z",
+        "start_timestamp": "2024-08-12T12:52:13.786Z",
         "line": 67,
         "name": "Registration User credentials too long",
         "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
@@ -4058,7 +3988,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17004500,
+              "duration": 13999200,
               "status": "passed"
             },
             "line": 59,
@@ -4070,7 +4000,7 @@
           },
           {
             "result": {
-              "duration": 37505900,
+              "duration": 27995700,
               "status": "passed"
             },
             "line": 60,
@@ -4082,7 +4012,7 @@
           },
           {
             "result": {
-              "duration": 78163400,
+              "duration": 71500500,
               "status": "passed"
             },
             "line": 61,
@@ -4100,7 +4030,7 @@
           },
           {
             "result": {
-              "duration": 68185500,
+              "duration": 68297900,
               "status": "passed"
             },
             "line": 62,
@@ -4118,7 +4048,7 @@
           },
           {
             "result": {
-              "duration": 29130900,
+              "duration": 28996700,
               "status": "passed"
             },
             "line": 63,
@@ -4142,7 +4072,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:02.448Z",
+        "start_timestamp": "2024-08-12T12:52:14.000Z",
         "line": 80,
         "name": "Registration Username not unique and password too long",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -4152,7 +4082,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17000300,
+              "duration": 13997800,
               "status": "passed"
             },
             "line": 72,
@@ -4164,7 +4094,7 @@
           },
           {
             "result": {
-              "duration": 42000400,
+              "duration": 30995900,
               "status": "passed"
             },
             "line": 73,
@@ -4176,7 +4106,7 @@
           },
           {
             "result": {
-              "duration": 36003400,
+              "duration": 37017100,
               "status": "passed"
             },
             "line": 74,
@@ -4194,7 +4124,7 @@
           },
           {
             "result": {
-              "duration": 89216200,
+              "duration": 69997400,
               "status": "passed"
             },
             "line": 75,
@@ -4212,7 +4142,7 @@
           },
           {
             "result": {
-              "duration": 30517200,
+              "duration": 543197000,
               "status": "passed"
             },
             "line": 76,
@@ -4236,7 +4166,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:02.664Z",
+        "start_timestamp": "2024-08-12T12:52:14.698Z",
         "line": 93,
         "name": "Registration Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
@@ -4246,7 +4176,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18000100,
+              "duration": 16998200,
               "status": "passed"
             },
             "line": 85,
@@ -4258,7 +4188,7 @@
           },
           {
             "result": {
-              "duration": 39993300,
+              "duration": 30995400,
               "status": "passed"
             },
             "line": 86,
@@ -4270,7 +4200,7 @@
           },
           {
             "result": {
-              "duration": 28518600,
+              "duration": 25054400,
               "status": "passed"
             },
             "line": 87,
@@ -4282,7 +4212,7 @@
           },
           {
             "result": {
-              "duration": 72000300,
+              "duration": 69990300,
               "status": "passed"
             },
             "line": 88,
@@ -4300,7 +4230,7 @@
           },
           {
             "result": {
-              "duration": 28932400,
+              "duration": 31046500,
               "status": "passed"
             },
             "line": 89,
@@ -4321,7 +4251,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:02.853Z",
+        "start_timestamp": "2024-08-12T12:52:14.874Z",
         "line": 106,
         "name": "Registration Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
@@ -4331,7 +4261,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14999900,
+              "duration": 15997700,
               "status": "passed"
             },
             "line": 98,
@@ -4343,7 +4273,7 @@
           },
           {
             "result": {
-              "duration": 54000600,
+              "duration": 38995000,
               "status": "passed"
             },
             "line": 99,
@@ -4355,7 +4285,7 @@
           },
           {
             "result": {
-              "duration": 73036600,
+              "duration": 70039500,
               "status": "passed"
             },
             "line": 100,
@@ -4373,7 +4303,7 @@
           },
           {
             "result": {
-              "duration": 19999900,
+              "duration": 19601400,
               "status": "passed"
             },
             "line": 101,
@@ -4385,7 +4315,7 @@
           },
           {
             "result": {
-              "duration": 31530400,
+              "duration": 33011900,
               "status": "passed"
             },
             "line": 102,
@@ -4406,7 +4336,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T02:21:03.049Z",
+        "start_timestamp": "2024-08-12T12:52:15.053Z",
         "line": 109,
         "name": "Registration Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
@@ -4416,7 +4346,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17999900,
+              "duration": 14505000,
               "status": "passed"
             },
             "line": 111,
@@ -4428,7 +4358,7 @@
           },
           {
             "result": {
-              "duration": 43000900,
+              "duration": 27996100,
               "status": "passed"
             },
             "line": 112,
@@ -4440,7 +4370,7 @@
           },
           {
             "result": {
-              "duration": 20002300,
+              "duration": 24996100,
               "status": "passed"
             },
             "line": 113,
@@ -4452,7 +4382,7 @@
           },
           {
             "result": {
-              "duration": 19507400,
+              "duration": 20997200,
               "status": "passed"
             },
             "line": 114,
@@ -4464,7 +4394,7 @@
           },
           {
             "result": {
-              "duration": 41950700,
+              "duration": 530924500,
               "status": "passed"
             },
             "line": 115,
@@ -4505,7 +4435,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T02:21:03.192Z",
+        "start_timestamp": "2024-08-12T12:52:15.675Z",
         "line": 14,
         "name": "Planets and Moons View Valid login credentials",
         "description": "\tViewing the Planets and Moons",
@@ -4515,7 +4445,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16000500,
+              "duration": 22995600,
               "status": "passed"
             },
             "line": 7,
@@ -4527,7 +4457,7 @@
           },
           {
             "result": {
-              "duration": 32155200,
+              "duration": 38086500,
               "status": "passed"
             },
             "line": 8,
@@ -4545,7 +4475,7 @@
           },
           {
             "result": {
-              "duration": 52275500,
+              "duration": 53023300,
               "status": "passed"
             },
             "line": 9,
@@ -4563,7 +4493,7 @@
           },
           {
             "result": {
-              "duration": 32993900,
+              "duration": 538413400,
               "status": "passed"
             },
             "line": 10,

@@ -20,7 +20,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert the moon name "<Valid Moon Name>"
 		When I insert the planet ID "<Valid Planet ID Number>"
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should be added to the planetarium
@@ -35,7 +35,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert the moon name "<Invalid Moon Name>"
 		When I insert the planet ID "<Valid Planet ID Number>"
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -63,7 +63,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert the moon name "<Valid Moon Name>"
 		When I insert the planet ID "<Invalid Planet ID Number>"
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -91,7 +91,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert the moon name "<Invalid Moon name>"
 		When I insert the planet ID "<Invalid Planet ID Number>"
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -133,7 +133,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert no moon name
 		When I insert the planet ID "<Valid Planet ID Number>"
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -163,7 +163,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert the moon name "<Valid Moon Name>"
 		When I insert no planet id
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium
@@ -193,7 +193,7 @@ Feature: MoonRegistration
 		When I change the selector to Moon
 		When I insert no moon name
 		When I insert no planet id
-		When I click choose File
+		#When I click choose File
 		When I choose an image for the moon "<Picture for Moons>"
 		When I click the submit moon button
 		Then the moon should not be added to the planetarium

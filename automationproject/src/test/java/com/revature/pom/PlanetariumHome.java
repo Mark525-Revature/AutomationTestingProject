@@ -58,7 +58,8 @@ public class PlanetariumHome {
     @FindBy(xpath = "//div[@id='inputContainer']/input[@id='orbitedPlanetInput']")
     private WebElement planetIdInput;
 
-    @FindBy(id = "moonImageInput")
+    //@FindBy(id = "moonImageInput")
+    @FindBy(xpath = "//div[@id='inputContainer']/input[@id='moonImageInput']")
     private WebElement moonImageInput;
 
     @FindBy(xpath = "//div[@id='inputContainer']/button")
