@@ -2,9 +2,9 @@ package com.revature.step;
 
 import org.junit.Assert;
 import com.revature.TestRunner;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en.Given;
 
 public class PlanetRegistrationSteps {
 
@@ -38,12 +38,10 @@ public class PlanetRegistrationSteps {
 
     @When("I choose an image for the planet {string}")
     public void i_choose_an_image_for_the_planet(String string) {
-        // Implement this method if necessary
     }
 
     @When("I choose an image for the planet planet-{int}.jpg")
     public void i_choose_an_image_for_the_planet_planet_jpg(Integer int1) {
-        // Implement this method if necessary
     }
 
     @When("I insert no planet name")
@@ -62,4 +60,5 @@ public class PlanetRegistrationSteps {
         int newTableLength = TestRunner.planetariumHome.getTableLength();
         Assert.assertEquals(initialTableLength, newTableLength);
     }
+
 }

@@ -6,10 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PlanetariumLogin{
+    
     private WebDriver driver;
 
     private String url = "http://localhost:8080";
@@ -23,12 +24,10 @@ public class PlanetariumLogin{
     @FindBy(xpath = "/html/body/div/form/input[3]")
     private WebElement loginButton;
 
-
     public PlanetariumLogin(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
 
     public void goToLandingPage(){
         driver.get(url);
@@ -59,7 +58,6 @@ public class PlanetariumLogin{
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         wait.until(ExpectedConditions.urlContains("/planetarium"));
     }
-
 
     public String getAlertText(){
         WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
