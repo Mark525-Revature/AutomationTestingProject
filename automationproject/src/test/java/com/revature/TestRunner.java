@@ -1,22 +1,23 @@
 package com.revature;
-import com.revature.Setup;
-import com.revature.pom.PlanetariumHome;
-import com.revature.pom.PlanetariumLogin;
-import com.revature.pom.PlanetariumRegistration;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+import java.time.Duration;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
 import org.openqa.selenium.WebDriver;
+import com.revature.pom.PlanetariumHome;
+import io.cucumber.junit.CucumberOptions;
+import com.revature.pom.PlanetariumLogin;
 import org.openqa.selenium.chrome.ChromeDriver;
+import com.revature.pom.PlanetariumRegistration;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "classpath:features",
+    // features = {"classpath:features/Login.feature",
+    //             "classpath:features/MoonRegistration.feature"},
     glue = "com.revature.step",
     plugin = {
         "pretty",

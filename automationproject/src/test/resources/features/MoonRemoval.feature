@@ -6,7 +6,7 @@ Feature: MoonRemoval
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
 		When I insert the moon name "<Valid Moon Name>"
-		When I click the delete button
+		When I click the Delete button
 		Then the moon should be removed from the planetarium
 
 		Examples:
@@ -18,7 +18,7 @@ Feature: MoonRemoval
 		Given I am on the Planet and Moon viewing page
 		When I change the selector to Moon
 		When I insert the moon name "<Invalid Moon Name>"
-		When I click the delete button
+		When I click the Delete button
 		Then no moon should be removed from the planetarium
 
 		Examples:
