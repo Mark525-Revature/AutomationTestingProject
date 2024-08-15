@@ -1,13 +1,12 @@
 package com.revature;
 
-import org.sqlite.SQLiteConfig;
-
+import java.sql.*;
+import java.nio.file.Path;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.*;
 import java.util.stream.Stream;
+import org.sqlite.SQLiteConfig;
 
 public class Setup {
     public static void main(String[] args) {

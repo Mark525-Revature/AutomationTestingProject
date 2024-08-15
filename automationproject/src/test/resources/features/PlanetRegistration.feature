@@ -11,7 +11,7 @@ Feature: PlanetRegistration
 
 	Examples: 
 		| Valid Planet name              |
-		| Amphitrite Euphrosyne Virginib |
+		| thisisaveryverylongplanetname1 |
 
 	@SCRUM-TC-12 @JREQ-SCRUM-25
 	Scenario Outline: Planet Registration Invalid Planet name with picture
@@ -77,7 +77,7 @@ Feature: PlanetRegistration
 
 	Examples: 
 		| Valid Planet name              | Picture for Planets |
-		| Amphitrite Euphrosyne Virginia | planet-1.jpg        |
+		| thisisaveryverylongplanetname1 | planet-1.jpg        |
 
 	@SCRUM-TC-39 @JREQ-SCRUM-70
 	Scenario: Planet Registration Negative Scenario Null planet name without picture
