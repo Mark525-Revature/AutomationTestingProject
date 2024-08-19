@@ -61,6 +61,11 @@ public class PlanetariumHome {
     @FindBy(xpath = "//tr")
     private List<WebElement> tableData;
 
+    /*
+---------------------------------------------------------------------------------------------------------------------------------
+*/
+
+    // Constructor 
     public PlanetariumHome(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -216,6 +221,9 @@ public class PlanetariumHome {
 
     public Boolean getCelestialBodyInfo() {
         try{
+            //Thread.sleep(2000);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.xpath("//tr"))));
             if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() == 0){
                 return true;
             }
