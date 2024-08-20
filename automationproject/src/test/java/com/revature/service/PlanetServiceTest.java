@@ -1,34 +1,37 @@
 package com.revature.service;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.mockito.Mockito;
 import com.revature.Setup;
-import io.javalin.Javalin;
+import com.revature.planetarium.entities.Planet;
+import com.revature.planetarium.repository.planet.*;
+import com.revature.planetarium.service.planet.*;
 
 public class PlanetServiceTest {
-    
-    HttpClient webClient;
-    ObjectMapper objectMapper;
-    Javalin app;
+
+    private Planet planet;
+    private PlanetDao dao;
+    private PlanetServiceImp service;
     @Before
     public void setUp() throws InterruptedException {
         Setup.resetTestDatabase();
-        webClient = HttpClient.newHttpClient();
-        objectMapper = new ObjectMapper();
-        app.start(8080);
-        Thread.sleep(1000);
+        dao = Mockito.mock(PlanetDaoImp.class);
+        service = new PlanetServiceImp(dao);
     }
     @After
-    public void tearDown(){
-        app.stop();
-    }
+    public void tearDown(){}
+
+    /* Tests to create:
+     * selectAllPlanets()
+     * selectPlanet(int ID)
+     * selectPlanet(String name)
+     * selectPlanetByOwner(int ID)
+     * createPlanet(Planet planet) name length enforced: 0, 1, 30, 31 && unique name enforced
+     * updatePlanet(Planet planet) name length enforced: 0, 1, 30, 31 && unique name enforced
+     * deletePlanet(int ID) returns a the string: "Planet deleted successfully"
+     * deletePlanet(String name) returns a the string: "Planet deleted successfully"
+     */
 }
