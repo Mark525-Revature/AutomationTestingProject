@@ -13,6 +13,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -220,21 +221,24 @@ public class PlanetariumHome {
     }
 
     public Boolean getCelestialBodyInfo() {
-        try{
-            //Thread.sleep(2000);
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-            wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.xpath("//tr"))));
-            if(driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]")).size() == 0){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
-        catch(NoSuchElementException e){
-            return true;
-        }
+    try {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//tr")));
+        
+        // Re-locate elements right before interacting to avoid stale references
+        List<WebElement> elements = driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]"));
+
+        // Check if elements were found and if the table is empty
+        return elements.size() == 0;
+    } catch (StaleElementReferenceException e) {
+        // Retry finding the elements if a stale reference occurs
+        List<WebElement> elements = driver.findElements(By.xpath("//tr//td[contains(text(),'" + getDeleteInput() + "')]"));
+        return elements.size() == 0;
+    } catch (NoSuchElementException e) {
+        return true;
     }
+}
+
 
     // UTILITY
 
