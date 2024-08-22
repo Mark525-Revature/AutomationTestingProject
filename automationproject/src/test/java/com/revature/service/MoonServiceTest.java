@@ -1,5 +1,10 @@
 package com.revature.service;
 
+import static org.junit.Assert.assertThrows;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,7 +23,9 @@ import org.mockito.Mockito;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.Setup;
 import com.revature.planetarium.entities.Moon;
+import com.revature.planetarium.entities.Planet;
 import com.revature.planetarium.exceptions.MoonFail;
+import com.revature.planetarium.exceptions.PlanetFail;
 import com.revature.planetarium.repository.moon.MoonDao;
 import com.revature.planetarium.repository.moon.MoonDaoImp;
 import com.revature.planetarium.service.moon.MoonService;
@@ -190,6 +197,21 @@ public class MoonServiceTest {
         Assert.assertEquals("Moon not found, could not update", e.getMessage());
         Mockito.verify(moonDao).readMoon(positiveCreatedMoon.getMoonId());
         Mockito.verify(moonDao,Mockito.never()).updateMoon(positiveCreatedMoon);
+    }
+
+    @Test
+    public void updateMoonNegativeDuplicate() {
+        Moon otherMoon = new Moon(1, "Titan", 2); 
+
+        Mockito.when(moonDao.readMoon(existingMoon.getMoonId())).thenReturn(Optional.of(otherMoon));
+        Mockito.when(moonDao.readMoon(existingMoon.getMoonName())).thenReturn(Optional.of(otherMoon));
+
+        MoonFail e = Assert.assertThrows(MoonFail.class, () -> {
+            moonService.updateMoon(existingMoon);
+        });
+
+        Assert.assertEquals("Moon name must be unique, could not update", e.getMessage());
+        Mockito.verify(moonDao, never()).updateMoon(existingMoon);
     }
 
     @Test
