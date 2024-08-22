@@ -20,6 +20,7 @@ import com.revature.planetarium.service.planet.*;
 public class PlanetServiceTest {
 
     private Planet existingPlanet;// id of 1, Earth, 1,
+    private Planet existingPlanet2;// id of 1, Earth, 1,
     private Planet uniqueNamePlanet;// id of 2
     private Planet singleCharNamePlanet;// id of 3
     private Planet nameToLongPlanet;// id of 4
@@ -33,6 +34,10 @@ public class PlanetServiceTest {
         existingPlanet.setPlanetId(1);
         existingPlanet.setPlanetName("Earth");
         existingPlanet.setOwnerId(1);
+        existingPlanet2 = new Planet();
+        existingPlanet2.setPlanetId(1);
+        existingPlanet2.setPlanetName("Earth");
+        existingPlanet2.setOwnerId(1);
         uniqueNamePlanet = new Planet();
         uniqueNamePlanet.setPlanetId(2);
         uniqueNamePlanet.setPlanetName("Amphitrite Euphrosyne Virginia");
@@ -75,10 +80,6 @@ public class PlanetServiceTest {
      }
 
      @Test
-     @Ignore
-     public void selectAllPlanetsNegativeTest(){}
-
-     @Test
      public void selectPlanetByIDPositiveTest(){
         Mockito.when(dao.readPlanet(existingPlanet.getPlanetId())).thenReturn(Optional.of(existingPlanet));
         Assert.assertEquals(existingPlanet, service.selectPlanet(existingPlanet.getPlanetId()));
@@ -109,17 +110,18 @@ public class PlanetServiceTest {
      }
 
      @Test
+     public void selectPlanetNegativeInvalidIdentifierTest(){
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.selectPlanet(uniqueNamePlanet);});
+        Assert.assertEquals("identifier must be an Integer or String", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).readPlanet(uniqueNamePlanet.getPlanetName());
+     }
+
+     @Test
      public void selectPlanetByOwnerPositiveTest(){
         List<Planet> planetList = new ArrayList<>(Arrays.asList(existingPlanet, uniqueNamePlanet, singleCharNamePlanet));
         Mockito.when(dao.readPlanetsByOwner(1)).thenReturn(planetList.subList(1,2));
         Assert.assertEquals(planetList.subList(1, 2), service.selectByOwner(1));
         Mockito.verify(dao).readPlanetsByOwner(1);
-     }
-
-     @Test
-     @Ignore
-     public void selectPlanetByOwnerNegativeTest(){
-
      }
 
      @Test
@@ -149,7 +151,6 @@ public class PlanetServiceTest {
         Mockito.verify(dao).createPlanet(uniqueNamePlanet);
      }
 
-
      @Test
      public void createPlanetNegativeNoNameTest(){
         Mockito.when(dao.readPlanet(noNamePlanet.getPlanetName())).thenReturn(Optional.empty());
@@ -175,6 +176,13 @@ public class PlanetServiceTest {
      }
 
      @Test
+     public void createPlanetNegativeFailedToCreateTest(){
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(existingPlanet);});
+        Assert.assertEquals("Planet creation failed, please try again", e.getMessage());
+        Mockito.verify(dao).createPlanet(existingPlanet);
+     }
+
+     @Test
      public void updatePlanetPositiveTest(){
         Mockito.when(dao.readPlanet(existingPlanet.getPlanetId())).thenReturn(Optional.of(existingPlanet));
         Mockito.when(dao.updatePlanet(existingPlanet)).thenReturn(Optional.of(existingPlanet));
@@ -185,36 +193,72 @@ public class PlanetServiceTest {
      
      @Test
      public void updatePlanetPositiveNameWithMinimumCharactersTest(){
-        Mockito.when(dao.readPlanet(existingPlanet.getPlanetId())).thenReturn(Optional.of(existingPlanet));
-        Mockito.when(dao.updatePlanet(singleCharNamePlanet)).thenReturn(Optional.of(existingPlanet));
-        Assert.assertEquals(existingPlanet, service.updatePlanet(existingPlanet));
-        Mockito.verify(dao).readPlanet(existingPlanet.getPlanetId());
-        Mockito.verify(dao).updatePlanet(existingPlanet);
+        Mockito.when(dao.readPlanet(singleCharNamePlanet.getPlanetId())).thenReturn(Optional.of(singleCharNamePlanet));
+        Mockito.when(dao.updatePlanet(singleCharNamePlanet)).thenReturn(Optional.of(singleCharNamePlanet));
+        Assert.assertEquals(singleCharNamePlanet, service.updatePlanet(singleCharNamePlanet));
+        Mockito.verify(dao).readPlanet(singleCharNamePlanet.getPlanetId());
+        Mockito.verify(dao).updatePlanet(singleCharNamePlanet);
      }
      
      @Test
      public void updatePlanetPositiveNameWithMaximumCharactersTest(){
-        
+        Mockito.when(dao.readPlanet(uniqueNamePlanet.getPlanetId())).thenReturn(Optional.of(uniqueNamePlanet));
+        Mockito.when(dao.updatePlanet(uniqueNamePlanet)).thenReturn(Optional.of(uniqueNamePlanet));
+        Assert.assertEquals(uniqueNamePlanet, service.updatePlanet(uniqueNamePlanet));
+        Mockito.verify(dao).readPlanet(uniqueNamePlanet.getPlanetId());
+        Mockito.verify(dao).updatePlanet(uniqueNamePlanet);
      }
 
      @Test
-     public void updatePlanetNegativeNoNameTest(){}
+     public void updatePlanetNegativeNoNameTest(){
+        Mockito.when(dao.readPlanet(noNamePlanet.getPlanetId())).thenReturn(Optional.empty());
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(noNamePlanet);});
+        Assert.assertEquals("Planet not found, could not update", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).updatePlanet(noNamePlanet);
+     }
 
      @Test
-     public void updatePlanetNegativeNameWithTooManyCharactersTest(){}
+     public void updatePlanetNegativeNameWithTooManyCharactersTest(){
+        Mockito.when(dao.readPlanet(nameToLongPlanet.getPlanetId())).thenReturn(Optional.of(nameToLongPlanet));
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(nameToLongPlanet);});
+        Assert.assertEquals("Planet name must be between 1 and 30 characters, could not update", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).updatePlanet(nameToLongPlanet);
+     }
      
      @Test
-     public void updatePlanetNegativeNonUniqueNameTest(){}
+     public void updatePlanetNegativeNonUniqueNameTest(){
+        Mockito.when(dao.readPlanet(existingPlanet2.getPlanetId())).thenReturn(Optional.of(existingPlanet));
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(existingPlanet2);});
+        Assert.assertEquals("Planet name must be unique, could not update", e.getMessage());
+        Mockito.verify(dao).readPlanet(existingPlanet2.getPlanetId());
+        Mockito.verify(dao).updatePlanet(existingPlanet2);
+     }
 
      @Test
-     public void deletePlanetByIDPositveTest(){}
+     public void deletePlanetByIDPositveTest(){
+        Mockito.when(dao.deletePlanet(existingPlanet.getPlanetId())).thenReturn(true);
+        Assert.assertEquals("Planet deleted successfully", service.deletePlanet(existingPlanet.getPlanetId()));
+        Mockito.verify(dao).deletePlanet(existingPlanet.getPlanetId());
+     }
 
      @Test
-     public void deletePlanetByIDNegativeTest(){}
+     public void deletePlanetByNamePositveTest(){
+        Mockito.when(dao.deletePlanet(existingPlanet.getPlanetName())).thenReturn(true);
+        Assert.assertEquals("Planet deleted successfully", service.deletePlanet(existingPlanet.getPlanetName()));
+        Mockito.verify(dao).deletePlanet(existingPlanet.getPlanetName());
+     }
 
      @Test
-     public void deletePlanetByNamePositveTest(){}
+     public void deletePlanetNegativeInvalidIdentifierTest(){
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.deletePlanet(existingPlanet);});
+        Assert.assertEquals("identifier must be an Integer or String", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).deletePlanet(existingPlanet.getPlanetName());
+     }
 
      @Test
-     public void deletePlanetByNameNegativeTest(){}
+     public void deletePlanetNegativeNotFoundTest(){
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.deletePlanet(uniqueNamePlanet.getPlanetName());});
+        Assert.assertEquals("Planet delete failed, please try again", e.getMessage());
+        Mockito.verify(dao).deletePlanet(uniqueNamePlanet.getPlanetName());
+     }
 }

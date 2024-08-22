@@ -4,7 +4,7 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
-import java.lang.classfile.ClassFile.Option;
+//import java.lang.classfile.ClassFile.Option;
 import java.util.Optional;
 
 import org.junit.After;
