@@ -228,9 +228,11 @@ public class PlanetServiceTest {
      @Test
      public void updatePlanetNegativeNonUniqueNameTest(){
         Mockito.when(dao.readPlanet(existingPlanet2.getPlanetId())).thenReturn(Optional.of(existingPlanet));
+        Mockito.when(dao.readPlanet(existingPlanet2.getPlanetName())).thenReturn(Optional.of(existingPlanet));
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(existingPlanet2);});
         Assert.assertEquals("Planet name must be unique, could not update", e.getMessage());
         Mockito.verify(dao).readPlanet(existingPlanet2.getPlanetId());
+        Mockito.verify(dao).readPlanet(existingPlanet2.getPlanetName());
         Mockito.verify(dao).updatePlanet(existingPlanet2);
      }
 
