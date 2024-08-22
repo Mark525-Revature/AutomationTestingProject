@@ -4,6 +4,7 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
+import java.lang.classfile.ClassFile.Option;
 import java.util.Optional;
 
 import org.junit.After;
@@ -40,7 +41,7 @@ public class UserServiceTest {
         negativeUsernameTooLong = new User(2, "Gordon and Clark are friends!!!", "I am the night!!!");
         negativePasswordTooLong = new User(2, "Robin", "Reverse Flash strikes again!!!!");
         userAlreadyRegistered = new User(2, "Batman", "I am the night!!!");
-        negativeAuthenticateUserPasswordIncorect = new User(2, "Robin", "I am the day!!!");
+        negativeAuthenticateUserPasswordIncorect = new User(2, "Batman", "I am the day!!!");
 
     }
     @Test
@@ -85,8 +86,11 @@ public class UserServiceTest {
     }
     @Test
     public void authenticateNegative(){
-        Mockito.when(userDao.findUserByUsername(negativeAuthenticateUserPasswordIncorect.getUsername())).thenReturn(Optional.of(negativeAuthenticateUserPasswordIncorect));
-        assertSame(negativeAuthenticateUserPasswordIncorect, userService.authenticate(negativeAuthenticateUserPasswordIncorect));
+        Mockito.when(userDao.findUserByUsername(negativeAuthenticateUserPasswordIncorect.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
+        UserFail e = assertThrows(UserFail.class, () -> {
+            userService.authenticate(negativeAuthenticateUserPasswordIncorect);
+        });
+        Assert.assertEquals("Username and/or password do not match", e.getMessage());
         Mockito.verify(userDao).findUserByUsername(negativeAuthenticateUserPasswordIncorect.getUsername());
     }
 
