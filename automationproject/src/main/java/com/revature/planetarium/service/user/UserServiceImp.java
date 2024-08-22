@@ -43,7 +43,7 @@ public class UserServiceImp implements UserService {
                 return foundUser.get();
             }
         }
-        throw new UserFail("Username and/or password do not match");
+        throw new UserFail("Username a nd/or password do not match");
     }
 
 }
