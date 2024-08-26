@@ -4,9 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
-
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,7 +30,7 @@ public class UserDaoTest {
     
 
     @Before
-    public void setUp() throws InterruptedException {
+    public void setUp(){
         Setup.resetTestDatabase();
 		dao = new UserDaoImp();
         newUser = new User(2, "Robin", "I am the night!!!");
@@ -44,11 +42,16 @@ public class UserDaoTest {
         usernameRegistered = "Batman";
         usernameNotRegistered = "Robin";
     }
+    
+    @After
+    public void tearDown(){}
+
     @Test
     public void createUser(){
         User result = dao.createUser(newUser).get();
         assertEquals(newUser, result);
     }
+
     @Test
     public void createUserNegativeNonUniqueUsername(){
         Exception exception = assertThrows(UserFail.class, () -> {
@@ -57,6 +60,7 @@ public class UserDaoTest {
         actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
     }
+
     @Test
     public void createUserNegativeTooLongUsername(){
         Exception exception = assertThrows(UserFail.class, () -> {
@@ -65,6 +69,7 @@ public class UserDaoTest {
         actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
     }
+
     @Test
     public void createUserNegativeTooLongPassword(){
         Exception exception = assertThrows(UserFail.class, () -> {
@@ -73,6 +78,7 @@ public class UserDaoTest {
         actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
     }
+
     @Test
     public void createUserNegativeTooLongUsernameAndPassword(){
         Exception exception = assertThrows(UserFail.class, () -> {
@@ -86,13 +92,9 @@ public class UserDaoTest {
     public void findUserByUsernamePositive(){
         assertTrue(dao.findUserByUsername(usernameRegistered).isPresent());
     }
+
     @Test
     public void findUserByUsernameNegative(){
         assertFalse(dao.findUserByUsername(usernameNotRegistered).isPresent());
-    }
-
-    @After
-    public void tearDown(){
-        //app.stop();
     }
 }

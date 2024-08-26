@@ -1,18 +1,14 @@
 package com.revature.service;
 
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThrows;
-import static org.junit.Assert.assertTrue;
-
-//import java.lang.classfile.ClassFile.Option;
 import java.util.Optional;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
 import org.mockito.Mockito;
-
 import com.revature.Setup;
 import com.revature.planetarium.entities.User;
 import com.revature.planetarium.exceptions.UserFail;
@@ -42,14 +38,19 @@ public class UserServiceTest {
         negativePasswordTooLong = new User(2, "Robin", "Reverse Flash strikes again!!!!");
         userAlreadyRegistered = new User(2, "Batman", "I am the night!!!");
         negativeAuthenticateUserPasswordIncorect = new User(2, "Batman", "I am the day!!!");
-
+        
     }
+
+    @After
+    public void tearDown(){}
+
     @Test
     public void createUserPositive(){
         Mockito.when(userDao.createUser(positiveCreatedUser)).thenReturn(Optional.of(positiveCreatedUser));
         assertTrue(userService.createUser(positiveCreatedUser).contains("Created user with username Robin and password I am the night!!!"));
         Mockito.verify(userDao).createUser(positiveCreatedUser);
     }
+
     @Test
     public void createUserNegativeTooLongUsername(){
         Mockito.when(userDao.createUser(negativeUsernameTooLong)).thenReturn(Optional.empty());
@@ -59,6 +60,7 @@ public class UserServiceTest {
         Assert.assertEquals("Username must be between 1 and 30 characters", e.getMessage());
         Mockito.verify(userDao, Mockito.never()).createUser(negativeUsernameTooLong);
     }
+
     @Test
     public void createUserNegativeTooPassword(){
         Mockito.when(userDao.createUser(negativePasswordTooLong)).thenReturn(Optional.empty());
@@ -68,6 +70,7 @@ public class UserServiceTest {
         Assert.assertEquals("Password must be between 1 and 30 characters", e.getMessage());
         Mockito.verify(userDao, Mockito.never()).createUser(negativePasswordTooLong);
     }
+
     @Test
     public void createUserNegativNonUniqueUsername(){
         Mockito.when(userDao.findUserByUsername(userAlreadyRegistered.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
@@ -78,12 +81,14 @@ public class UserServiceTest {
         Assert.assertEquals("Username is already in use", e.getMessage());
         Mockito.verify(userDao, Mockito.never()).createUser(userAlreadyRegistered);
     }
+
     @Test
     public void authenticatePositive(){
         Mockito.when(userDao.findUserByUsername(userAlreadyRegistered.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
         assertSame(userAlreadyRegistered, userService.authenticate(userAlreadyRegistered));
         Mockito.verify(userDao).findUserByUsername(userAlreadyRegistered.getUsername());
     }
+    
     @Test
     public void authenticateNegative(){
         Mockito.when(userDao.findUserByUsername(negativeAuthenticateUserPasswordIncorect.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
@@ -94,8 +99,4 @@ public class UserServiceTest {
         Mockito.verify(userDao).findUserByUsername(negativeAuthenticateUserPasswordIncorect.getUsername());
     }
 
-    @After
-    public void tearDown(){
-       // app.stop();
-    }
 }

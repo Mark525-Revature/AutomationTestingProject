@@ -1,15 +1,6 @@
 package com.revature.service;
 
-import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,26 +9,15 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.Setup;
 import com.revature.planetarium.entities.Moon;
-import com.revature.planetarium.entities.Planet;
 import com.revature.planetarium.exceptions.MoonFail;
-import com.revature.planetarium.exceptions.PlanetFail;
 import com.revature.planetarium.repository.moon.MoonDao;
-import com.revature.planetarium.repository.moon.MoonDaoImp;
 import com.revature.planetarium.service.moon.MoonService;
 import com.revature.planetarium.service.moon.MoonServiceImp;
 
-import io.javalin.Javalin;
-
 public class MoonServiceTest {
-    
-    // HttpClient webClient;
-    // ObjectMapper objectMapper;
-    // Javalin app;
 
     private MoonDao moonDao;
     private MoonService<Object> moonService;
@@ -49,10 +29,6 @@ public class MoonServiceTest {
     @Before
     public void setUp() throws InterruptedException {
         Setup.resetTestDatabase();
-        // webClient = HttpClient.newHttpClient();
-        // objectMapper = new ObjectMapper();
-        // app.start(8080);
-        // Thread.sleep(1000);
         moonDao = Mockito.mock(MoonDao.class);
         moonService = new MoonServiceImp<>(moonDao);
         positiveCreatedMoon = new Moon(4,"waxing crescent gibbous Moon1!",1);
@@ -61,9 +37,7 @@ public class MoonServiceTest {
         existingMoon = new Moon(2,"Titan",2);
     }
     @After
-    public void tearDown(){
-        // app.stop();
-    }
+    public void tearDown(){}
 
     @Test
     public void createMoonPositive(){
