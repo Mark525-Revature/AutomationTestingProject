@@ -1,14 +1,16 @@
 package com.revature.service;
 
+import static org.mockito.Mockito.never;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-
+import java.util.Base64;
+import java.nio.file.*;
+import java.io.IOException;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 import com.revature.Setup;
@@ -27,8 +29,12 @@ public class PlanetServiceTest {
     private Planet noNamePlanet;// id of 5
     private PlanetDao dao;
     private PlanetService<Object> service;
+    private String base64String;
+    Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", "planet-1.jpg");
+    byte[] fileContent;
+
     @Before
-    public void setUp() throws InterruptedException {
+    public void setUp() throws IOException {
         Setup.resetTestDatabase();
         existingPlanet = new Planet();
         existingPlanet.setPlanetId(1);
@@ -56,7 +62,10 @@ public class PlanetServiceTest {
         noNamePlanet.setOwnerId(1);
         dao = Mockito.mock(PlanetDaoImp.class);
         service = new PlanetServiceImp<>(dao);
+        fileContent = Files.readAllBytes(filePath);
+        base64String = Base64.getEncoder().encodeToString(fileContent);
     }
+
     @After
     public void tearDown(){}
 
@@ -134,7 +143,27 @@ public class PlanetServiceTest {
      }
 
      @Test
+     public void createPlanetPositiveWithImageTest(){
+      existingPlanet.setImageData(base64String);
+      Mockito.when(dao.readPlanet(existingPlanet.getPlanetName())).thenReturn(Optional.empty());
+      Mockito.when(dao.createPlanet(existingPlanet)).thenReturn(Optional.of(existingPlanet));
+      Assert.assertSame(existingPlanet, service.createPlanet(existingPlanet));
+      Mockito.verify(dao).readPlanet(existingPlanet.getPlanetName());
+      Mockito.verify(dao).createPlanet(existingPlanet);
+   }
+
+     @Test
      public void createPlanetPositiveNameWithMinimumCharactersTest(){
+        Mockito.when(dao.readPlanet(singleCharNamePlanet.getPlanetName())).thenReturn(Optional.empty());
+        Mockito.when(dao.createPlanet(singleCharNamePlanet)).thenReturn(Optional.of(singleCharNamePlanet));
+        Assert.assertSame(singleCharNamePlanet, service.createPlanet(singleCharNamePlanet));
+        Mockito.verify(dao).readPlanet(singleCharNamePlanet.getPlanetName());
+        Mockito.verify(dao).createPlanet(singleCharNamePlanet);
+     }
+
+     @Test
+     public void createPlanetPositiveNameWithMinimumCharactersWithImageTest(){
+        singleCharNamePlanet.setImageData(base64String);
         Mockito.when(dao.readPlanet(singleCharNamePlanet.getPlanetName())).thenReturn(Optional.empty());
         Mockito.when(dao.createPlanet(singleCharNamePlanet)).thenReturn(Optional.of(singleCharNamePlanet));
         Assert.assertSame(singleCharNamePlanet, service.createPlanet(singleCharNamePlanet));
@@ -152,7 +181,26 @@ public class PlanetServiceTest {
      }
 
      @Test
+     public void createPlanetNameWithMaximumCharactersWithImageTest(){
+        uniqueNamePlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(uniqueNamePlanet.getPlanetName())).thenReturn(Optional.empty());
+        Mockito.when(dao.createPlanet(uniqueNamePlanet)).thenReturn(Optional.of(uniqueNamePlanet));
+        Assert.assertSame(uniqueNamePlanet, service.createPlanet(uniqueNamePlanet));
+        Mockito.verify(dao).readPlanet(uniqueNamePlanet.getPlanetName());
+        Mockito.verify(dao).createPlanet(uniqueNamePlanet);
+     }
+
+     @Test
      public void createPlanetNegativeNoNameTest(){
+        Mockito.when(dao.readPlanet(noNamePlanet.getPlanetName())).thenReturn(Optional.empty());
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(noNamePlanet);});
+        Assert.assertEquals("Planet name must be between 1 and 30 characters", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).createPlanet(noNamePlanet);
+     }
+
+     @Test
+     public void createPlanetNegativeNoNameWithImageTest(){
+        noNamePlanet.setImageData(base64String);
         Mockito.when(dao.readPlanet(noNamePlanet.getPlanetName())).thenReturn(Optional.empty());
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(noNamePlanet);});
         Assert.assertEquals("Planet name must be between 1 and 30 characters", e.getMessage());
@@ -166,9 +214,25 @@ public class PlanetServiceTest {
         Assert.assertEquals("Planet name must be between 1 and 30 characters", e.getMessage());
         Mockito.verify(dao, Mockito.never()).createPlanet(nameToLongPlanet);
      }
-     
+     @Test
+     public void createPlanetNegativeNameWithTooManyCharactersWithImageTest(){
+        nameToLongPlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(nameToLongPlanet.getPlanetName())).thenReturn(Optional.empty());
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(nameToLongPlanet);});
+        Assert.assertEquals("Planet name must be between 1 and 30 characters", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).createPlanet(nameToLongPlanet);
+     }
+
      @Test
      public void createPlanetNegativeNonUniqueNameTest(){
+        Mockito.when(dao.readPlanet(existingPlanet.getPlanetName())).thenReturn(Optional.of(existingPlanet));
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(existingPlanet);});
+        Assert.assertEquals("Planet name must be unique", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).createPlanet(existingPlanet);
+     }
+     @Test
+     public void createPlanetNegativeNonUniqueNameWithImageTest(){
+        existingPlanet.setImageData(base64String);
         Mockito.when(dao.readPlanet(existingPlanet.getPlanetName())).thenReturn(Optional.of(existingPlanet));
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(existingPlanet);});
         Assert.assertEquals("Planet name must be unique", e.getMessage());
@@ -177,6 +241,14 @@ public class PlanetServiceTest {
 
      @Test
      public void createPlanetNegativeFailedToCreateTest(){
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(existingPlanet);});
+        Assert.assertEquals("Planet creation failed, please try again", e.getMessage());
+        Mockito.verify(dao).createPlanet(existingPlanet);
+     }
+
+     @Test
+     public void createPlanetNegativeFailedToCreateWithImageTest(){
+        existingPlanet.setImageData(base64String);
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.createPlanet(existingPlanet);});
         Assert.assertEquals("Planet creation failed, please try again", e.getMessage());
         Mockito.verify(dao).createPlanet(existingPlanet);
@@ -192,6 +264,16 @@ public class PlanetServiceTest {
      }
      
      @Test
+     public void updatePlanetPositiveWithImageTest(){
+        existingPlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(existingPlanet.getPlanetId())).thenReturn(Optional.of(existingPlanet));
+        Mockito.when(dao.updatePlanet(existingPlanet)).thenReturn(Optional.of(existingPlanet));
+        Assert.assertEquals(existingPlanet, service.updatePlanet(existingPlanet));
+        Mockito.verify(dao).readPlanet(existingPlanet.getPlanetId());
+        Mockito.verify(dao).updatePlanet(existingPlanet);
+     }
+
+     @Test
      public void updatePlanetPositiveNameWithMinimumCharactersTest(){
         Mockito.when(dao.readPlanet(singleCharNamePlanet.getPlanetId())).thenReturn(Optional.of(singleCharNamePlanet));
         Mockito.when(dao.updatePlanet(singleCharNamePlanet)).thenReturn(Optional.of(singleCharNamePlanet));
@@ -201,7 +283,27 @@ public class PlanetServiceTest {
      }
      
      @Test
+     public void updatePlanetPositiveNameWithMinimumCharactersWithImageTest(){
+        singleCharNamePlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(singleCharNamePlanet.getPlanetId())).thenReturn(Optional.of(singleCharNamePlanet));
+        Mockito.when(dao.updatePlanet(singleCharNamePlanet)).thenReturn(Optional.of(singleCharNamePlanet));
+        Assert.assertEquals(singleCharNamePlanet, service.updatePlanet(singleCharNamePlanet));
+        Mockito.verify(dao).readPlanet(singleCharNamePlanet.getPlanetId());
+        Mockito.verify(dao).updatePlanet(singleCharNamePlanet);
+     }
+
+     @Test
      public void updatePlanetPositiveNameWithMaximumCharactersTest(){
+        Mockito.when(dao.readPlanet(uniqueNamePlanet.getPlanetId())).thenReturn(Optional.of(uniqueNamePlanet));
+        Mockito.when(dao.updatePlanet(uniqueNamePlanet)).thenReturn(Optional.of(uniqueNamePlanet));
+        Assert.assertEquals(uniqueNamePlanet, service.updatePlanet(uniqueNamePlanet));
+        Mockito.verify(dao).readPlanet(uniqueNamePlanet.getPlanetId());
+        Mockito.verify(dao).updatePlanet(uniqueNamePlanet);
+     }
+
+     @Test
+     public void updatePlanetPositiveNameWithMaximumCharactersWithImageTest(){
+        uniqueNamePlanet.setImageData(base64String);
         Mockito.when(dao.readPlanet(uniqueNamePlanet.getPlanetId())).thenReturn(Optional.of(uniqueNamePlanet));
         Mockito.when(dao.updatePlanet(uniqueNamePlanet)).thenReturn(Optional.of(uniqueNamePlanet));
         Assert.assertEquals(uniqueNamePlanet, service.updatePlanet(uniqueNamePlanet));
@@ -218,6 +320,15 @@ public class PlanetServiceTest {
      }
 
      @Test
+     public void updatePlanetNegativeNoNameWithImageTest(){
+        noNamePlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(noNamePlanet.getPlanetId())).thenReturn(Optional.empty());
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(noNamePlanet);});
+        Assert.assertEquals("Planet not found, could not update", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).updatePlanet(noNamePlanet);
+     }
+
+     @Test
      public void updatePlanetNegativeNameWithTooManyCharactersTest(){
         Mockito.when(dao.readPlanet(nameToLongPlanet.getPlanetId())).thenReturn(Optional.of(nameToLongPlanet));
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(nameToLongPlanet);});
@@ -226,14 +337,31 @@ public class PlanetServiceTest {
      }
      
      @Test
+     public void updatePlanetNegativeNameWithTooManyCharactersWithImageTest(){
+        nameToLongPlanet.setImageData(base64String);
+        Mockito.when(dao.readPlanet(nameToLongPlanet.getPlanetId())).thenReturn(Optional.of(nameToLongPlanet));
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(nameToLongPlanet);});
+        Assert.assertEquals("Planet name must be between 1 and 30 characters, could not update", e.getMessage());
+        Mockito.verify(dao, Mockito.never()).updatePlanet(nameToLongPlanet);
+     }
+
+     @Test
      public void updatePlanetNegativeNonUniqueNameTest(){
         Mockito.when(dao.readPlanet(existingPlanet2.getPlanetId())).thenReturn(Optional.of(existingPlanet));
         Mockito.when(dao.readPlanet(existingPlanet2.getPlanetName())).thenReturn(Optional.of(existingPlanet));
         PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(existingPlanet2);});
         Assert.assertEquals("Planet name must be unique, could not update", e.getMessage());
-        Mockito.verify(dao).readPlanet(existingPlanet2.getPlanetId());
-        Mockito.verify(dao).readPlanet(existingPlanet2.getPlanetName());
-        Mockito.verify(dao).updatePlanet(existingPlanet2);
+        Mockito.verify(dao, never()).updatePlanet(existingPlanet2);
+     }
+
+     @Test
+     public void updatePlanetNegativeNonUniqueNameWithImageTest(){
+        existingPlanet2.setImageData(base64String);
+        Mockito.when(dao.readPlanet(existingPlanet2.getPlanetId())).thenReturn(Optional.of(existingPlanet));
+        Mockito.when(dao.readPlanet(existingPlanet2.getPlanetName())).thenReturn(Optional.of(existingPlanet));
+        PlanetFail e = Assert.assertThrows(PlanetFail.class, () ->{service.updatePlanet(existingPlanet2);});
+        Assert.assertEquals("Planet name must be unique, could not update", e.getMessage());
+        Mockito.verify(dao, never()).updatePlanet(existingPlanet2);
      }
 
      @Test
