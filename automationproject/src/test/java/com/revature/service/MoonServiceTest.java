@@ -1,8 +1,14 @@
 package com.revature.service;
 
 import static org.mockito.Mockito.never;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 import org.junit.After;
@@ -13,6 +19,7 @@ import org.mockito.Mockito;
 import com.revature.Setup;
 import com.revature.planetarium.entities.Moon;
 import com.revature.planetarium.exceptions.MoonFail;
+import com.revature.planetarium.exceptions.PlanetFail;
 import com.revature.planetarium.repository.moon.MoonDao;
 import com.revature.planetarium.service.moon.MoonService;
 import com.revature.planetarium.service.moon.MoonServiceImp;
@@ -22,19 +29,26 @@ public class MoonServiceTest {
     private MoonDao moonDao;
     private MoonService<Object> moonService;
     private Moon positiveCreatedMoon;
+    private Moon positiveCreatedMoonShortName;
     private Moon negativeMoonNameTooShort;
     private Moon negativeMoonNameTooLong;
     private Moon existingMoon;
+    Path filePath = Paths.get("src", "test", "resources", "Celestial-Images", "moon-1.jpg");
+    private String base64String;
+    byte[] fileContent;
 
     @Before
-    public void setUp() throws InterruptedException {
+    public void setUp() throws IOException {
         Setup.resetTestDatabase();
         moonDao = Mockito.mock(MoonDao.class);
         moonService = new MoonServiceImp<>(moonDao);
         positiveCreatedMoon = new Moon(4,"waxing crescent gibbous Moon1!",1);
+        positiveCreatedMoonShortName = new Moon(4,"M",1);
         negativeMoonNameTooShort = new Moon(5,"",1);
         negativeMoonNameTooLong = new Moon(5,"waxing crescent gibbous Moon!!!",1);
         existingMoon = new Moon(2,"Titan",2);
+        fileContent = Files.readAllBytes(filePath);
+        base64String = Base64.getEncoder().encodeToString(fileContent);
     }
     @After
     public void tearDown(){}
@@ -46,6 +60,55 @@ public class MoonServiceTest {
         Assert.assertSame(positiveCreatedMoon,moonService.createMoon(positiveCreatedMoon));
         Mockito.verify(moonDao).readMoon(positiveCreatedMoon.getMoonName());
         Mockito.verify(moonDao).createMoon(positiveCreatedMoon);
+    }
+
+    @Test
+    public void createMoonPositiveWithImageTest(){
+        positiveCreatedMoon.setImageData(base64String);
+        Mockito.when(moonDao.readMoon(positiveCreatedMoon.getMoonName())).thenReturn(Optional.empty());
+        Mockito.when(moonDao.createMoon(positiveCreatedMoon)).thenReturn(Optional.of(positiveCreatedMoon));
+        Assert.assertSame(positiveCreatedMoon, moonService.createMoon(positiveCreatedMoon));
+        Mockito.verify(moonDao).readMoon(positiveCreatedMoon.getMoonName());
+        Mockito.verify(moonDao).createMoon(positiveCreatedMoon);
+    }
+
+    @Test
+    public void createMoonPositiveNameWithMinimumCharactersWithImageTest(){
+        positiveCreatedMoonShortName.setImageData(base64String);
+        Mockito.when(moonDao.readMoon(positiveCreatedMoonShortName.getMoonName())).thenReturn(Optional.empty());
+        Mockito.when(moonDao.createMoon(positiveCreatedMoonShortName)).thenReturn(Optional.of(positiveCreatedMoonShortName));
+        Assert.assertSame(positiveCreatedMoonShortName, moonService.createMoon(positiveCreatedMoonShortName));
+        Mockito.verify(moonDao).readMoon(positiveCreatedMoonShortName.getMoonName());
+        Mockito.verify(moonDao).createMoon(positiveCreatedMoonShortName);
+    }
+
+    @Test
+    public void createMoonNegativeNoNameWithImageTest(){
+        negativeMoonNameTooShort.setImageData(base64String);
+        Mockito.when(moonDao.readMoon(negativeMoonNameTooShort.getMoonName())).thenReturn(Optional.empty());
+        MoonFail e = Assert.assertThrows(MoonFail.class, () ->{moonService.createMoon(negativeMoonNameTooShort);});
+        Assert.assertEquals("Moon name must be between 1 and 30 characters", e.getMessage());
+        Mockito.verify(moonDao, Mockito.never()).createMoon(negativeMoonNameTooShort);
+    }
+
+    @Test
+    public void createMoonNegativeNameTooLongWithImageTest(){
+        negativeMoonNameTooLong.setImageData(base64String);
+        Mockito.when(moonDao.readMoon(negativeMoonNameTooLong.getMoonName())).thenReturn(Optional.empty());
+        MoonFail e = Assert.assertThrows(MoonFail.class, () ->{moonService.createMoon(negativeMoonNameTooLong);});
+        Assert.assertEquals("Moon name must be between 1 and 30 characters", e.getMessage());
+        Mockito.verify(moonDao, Mockito.never()).createMoon(negativeMoonNameTooLong);
+    }
+
+    @Test
+    public void createMoonNegativeNameTakenWithImageTest(){
+        existingMoon.setImageData(base64String);
+        Mockito.when(moonDao.readMoon(existingMoon.getMoonName())).thenReturn(Optional.of(existingMoon));
+        MoonFail e = Assert.assertThrows(MoonFail.class, () -> {
+            moonService.createMoon(existingMoon);
+        });
+        Assert.assertEquals("Moon name must be unique", e.getMessage());
+        Mockito.verify(moonDao, Mockito.never()).createMoon(existingMoon);
     }
 
     @Test
@@ -78,6 +141,21 @@ public class MoonServiceTest {
         });
         Assert.assertEquals("Moon name must be unique", e.getMessage());
         Mockito.verify(moonDao, Mockito.never()).createMoon(existingMoon);
+    }
+
+    @Test
+    public void createMoonNegativeFailedToCreate(){
+        MoonFail e = Assert.assertThrows(MoonFail.class, () ->{moonService.createMoon(existingMoon);});
+        Assert.assertEquals("Could not create new moon", e.getMessage());
+        Mockito.verify(moonDao).createMoon(existingMoon);
+    }
+
+    @Test
+    public void createMoonNegativeFailedToCreateWithImageTest(){
+        existingMoon.setImageData(base64String);
+        MoonFail e = Assert.assertThrows(MoonFail.class, () ->{moonService.createMoon(existingMoon);});
+        Assert.assertEquals("Could not create new moon", e.getMessage());
+        Mockito.verify(moonDao).createMoon(existingMoon);
     }
 
     // misc moon creation failure method??
