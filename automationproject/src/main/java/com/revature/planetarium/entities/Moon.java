@@ -38,7 +38,15 @@ public class Moon {
         this.ownerId = ownerId;
     }
     public void setImageData(String base64ImageData){
-        imageData = Base64.getDecoder().decode(base64ImageData);
+        if (base64ImageData != null) {
+            try {
+                this.imageData = Base64.getDecoder().decode(base64ImageData);
+            } catch (IllegalArgumentException e) {
+                this.imageData = null; 
+            }
+        } else {
+            this.imageData = null;
+        }
     }
 
     public String getImageData(){
