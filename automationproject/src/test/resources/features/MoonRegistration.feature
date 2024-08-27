@@ -12,7 +12,7 @@ Feature: MoonRegistration
 
 	Examples: 
 		| Valid Moon Name                | Valid Planet ID Number |
-		| waxing crescent gibbous Moon!! | 1                      |
+		| waxing crescent gibbous Moon!1 | 1                      |
 
 	@SCRUM-TC-21 @JREQ-SCRUM-36
 	Scenario Outline: Moon Registration Valid Moon name with valid Planet ID and picture

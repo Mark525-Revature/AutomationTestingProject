@@ -77,7 +77,7 @@ Feature: PlanetRegistration
 
 	Examples: 
 		| Valid Planet name              | Picture for Planets |
-		| thisisaveryverylongplanetname1 | planet-1.jpg        |
+		| thisisaveryverylongplanetname2 | planet-1.jpg        |
 
 	@SCRUM-TC-39 @JREQ-SCRUM-70
 	Scenario: Planet Registration Negative Scenario Null planet name without picture
