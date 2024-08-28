@@ -265,7 +265,11 @@
         async function createPlanet(){
             let planetName = document.getElementById('planetNameInput').value;
             let planetImageInput = document.getElementById('planetImageInput');
-            let imageData = await convertToBase64(planetImageInput);
+            let imageData = null;
+
+            if (planetImageInput.files.length > 0) {
+                imageData = await convertToBase64(planetImageInput);
+            }
             const bodyData = {
                     "planetName": planetName,
                     "ownerId": sessionStorage.getItem("userId"),
@@ -285,7 +289,7 @@
                 if (response.status === 201) {
                     populateCelestialTable();
                 } else {
-                    alert("Something went wrong, please try again");
+                    alert("Something went wrong with creating the planet, please try again");
                 }  
         }
 
@@ -293,7 +297,11 @@
             let moonName = document.getElementById('moonNameInput').value;
             let orbitedPlanet = document.getElementById('orbitedPlanetInput').value;
             let moonImageInput = document.getElementById('moonImageInput');
-            let imageData = await convertToBase64(moonImageInput);
+            let imageData = null;
+
+            if (moonImageInput.files.length > 0) {
+                imageData = await convertToBase64(moonImageInput);
+            }
             const bodyData = {
                 moonName: moonName,
                 ownerId: orbitedPlanet,
@@ -313,7 +321,7 @@
             if (response.status === 201) {
                 populateCelestialTable();
             } else {
-                alert("Something went wrong, please try again");
+                alert("Something went wrong with creating the moon, please try again");
             }             
         }
        
