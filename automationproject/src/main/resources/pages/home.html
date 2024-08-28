@@ -265,7 +265,7 @@
         async function createPlanet(){
             let planetName = document.getElementById('planetNameInput').value;
             let planetImageInput = document.getElementById('planetImageInput');
-            let imageData = null;
+            let imageData = 'null';
 
             if (planetImageInput.files.length > 0) {
                 imageData = await convertToBase64(planetImageInput);
@@ -297,7 +297,7 @@
             let moonName = document.getElementById('moonNameInput').value;
             let orbitedPlanet = document.getElementById('orbitedPlanetInput').value;
             let moonImageInput = document.getElementById('moonImageInput');
-            let imageData = null;
+            let imageData = 'null';
 
             if (moonImageInput.files.length > 0) {
                 imageData = await convertToBase64(moonImageInput);
