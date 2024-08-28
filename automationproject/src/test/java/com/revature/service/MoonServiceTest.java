@@ -19,7 +19,6 @@ import org.mockito.Mockito;
 import com.revature.Setup;
 import com.revature.planetarium.entities.Moon;
 import com.revature.planetarium.exceptions.MoonFail;
-import com.revature.planetarium.exceptions.PlanetFail;
 import com.revature.planetarium.repository.moon.MoonDao;
 import com.revature.planetarium.service.moon.MoonService;
 import com.revature.planetarium.service.moon.MoonServiceImp;

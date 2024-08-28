@@ -109,7 +109,7 @@
 
         async function populateCelestialTable() {
         document.getElementById('celestialTable').innerHTML = '<tr><th>Type</th><th>ID</th><th>Name</th><th>Owner</th></tr>';
-        const response = await fetch('http://localhost:8080/planetarium/planet', {credentials: 'include'});
+        const response = await fetch('http://localhost:8081/planetarium/planet', {credentials: 'include'});//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/planetarium/planet
         if (response.ok) {
             const data = await response.json();
             console.log(data);
@@ -130,8 +130,8 @@
                 imageCell.appendChild(planetImageElement);
 
             });
-        }
-        const moonResponse = await fetch('http://localhost:8080/planetarium/moon', {credentials: 'include'});
+        }//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/planetarium/moon
+        const moonResponse = await fetch('http://localhost:8081/planetarium/moon', {credentials: 'include'});
             if (moonResponse.ok) {
                 const moonData = await moonResponse.json();
                 console.log(moonData);
@@ -160,9 +160,9 @@
 
             let url;
             if (selectedOption === 'moon') {
-                url = `http://localhost:8080/planetarium/moon/${identifier}`;
+                url = `http://localhost:8081/planetarium/moon/${identifier}`;//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/planetarium/moon/${identifier}
             } else if (selectedOption === 'planet') {
-                url = `http://localhost:8080/planetarium/planet/${identifier}`;
+                url = `http://localhost:8081/planetarium/planet/${identifier}`;//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/planetarium/planet/${identifier}
             } else {
                 alert('Invalid selection: choose moon or planet to delete');
                 return;
@@ -178,12 +178,12 @@
             }
         }
 
-        async function logout() {
-            const response = await fetch('http://localhost:8080/logout', {method: "POST", credentials: 'include'});
+        async function logout() {//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/logout
+            const response = await fetch('http://localhost:8081/logout', {method: "POST", credentials: 'include'});
             if (response.status === 401) {
                 sessionStorage.removeItem("user");
                 sessionStorage.removeItem("userId");
-                window.location.replace("http://localhost:8080");            
+                window.location.replace("http://localhost:8081");//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081          
             } else {
                 alert("Something went wrong, please try again");
             }
@@ -275,8 +275,8 @@
                 const headersList = {
                     "Accept": "*/*",
                     "Content-Type": "application/json"
-                }
-                const response = await fetch('http://localhost:8080/planetarium/planet', {
+                }//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/planetarium/planet
+                const response = await fetch('http://localhost:8081/planetarium/planet', {
                     method: 'POST',
                     body: bodyJson,
                     headers: headersList,
@@ -303,8 +303,8 @@
             const headersList = {
                 "Accept": "*/*",
                 "Content-Type": "application/json"
-            }
-            const response = await fetch('http://localhost:8080/planetarium/moon', {
+            }//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/register
+            const response = await fetch('http://localhost:8081/planetarium/moon', {
                 method: 'POST',
                 body: bodyJson,
                 headers: headersList,
@@ -374,8 +374,8 @@
     //     document.body.style.backgroundSize = `${viewportWidth}px auto`;
     // });
 
-    // Call the function with the URL of the image
-    setBackgroundImageWithScrolling('http://localhost:8080/background');
+    // Call the function with the URL of the image//http://ec2-50-16-13-137.compute-1.amazonaws.com:8081/background
+    setBackgroundImageWithScrolling('http://localhost:8081/background');
 </script>
     </script>
 </body>

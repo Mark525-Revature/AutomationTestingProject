@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
-import org.sqlite.SQLiteConfig;
+//import org.sqlite.SQLiteConfig;
 
 public class Setup {
     public static void main(String[] args) {
@@ -14,10 +14,14 @@ public class Setup {
     }
 
     public static Connection getConnection() throws SQLException {
-        SQLiteConfig config = new SQLiteConfig();
+        /* SQLiteConfig config = new SQLiteConfig();
         config.enforceForeignKeys(true);
         String url = System.getenv("PLANETARIUM");
-        return DriverManager.getConnection(url, config.toProperties());
+        return DriverManager.getConnection(url, config.toProperties()); */
+        String user = "postgres1";
+        String password = "trng2010rds1";
+        String url = "jdbc:postgresql://trng2010-rds-1.chueiwozbnfz.us-east-1.rds.amazonaws.com:5432/postgres";
+        return DriverManager.getConnection(url, user, password);
     }
 
     public static byte[] convertImgToByteArray(String filePath) throws IOException {
