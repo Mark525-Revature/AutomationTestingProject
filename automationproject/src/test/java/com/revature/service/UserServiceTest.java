@@ -21,10 +21,16 @@ public class UserServiceTest {
     private UserDao userDao;
     private UserService userService;
     private User positiveCreatedUser;
+    private User positiveCreatedUserSingleCharUsername;
+    private User positiveCreatedUserSingleCharPassword;
+    private User positiveCreatedUserSingleCharUsernameAndPassword;
     private User negativeUsernameTooLong;
     private User negativePasswordTooLong;
     private User userAlreadyRegistered;
     private User negativeAuthenticateUserPasswordIncorect;
+    private User negativeNullUsername;
+    private User negativeNullPassword;
+    private User negativeNullUsernameAndPassword;
 
     
 
@@ -34,11 +40,16 @@ public class UserServiceTest {
         userDao = Mockito.mock(UserDao.class);
         userService = new UserServiceImp((userDao));
         positiveCreatedUser = new User(2, "Robin", "I am the night!!!");
+        positiveCreatedUserSingleCharUsername = new User(2, "R", "I am the night!!!");
+        positiveCreatedUserSingleCharPassword = new User(2, "Robin", "I");
+        positiveCreatedUserSingleCharUsernameAndPassword = new User(2, "R", "I");
         negativeUsernameTooLong = new User(2, "Gordon and Clark are friends!!!", "I am the night!!!");
         negativePasswordTooLong = new User(2, "Robin", "Reverse Flash strikes again!!!!");
         userAlreadyRegistered = new User(2, "Batman", "I am the night!!!");
         negativeAuthenticateUserPasswordIncorect = new User(2, "Batman", "I am the day!!!");
-        
+        negativeNullUsername = new User(2, "", "I am the night!!!");
+        negativeNullPassword = new User(2, "Robin", "");
+        negativeNullUsernameAndPassword = new User(2, "", "");
     }
 
     @After
@@ -52,27 +63,44 @@ public class UserServiceTest {
     }
 
     @Test
+        public void createUserPositiveSingleUsername(){
+            Mockito.when(userDao.createUser(positiveCreatedUserSingleCharUsername)).thenReturn(Optional.of(positiveCreatedUserSingleCharUsername));
+            assertTrue(userService.createUser(positiveCreatedUserSingleCharUsername).contains("Created user with username R and password I am the night!!!"));
+            Mockito.verify(userDao).createUser(positiveCreatedUserSingleCharUsername);
+        }
+
+    @Test
+    public void createUserPositiveSingleCharPassword(){
+        Mockito.when(userDao.createUser(positiveCreatedUserSingleCharPassword)).thenReturn(Optional.of(positiveCreatedUserSingleCharPassword));
+        assertTrue(userService.createUser(positiveCreatedUserSingleCharPassword).contains("Created user with username Robin and password I"));
+        Mockito.verify(userDao).createUser(positiveCreatedUserSingleCharPassword);
+    }
+
+    @Test
+    public void createUserPositiveSingleCharUsernameandPassword(){
+        Mockito.when(userDao.createUser(positiveCreatedUserSingleCharUsernameAndPassword)).thenReturn(Optional.of(positiveCreatedUserSingleCharUsernameAndPassword));
+        assertTrue(userService.createUser(positiveCreatedUserSingleCharUsernameAndPassword).contains("Created user with username R and password I"));
+        Mockito.verify(userDao).createUser(positiveCreatedUserSingleCharUsernameAndPassword);
+    }
+
+    @Test
     public void createUserNegativeTooLongUsername(){
-        Mockito.when(userDao.createUser(negativeUsernameTooLong)).thenReturn(Optional.empty());
         UserFail e = assertThrows(UserFail.class, () -> {
             userService.createUser(negativeUsernameTooLong);
         });
         Assert.assertEquals("Username must be between 1 and 30 characters", e.getMessage());
-        Mockito.verify(userDao, Mockito.never()).createUser(negativeUsernameTooLong);
     }
 
     @Test
     public void createUserNegativeTooPassword(){
-        Mockito.when(userDao.createUser(negativePasswordTooLong)).thenReturn(Optional.empty());
         UserFail e = assertThrows(UserFail.class, () -> {
             userService.createUser(negativePasswordTooLong);
         });
         Assert.assertEquals("Password must be between 1 and 30 characters", e.getMessage());
-        Mockito.verify(userDao, Mockito.never()).createUser(negativePasswordTooLong);
     }
 
     @Test
-    public void createUserNegativNonUniqueUsername(){
+    public void createUserNegativeNonUniqueUsername(){
         Mockito.when(userDao.findUserByUsername(userAlreadyRegistered.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
         Mockito.when(userDao.createUser(userAlreadyRegistered)).thenReturn(Optional.empty());
         UserFail e = assertThrows(UserFail.class, () -> {
@@ -82,6 +110,30 @@ public class UserServiceTest {
         Mockito.verify(userDao, Mockito.never()).createUser(userAlreadyRegistered);
     }
 
+    @Test
+    public void createUserNegativeNullUsername(){
+        UserFail e = assertThrows(UserFail.class, () -> {
+            userService.createUser(negativeNullUsername);
+        });
+        Assert.assertEquals("Username must be between 1 and 30 characters", e.getMessage());
+    }
+
+    @Test
+    public void createUserNegativeNullPassword(){
+        UserFail e = assertThrows(UserFail.class, () -> {
+            userService.createUser(negativeNullPassword);
+        });
+        Assert.assertEquals("Password must be between 1 and 30 characters", e.getMessage());
+    }
+
+    @Test
+    public void createUserNegativeNullUsernameandPassword(){
+        UserFail e = assertThrows(UserFail.class, () -> {
+            userService.createUser(negativeNullUsernameAndPassword);
+        });
+        Assert.assertEquals("Username must be between 1 and 30 characters", e.getMessage());
+    }
+    
     @Test
     public void authenticatePositive(){
         Mockito.when(userDao.findUserByUsername(userAlreadyRegistered.getUsername())).thenReturn(Optional.of(userAlreadyRegistered));
