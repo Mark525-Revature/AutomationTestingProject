@@ -68,7 +68,7 @@ public class PlanetServiceImp<T> implements PlanetService<T> {
         if (planet.getPlanetName().length() < 1 || planet.getPlanetName().length() > 30) {
             throw new PlanetFail("Planet name must be between 1 and 30 characters, could not update");
         }
-        if (!planet.getPlanetName().equals(existingPlanet.get().getPlanetName())) {
+        if (planet.getPlanetName().equals(existingPlanet.get().getPlanetName())) {
             if (planetDao.readPlanet(planet.getPlanetName()).isPresent()) {
                 throw new PlanetFail("Planet name must be unique, could not update");
             }
