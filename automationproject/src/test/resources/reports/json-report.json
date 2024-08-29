@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:23.686Z",
+        "start_timestamp": "2024-08-29T20:26:43.595Z",
         "line": 14,
         "name": "Login Valid login credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30243600,
+              "duration": 26571300,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 49051000,
+              "duration": 44856800,
               "status": "passed"
             },
             "line": 8,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 60161300,
+              "duration": 44853400,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 50159600,
+              "duration": 576050000,
               "status": "passed"
             },
             "line": 10,
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:23.940Z",
+        "start_timestamp": "2024-08-29T20:26:44.338Z",
         "line": 27,
         "name": "Login Invalid login credentials with Registered Username",
         "description": "\tRegistered Username and Invalid Password",
@@ -106,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19058100,
+              "duration": 14636300,
               "status": "passed"
             },
             "line": 19,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 131895600,
+              "duration": 69793800,
               "status": "passed"
             },
             "line": 21,
@@ -147,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 79175600,
+              "duration": 68810200,
               "status": "passed"
             },
             "line": 22,
@@ -165,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 28537000,
+              "duration": 535149600,
               "status": "passed"
             },
             "line": 23,
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:24.203Z",
+        "start_timestamp": "2024-08-29T20:26:45.029Z",
         "line": 40,
         "name": "Login Invalid login credentials with Non-Registered Username",
         "description": "\tN0n-registered Username and valid Password",
@@ -199,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11578100,
+              "duration": 10155700,
               "status": "passed"
             },
             "line": 32,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 78124000,
+              "duration": 66553600,
               "status": "passed"
             },
             "line": 34,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 76712400,
+              "duration": 59222600,
               "status": "passed"
             },
             "line": 35,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 26531100,
+              "duration": 531060500,
               "status": "passed"
             },
             "line": 36,
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:24.400Z",
+        "start_timestamp": "2024-08-29T20:26:45.699Z",
         "line": 53,
         "name": "Login Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to log in to the planetarium",
@@ -292,7 +292,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10568500,
+              "duration": 9510000,
               "status": "passed"
             },
             "line": 45,
@@ -315,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 22017500,
+              "duration": 18548600,
               "status": "passed"
             },
             "line": 47,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 46662200,
+              "duration": 37720200,
               "status": "passed"
             },
             "line": 48,
@@ -345,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 539792400,
+              "duration": 524580400,
               "status": "passed"
             },
             "line": 49,
@@ -366,7 +366,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:25.023Z",
+        "start_timestamp": "2024-08-29T20:26:46.293Z",
         "line": 66,
         "name": "Login Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to log in to the planetarium",
@@ -376,7 +376,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10508200,
+              "duration": 12511600,
               "status": "passed"
             },
             "line": 58,
@@ -399,7 +399,7 @@
           },
           {
             "result": {
-              "duration": 31574400,
+              "duration": 34269900,
               "status": "passed"
             },
             "line": 60,
@@ -417,7 +417,7 @@
           },
           {
             "result": {
-              "duration": 33537800,
+              "duration": 20874100,
               "status": "passed"
             },
             "line": 61,
@@ -429,7 +429,7 @@
           },
           {
             "result": {
-              "duration": 24091200,
+              "duration": 526452000,
               "status": "passed"
             },
             "line": 62,
@@ -450,7 +450,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:25.125Z",
+        "start_timestamp": "2024-08-29T20:26:46.888Z",
         "line": 69,
         "name": "Login Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to log in to the planetarium",
@@ -460,7 +460,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10068100,
+              "duration": 14513100,
               "status": "passed"
             },
             "line": 71,
@@ -483,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 21031600,
+              "duration": 22996200,
               "status": "passed"
             },
             "line": 73,
@@ -495,7 +495,7 @@
           },
           {
             "result": {
-              "duration": 25611300,
+              "duration": 19685800,
               "status": "passed"
             },
             "line": 74,
@@ -507,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 538068000,
+              "duration": 530196500,
               "status": "passed"
             },
             "line": 75,
@@ -548,7 +548,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:25.722Z",
+        "start_timestamp": "2024-08-29T20:26:47.477Z",
         "line": 15,
         "name": "Moon Registration Valid Moon name with valid Planet ID and without picture",
         "description": "",
@@ -558,7 +558,7 @@
         "steps": [
           {
             "result": {
-              "duration": 116288500,
+              "duration": 104202100,
               "status": "passed"
             },
             "line": 6,
@@ -570,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 198664800,
+              "duration": 578016700,
               "status": "passed"
             },
             "line": 7,
@@ -582,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 67706700,
+              "duration": 62413600,
               "status": "passed"
             },
             "line": 8,
@@ -600,7 +600,7 @@
           },
           {
             "result": {
-              "duration": 25037300,
+              "duration": 25051900,
               "status": "passed"
             },
             "line": 9,
@@ -618,7 +618,7 @@
           },
           {
             "result": {
-              "duration": 1066587700,
+              "duration": 1058415800,
               "status": "passed"
             },
             "line": 10,
@@ -630,8 +630,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c8\u003e but was:\u003c7\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_be_added_to_the_planetarium(MoonRegistrationSteps.java:52)\r\n\tat ✽.the moon should be added to the planetarium(classpath:features/MoonRegistration.feature:11)\r\n",
-              "duration": 6538600,
+              "error_message": "java.lang.AssertionError: expected:\u003c2\u003e but was:\u003c7\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_be_added_to_the_planetarium(MoonRegistrationSteps.java:52)\r\n\tat ✽.the moon should be added to the planetarium(classpath:features/MoonRegistration.feature:11)\r\n",
+              "duration": 5000600,
               "status": "failed"
             },
             "line": 11,
@@ -655,7 +655,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:27.220Z",
+        "start_timestamp": "2024-08-29T20:26:49.322Z",
         "line": 29,
         "name": "Moon Registration Valid Moon name with valid Planet ID and picture",
         "description": "",
@@ -665,7 +665,7 @@
         "steps": [
           {
             "result": {
-              "duration": 121226100,
+              "duration": 127747300,
               "status": "passed"
             },
             "line": 19,
@@ -677,7 +677,7 @@
           },
           {
             "result": {
-              "duration": 167209200,
+              "duration": 576380600,
               "status": "passed"
             },
             "line": 20,
@@ -689,7 +689,7 @@
           },
           {
             "result": {
-              "duration": 75160600,
+              "duration": 56220800,
               "status": "passed"
             },
             "line": 21,
@@ -707,7 +707,7 @@
           },
           {
             "result": {
-              "duration": 22264200,
+              "duration": 23042900,
               "status": "passed"
             },
             "line": 22,
@@ -725,7 +725,7 @@
           },
           {
             "result": {
-              "duration": 14026300,
+              "duration": 13032100,
               "status": "passed"
             },
             "line": 23,
@@ -743,7 +743,7 @@
           },
           {
             "result": {
-              "duration": 1056646200,
+              "duration": 1044954200,
               "status": "passed"
             },
             "line": 24,
@@ -755,8 +755,9 @@
           },
           {
             "result": {
-              "duration": 4503600,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c2\u003e but was:\u003c7\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_be_added_to_the_planetarium(MoonRegistrationSteps.java:52)\r\n\tat ✽.the moon should be added to the planetarium(classpath:features/MoonRegistration.feature:25)\r\n",
+              "duration": 4003300,
+              "status": "failed"
             },
             "line": 25,
             "name": "the moon should be added to the planetarium",
@@ -779,7 +780,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:28.684Z",
+        "start_timestamp": "2024-08-29T20:26:51.171Z",
         "line": 43,
         "name": "Moon Registration Invalid Moon name with valid Planet ID and picture",
         "description": "",
@@ -789,7 +790,7 @@
         "steps": [
           {
             "result": {
-              "duration": 144332300,
+              "duration": 116000200,
               "status": "passed"
             },
             "line": 33,
@@ -801,7 +802,7 @@
           },
           {
             "result": {
-              "duration": 181033300,
+              "duration": 571087700,
               "status": "passed"
             },
             "line": 34,
@@ -813,7 +814,7 @@
           },
           {
             "result": {
-              "duration": 149593200,
+              "duration": 58143400,
               "status": "passed"
             },
             "line": 35,
@@ -831,7 +832,7 @@
           },
           {
             "result": {
-              "duration": 30094800,
+              "duration": 21008500,
               "status": "passed"
             },
             "line": 36,
@@ -849,7 +850,7 @@
           },
           {
             "result": {
-              "duration": 13508200,
+              "duration": 9701300,
               "status": "passed"
             },
             "line": 37,
@@ -867,7 +868,7 @@
           },
           {
             "result": {
-              "duration": 538146900,
+              "duration": 1226463400,
               "status": "passed"
             },
             "line": 38,
@@ -879,8 +880,9 @@
           },
           {
             "result": {
-              "duration": 3500000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:39)\r\n",
+              "duration": 4505100,
+              "status": "failed"
             },
             "line": 39,
             "name": "the moon should not be added to the planetarium",
@@ -903,7 +905,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:29.749Z",
+        "start_timestamp": "2024-08-29T20:26:53.183Z",
         "line": 56,
         "name": "Moon Registration Invalid Moon name with valid Planet ID and without picture",
         "description": "",
@@ -913,7 +915,7 @@
         "steps": [
           {
             "result": {
-              "duration": 171479300,
+              "duration": 121130800,
               "status": "passed"
             },
             "line": 47,
@@ -925,7 +927,7 @@
           },
           {
             "result": {
-              "duration": 163234500,
+              "duration": 571928300,
               "status": "passed"
             },
             "line": 48,
@@ -937,7 +939,7 @@
           },
           {
             "result": {
-              "duration": 72963600,
+              "duration": 58919000,
               "status": "passed"
             },
             "line": 49,
@@ -955,7 +957,7 @@
           },
           {
             "result": {
-              "duration": 25628700,
+              "duration": 20619600,
               "status": "passed"
             },
             "line": 50,
@@ -973,7 +975,7 @@
           },
           {
             "result": {
-              "duration": 1045385200,
+              "duration": 1093922200,
               "status": "passed"
             },
             "line": 51,
@@ -985,8 +987,9 @@
           },
           {
             "result": {
-              "duration": 4005300,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:52)\r\n",
+              "duration": 6192800,
+              "status": "failed"
             },
             "line": 52,
             "name": "the moon should not be added to the planetarium",
@@ -1009,7 +1012,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:31.234Z",
+        "start_timestamp": "2024-08-29T20:26:55.059Z",
         "line": 70,
         "name": "Moon Registration Valid Moon name with invalid Planet ID and picture",
         "description": "",
@@ -1019,7 +1022,7 @@
         "steps": [
           {
             "result": {
-              "duration": 78065600,
+              "duration": 124109300,
               "status": "passed"
             },
             "line": 60,
@@ -1031,7 +1034,7 @@
           },
           {
             "result": {
-              "duration": 183489000,
+              "duration": 574316000,
               "status": "passed"
             },
             "line": 61,
@@ -1043,7 +1046,7 @@
           },
           {
             "result": {
-              "duration": 25126800,
+              "duration": 60214000,
               "status": "passed"
             },
             "line": 62,
@@ -1061,7 +1064,7 @@
           },
           {
             "result": {
-              "duration": 21039500,
+              "duration": 23453900,
               "status": "passed"
             },
             "line": 63,
@@ -1079,7 +1082,7 @@
           },
           {
             "result": {
-              "duration": 13173300,
+              "duration": 10525000,
               "status": "passed"
             },
             "line": 64,
@@ -1097,7 +1100,7 @@
           },
           {
             "result": {
-              "duration": 551381200,
+              "duration": 1111200500,
               "status": "passed"
             },
             "line": 65,
@@ -1109,8 +1112,9 @@
           },
           {
             "result": {
-              "duration": 4500400,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:66)\r\n",
+              "duration": 3020100,
+              "status": "failed"
             },
             "line": 66,
             "name": "the moon should not be added to the planetarium",
@@ -1133,7 +1137,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:32.114Z",
+        "start_timestamp": "2024-08-29T20:26:56.969Z",
         "line": 83,
         "name": "Moon Registration Valid Moon name with invalid Planet ID and without picture",
         "description": "",
@@ -1143,7 +1147,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100577800,
+              "duration": 123032800,
               "status": "passed"
             },
             "line": 74,
@@ -1155,7 +1159,7 @@
           },
           {
             "result": {
-              "duration": 174424500,
+              "duration": 570848000,
               "status": "passed"
             },
             "line": 75,
@@ -1167,7 +1171,7 @@
           },
           {
             "result": {
-              "duration": 43697400,
+              "duration": 59823600,
               "status": "passed"
             },
             "line": 76,
@@ -1185,7 +1189,7 @@
           },
           {
             "result": {
-              "duration": 21560000,
+              "duration": 20217400,
               "status": "passed"
             },
             "line": 77,
@@ -1203,7 +1207,7 @@
           },
           {
             "result": {
-              "duration": 1047741300,
+              "duration": 1104827600,
               "status": "passed"
             },
             "line": 78,
@@ -1215,8 +1219,9 @@
           },
           {
             "result": {
-              "duration": 3505000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:79)\r\n",
+              "duration": 3000100,
+              "status": "failed"
             },
             "line": 79,
             "name": "the moon should not be added to the planetarium",
@@ -1239,7 +1244,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:33.507Z",
+        "start_timestamp": "2024-08-29T20:26:58.855Z",
         "line": 97,
         "name": "Moon Registration Invalid Moon name with invalid Planet ID and picture",
         "description": "",
@@ -1249,7 +1254,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99083600,
+              "duration": 117792900,
               "status": "passed"
             },
             "line": 87,
@@ -1261,7 +1266,7 @@
           },
           {
             "result": {
-              "duration": 230833100,
+              "duration": 557266200,
               "status": "passed"
             },
             "line": 88,
@@ -1273,7 +1278,7 @@
           },
           {
             "result": {
-              "duration": 48162000,
+              "duration": 62994100,
               "status": "passed"
             },
             "line": 89,
@@ -1291,7 +1296,7 @@
           },
           {
             "result": {
-              "duration": 23124600,
+              "duration": 22717700,
               "status": "passed"
             },
             "line": 90,
@@ -1309,7 +1314,7 @@
           },
           {
             "result": {
-              "duration": 13015100,
+              "duration": 10077700,
               "status": "passed"
             },
             "line": 91,
@@ -1327,7 +1332,7 @@
           },
           {
             "result": {
-              "duration": 544862600,
+              "duration": 1233833500,
               "status": "passed"
             },
             "line": 92,
@@ -1339,8 +1344,9 @@
           },
           {
             "result": {
-              "duration": 3583400,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:93)\r\n",
+              "duration": 2999500,
+              "status": "failed"
             },
             "line": 93,
             "name": "the moon should not be added to the planetarium",
@@ -1363,7 +1369,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:34.471Z",
+        "start_timestamp": "2024-08-29T20:27:00.865Z",
         "line": 110,
         "name": "Moon Registration Invalid Moon name with invalid Planet ID and without picture",
         "description": "",
@@ -1373,7 +1379,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115728100,
+              "duration": 121995100,
               "status": "passed"
             },
             "line": 101,
@@ -1385,7 +1391,7 @@
           },
           {
             "result": {
-              "duration": 217000700,
+              "duration": 571051800,
               "status": "passed"
             },
             "line": 102,
@@ -1397,7 +1403,7 @@
           },
           {
             "result": {
-              "duration": 38174400,
+              "duration": 65765700,
               "status": "passed"
             },
             "line": 103,
@@ -1415,7 +1421,7 @@
           },
           {
             "result": {
-              "duration": 27217900,
+              "duration": 21359300,
               "status": "passed"
             },
             "line": 104,
@@ -1433,7 +1439,7 @@
           },
           {
             "result": {
-              "duration": 1048772300,
+              "duration": 1023598700,
               "status": "passed"
             },
             "line": 105,
@@ -1445,8 +1451,9 @@
           },
           {
             "result": {
-              "duration": 2491900,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:106)\r\n",
+              "duration": 3000100,
+              "status": "failed"
             },
             "line": 106,
             "name": "the moon should not be added to the planetarium",
@@ -1469,7 +1476,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:35.923Z",
+        "start_timestamp": "2024-08-29T20:27:02.675Z",
         "line": 123,
         "name": "Moon Registration Non-Unique Moon name with valid Planet ID and without picture",
         "description": "",
@@ -1479,7 +1486,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123158300,
+              "duration": 112761100,
               "status": "passed"
             },
             "line": 114,
@@ -1491,7 +1498,7 @@
           },
           {
             "result": {
-              "duration": 158637600,
+              "duration": 559276200,
               "status": "passed"
             },
             "line": 115,
@@ -1503,7 +1510,7 @@
           },
           {
             "result": {
-              "duration": 22356400,
+              "duration": 23538700,
               "status": "passed"
             },
             "line": 116,
@@ -1521,7 +1528,7 @@
           },
           {
             "result": {
-              "duration": 24578900,
+              "duration": 21125900,
               "status": "passed"
             },
             "line": 117,
@@ -1539,7 +1546,7 @@
           },
           {
             "result": {
-              "duration": 1038411500,
+              "duration": 1180403900,
               "status": "passed"
             },
             "line": 118,
@@ -1551,8 +1558,9 @@
           },
           {
             "result": {
-              "duration": 3000000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:119)\r\n",
+              "duration": 2506400,
+              "status": "failed"
             },
             "line": 119,
             "name": "the moon should not be added to the planetarium",
@@ -1575,7 +1583,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:37.296Z",
+        "start_timestamp": "2024-08-29T20:27:04.579Z",
         "line": 138,
         "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and a picture",
         "description": "\tif User provides no moon name and a valid planet id with a picture no moon should be added to the planetarium",
@@ -1585,7 +1593,7 @@
         "steps": [
           {
             "result": {
-              "duration": 94024900,
+              "duration": 131163300,
               "status": "passed"
             },
             "line": 128,
@@ -1597,7 +1605,7 @@
           },
           {
             "result": {
-              "duration": 196105100,
+              "duration": 492549600,
               "status": "passed"
             },
             "line": 129,
@@ -1609,7 +1617,7 @@
           },
           {
             "result": {
-              "duration": 18015800,
+              "duration": 86501200,
               "status": "passed"
             },
             "line": 130,
@@ -1621,7 +1629,7 @@
           },
           {
             "result": {
-              "duration": 19121200,
+              "duration": 21583100,
               "status": "passed"
             },
             "line": 131,
@@ -1639,7 +1647,7 @@
           },
           {
             "result": {
-              "duration": 11027400,
+              "duration": 11319700,
               "status": "passed"
             },
             "line": 132,
@@ -1657,7 +1665,7 @@
           },
           {
             "result": {
-              "duration": 545199700,
+              "duration": 1215029300,
               "status": "passed"
             },
             "line": 133,
@@ -1669,8 +1677,9 @@
           },
           {
             "result": {
-              "duration": 3499700,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:134)\r\n",
+              "duration": 3000400,
+              "status": "failed"
             },
             "line": 134,
             "name": "the moon should not be added to the planetarium",
@@ -1690,7 +1699,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:38.185Z",
+        "start_timestamp": "2024-08-29T20:27:06.542Z",
         "line": 152,
         "name": "Moon Registration Negative Scenario Null Moon name with valid planet ID and no picture",
         "description": "\tif User provides no moon name and a valid planet id with no picture no moon should be added to the planetarium",
@@ -1700,7 +1709,7 @@
         "steps": [
           {
             "result": {
-              "duration": 87655700,
+              "duration": 132020900,
               "status": "passed"
             },
             "line": 143,
@@ -1712,7 +1721,7 @@
           },
           {
             "result": {
-              "duration": 201876500,
+              "duration": 567091800,
               "status": "passed"
             },
             "line": 144,
@@ -1724,7 +1733,7 @@
           },
           {
             "result": {
-              "duration": 18028600,
+              "duration": 15643500,
               "status": "passed"
             },
             "line": 145,
@@ -1736,7 +1745,7 @@
           },
           {
             "result": {
-              "duration": 20588400,
+              "duration": 21042200,
               "status": "passed"
             },
             "line": 146,
@@ -1754,7 +1763,7 @@
           },
           {
             "result": {
-              "duration": 1058159600,
+              "duration": 1277899400,
               "status": "passed"
             },
             "line": 147,
@@ -1766,8 +1775,9 @@
           },
           {
             "result": {
-              "duration": 3000200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:148)\r\n",
+              "duration": 3002900,
+              "status": "failed"
             },
             "line": 148,
             "name": "the moon should not be added to the planetarium",
@@ -1787,7 +1797,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:39.576Z",
+        "start_timestamp": "2024-08-29T20:27:08.559Z",
         "line": 167,
         "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and a picture",
         "description": "\tif User provides a Valid moon name and no  planet id with a picture no moon should be added to the planetarium",
@@ -1797,7 +1807,7 @@
         "steps": [
           {
             "result": {
-              "duration": 96708300,
+              "duration": 133433200,
               "status": "passed"
             },
             "line": 157,
@@ -1809,7 +1819,7 @@
           },
           {
             "result": {
-              "duration": 217628100,
+              "duration": 558989100,
               "status": "passed"
             },
             "line": 158,
@@ -1821,7 +1831,7 @@
           },
           {
             "result": {
-              "duration": 32580300,
+              "duration": 67839100,
               "status": "passed"
             },
             "line": 159,
@@ -1839,7 +1849,7 @@
           },
           {
             "result": {
-              "duration": 19768600,
+              "duration": 19879800,
               "status": "passed"
             },
             "line": 160,
@@ -1851,7 +1861,7 @@
           },
           {
             "result": {
-              "duration": 10505500,
+              "duration": 9411100,
               "status": "passed"
             },
             "line": 161,
@@ -1869,7 +1879,7 @@
           },
           {
             "result": {
-              "duration": 534462700,
+              "duration": 1049773500,
               "status": "passed"
             },
             "line": 162,
@@ -1881,8 +1891,9 @@
           },
           {
             "result": {
-              "duration": 3005200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:163)\r\n",
+              "duration": 3999600,
+              "status": "failed"
             },
             "line": 163,
             "name": "the moon should not be added to the planetarium",
@@ -1902,7 +1913,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:40.493Z",
+        "start_timestamp": "2024-08-29T20:27:10.405Z",
         "line": 181,
         "name": "Moon Registration Negative Scenario Valid Moon name with null planet ID and no picture",
         "description": "\tif User provides a Valid moon name and no planet id with no picture no moon should be added to the planetarium",
@@ -1912,7 +1923,7 @@
         "steps": [
           {
             "result": {
-              "duration": 105176800,
+              "duration": 109791300,
               "status": "passed"
             },
             "line": 172,
@@ -1924,7 +1935,7 @@
           },
           {
             "result": {
-              "duration": 204731700,
+              "duration": 563726400,
               "status": "passed"
             },
             "line": 173,
@@ -1936,7 +1947,7 @@
           },
           {
             "result": {
-              "duration": 33535700,
+              "duration": 59198200,
               "status": "passed"
             },
             "line": 174,
@@ -1954,7 +1965,7 @@
           },
           {
             "result": {
-              "duration": 20029300,
+              "duration": 18522600,
               "status": "passed"
             },
             "line": 175,
@@ -1966,7 +1977,7 @@
           },
           {
             "result": {
-              "duration": 1041841000,
+              "duration": 1115050700,
               "status": "passed"
             },
             "line": 176,
@@ -1978,8 +1989,9 @@
           },
           {
             "result": {
-              "duration": 3500200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:177)\r\n",
+              "duration": 3014100,
+              "status": "failed"
             },
             "line": 177,
             "name": "the moon should not be added to the planetarium",
@@ -1999,7 +2011,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:41.903Z",
+        "start_timestamp": "2024-08-29T20:27:12.275Z",
         "line": 197,
         "name": "Moon Registration Negative Scenario null Moon name with null planet ID and a picture",
         "description": "\tif User provides no moon name and no planet id with a picture no moon should be added to the planetarium",
@@ -2009,7 +2021,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115790100,
+              "duration": 111584500,
               "status": "passed"
             },
             "line": 186,
@@ -2021,7 +2033,7 @@
           },
           {
             "result": {
-              "duration": 207532900,
+              "duration": 620231400,
               "status": "passed"
             },
             "line": 187,
@@ -2033,7 +2045,7 @@
           },
           {
             "result": {
-              "duration": 21541500,
+              "duration": 17364800,
               "status": "passed"
             },
             "line": 188,
@@ -2045,7 +2057,7 @@
           },
           {
             "result": {
-              "duration": 20514800,
+              "duration": 17025200,
               "status": "passed"
             },
             "line": 189,
@@ -2057,7 +2069,7 @@
           },
           {
             "result": {
-              "duration": 12023100,
+              "duration": 9509400,
               "status": "passed"
             },
             "line": 191,
@@ -2075,7 +2087,7 @@
           },
           {
             "result": {
-              "duration": 547886400,
+              "duration": 1229343800,
               "status": "passed"
             },
             "line": 192,
@@ -2087,8 +2099,9 @@
           },
           {
             "result": {
-              "duration": 3500200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:193)\r\n",
+              "duration": 2999400,
+              "status": "failed"
             },
             "line": 193,
             "name": "the moon should not be added to the planetarium",
@@ -2108,7 +2121,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:42.834Z",
+        "start_timestamp": "2024-08-29T20:27:14.284Z",
         "line": 200,
         "name": "Moon Registration Negative Scenario null Moon name with null planet ID and no picture",
         "description": "\tif User provides no moon name and no planet id with no picture no moon should be added to the planetarium",
@@ -2118,7 +2131,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97363700,
+              "duration": 120062600,
               "status": "passed"
             },
             "line": 202,
@@ -2130,7 +2143,7 @@
           },
           {
             "result": {
-              "duration": 218184000,
+              "duration": 565415700,
               "status": "passed"
             },
             "line": 203,
@@ -2142,7 +2155,7 @@
           },
           {
             "result": {
-              "duration": 21631600,
+              "duration": 22123500,
               "status": "passed"
             },
             "line": 204,
@@ -2154,7 +2167,7 @@
           },
           {
             "result": {
-              "duration": 21094300,
+              "duration": 20813100,
               "status": "passed"
             },
             "line": 205,
@@ -2166,7 +2179,7 @@
           },
           {
             "result": {
-              "duration": 1047230200,
+              "duration": 1096610100,
               "status": "passed"
             },
             "line": 206,
@@ -2178,8 +2191,9 @@
           },
           {
             "result": {
-              "duration": 2999700,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.MoonRegistrationSteps.the_moon_should_not_be_added_to_the_planetarium(MoonRegistrationSteps.java:58)\r\n\tat ✽.the moon should not be added to the planetarium(classpath:features/MoonRegistration.feature:207)\r\n",
+              "duration": 2998700,
+              "status": "failed"
             },
             "line": 207,
             "name": "the moon should not be added to the planetarium",
@@ -2219,7 +2233,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:44.244Z",
+        "start_timestamp": "2024-08-29T20:27:16.114Z",
         "line": 14,
         "name": "Moon Removal Valid Moon name",
         "description": "",
@@ -2229,7 +2243,7 @@
         "steps": [
           {
             "result": {
-              "duration": 114701900,
+              "duration": 143232700,
               "status": "passed"
             },
             "line": 6,
@@ -2241,7 +2255,7 @@
           },
           {
             "result": {
-              "duration": 163259300,
+              "duration": 569003300,
               "status": "passed"
             },
             "line": 7,
@@ -2253,7 +2267,7 @@
           },
           {
             "result": {
-              "duration": 40155400,
+              "duration": 58622300,
               "status": "passed"
             },
             "line": 8,
@@ -2271,7 +2285,7 @@
           },
           {
             "result": {
-              "duration": 19023100,
+              "duration": 18622000,
               "status": "passed"
             },
             "line": 9,
@@ -2283,9 +2297,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.revature.step.MoonRemovalSteps.the_user_should_be_able_to_delete_moons(MoonRemovalSteps.java:17)\r\n\tat ✽.the moon should be removed from the planetarium(classpath:features/MoonRemoval.feature:10)\r\n",
-              "duration": 38623200,
-              "status": "failed"
+              "duration": 1067745700,
+              "status": "passed"
             },
             "line": 10,
             "name": "the moon should be removed from the planetarium",
@@ -2308,7 +2321,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:44.624Z",
+        "start_timestamp": "2024-08-29T20:27:17.974Z",
         "line": 26,
         "name": "Moon Removal Invalid Moon name",
         "description": "",
@@ -2318,7 +2331,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107628500,
+              "duration": 129320400,
               "status": "passed"
             },
             "line": 18,
@@ -2330,7 +2343,7 @@
           },
           {
             "result": {
-              "duration": 193511300,
+              "duration": 557840800,
               "status": "passed"
             },
             "line": 19,
@@ -2342,7 +2355,7 @@
           },
           {
             "result": {
-              "duration": 25087000,
+              "duration": 24393400,
               "status": "passed"
             },
             "line": 20,
@@ -2360,7 +2373,7 @@
           },
           {
             "result": {
-              "duration": 15012200,
+              "duration": 12535800,
               "status": "passed"
             },
             "line": 21,
@@ -2372,7 +2385,7 @@
           },
           {
             "result": {
-              "duration": 509474300,
+              "duration": 506212700,
               "status": "passed"
             },
             "line": 22,
@@ -2396,7 +2409,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:45.476Z",
+        "start_timestamp": "2024-08-29T20:27:19.207Z",
         "line": 29,
         "name": "Moon Removal Negative Scenario Null Moon name",
         "description": "\tif User provides no moon name then no moon should be removed from the planetarium",
@@ -2406,7 +2419,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104383800,
+              "duration": 122435000,
               "status": "passed"
             },
             "line": 31,
@@ -2418,7 +2431,7 @@
           },
           {
             "result": {
-              "duration": 195552300,
+              "duration": 562218600,
               "status": "passed"
             },
             "line": 32,
@@ -2430,7 +2443,7 @@
           },
           {
             "result": {
-              "duration": 20047600,
+              "duration": 16525800,
               "status": "passed"
             },
             "line": 33,
@@ -2442,7 +2455,7 @@
           },
           {
             "result": {
-              "duration": 15742000,
+              "duration": 15507700,
               "status": "passed"
             },
             "line": 34,
@@ -2454,7 +2467,7 @@
           },
           {
             "result": {
-              "duration": 3999800,
+              "duration": 3511300,
               "status": "passed"
             },
             "line": 35,
@@ -2498,7 +2511,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:45.816Z",
+        "start_timestamp": "2024-08-29T20:27:19.930Z",
         "line": 14,
         "name": "Planet Registration Valid Planet name without picture",
         "description": "",
@@ -2508,7 +2521,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97000700,
+              "duration": 114862400,
               "status": "passed"
             },
             "line": 6,
@@ -2520,7 +2533,7 @@
           },
           {
             "result": {
-              "duration": 166067700,
+              "duration": 465371900,
               "status": "passed"
             },
             "line": 7,
@@ -2532,7 +2545,7 @@
           },
           {
             "result": {
-              "duration": 35389500,
+              "duration": 128423700,
               "status": "passed"
             },
             "line": 8,
@@ -2550,7 +2563,7 @@
           },
           {
             "result": {
-              "duration": 1051402800,
+              "duration": 1488085900,
               "status": "passed"
             },
             "line": 9,
@@ -2562,8 +2575,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c8\u003e but was:\u003c7\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:55)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
-              "duration": 3019900,
+              "error_message": "java.lang.AssertionError: expected:\u003c2\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:55)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:10)\r\n",
+              "duration": 2636000,
               "status": "failed"
             },
             "line": 10,
@@ -2587,7 +2600,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:47.174Z",
+        "start_timestamp": "2024-08-29T20:27:22.133Z",
         "line": 28,
         "name": "Planet Registration Invalid Planet name with picture",
         "description": "",
@@ -2597,7 +2610,7 @@
         "steps": [
           {
             "result": {
-              "duration": 105202100,
+              "duration": 110414100,
               "status": "passed"
             },
             "line": 18,
@@ -2609,7 +2622,7 @@
           },
           {
             "result": {
-              "duration": 164288100,
+              "duration": 529418800,
               "status": "passed"
             },
             "line": 19,
@@ -2621,7 +2634,7 @@
           },
           {
             "result": {
-              "duration": 37545000,
+              "duration": 133876200,
               "status": "passed"
             },
             "line": 20,
@@ -2639,7 +2652,7 @@
           },
           {
             "result": {
-              "duration": 12014700,
+              "duration": 12158200,
               "status": "passed"
             },
             "line": 21,
@@ -2668,7 +2681,7 @@
           },
           {
             "result": {
-              "duration": 541712500,
+              "duration": 1154740800,
               "status": "passed"
             },
             "line": 23,
@@ -2680,8 +2693,9 @@
           },
           {
             "result": {
-              "duration": 3004200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:24)\r\n",
+              "duration": 3508300,
+              "status": "failed"
             },
             "line": 24,
             "name": "the planet should not be added to the planetarium",
@@ -2704,7 +2718,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:48.042Z",
+        "start_timestamp": "2024-08-29T20:27:24.079Z",
         "line": 40,
         "name": "Planet Registration Invalid Planet name without picture",
         "description": "",
@@ -2714,7 +2728,7 @@
         "steps": [
           {
             "result": {
-              "duration": 110253900,
+              "duration": 126472500,
               "status": "passed"
             },
             "line": 32,
@@ -2726,7 +2740,7 @@
           },
           {
             "result": {
-              "duration": 163432100,
+              "duration": 466375400,
               "status": "passed"
             },
             "line": 33,
@@ -2738,7 +2752,7 @@
           },
           {
             "result": {
-              "duration": 32753300,
+              "duration": 102799900,
               "status": "passed"
             },
             "line": 34,
@@ -2756,7 +2770,7 @@
           },
           {
             "result": {
-              "duration": 1054800500,
+              "duration": 1164464800,
               "status": "passed"
             },
             "line": 35,
@@ -2768,8 +2782,9 @@
           },
           {
             "result": {
-              "duration": 2574500,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:36)\r\n",
+              "duration": 3000300,
+              "status": "failed"
             },
             "line": 36,
             "name": "the planet should not be added to the planetarium",
@@ -2792,7 +2807,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:49.408Z",
+        "start_timestamp": "2024-08-29T20:27:25.944Z",
         "line": 54,
         "name": "Planet Registration Non-unique Planet name with picture",
         "description": "",
@@ -2802,7 +2817,7 @@
         "steps": [
           {
             "result": {
-              "duration": 106033300,
+              "duration": 128128200,
               "status": "passed"
             },
             "line": 44,
@@ -2814,7 +2829,7 @@
           },
           {
             "result": {
-              "duration": 156746700,
+              "duration": 473165700,
               "status": "passed"
             },
             "line": 45,
@@ -2826,7 +2841,7 @@
           },
           {
             "result": {
-              "duration": 23082300,
+              "duration": 90985000,
               "status": "passed"
             },
             "line": 46,
@@ -2844,7 +2859,7 @@
           },
           {
             "result": {
-              "duration": 12087100,
+              "duration": 10108400,
               "status": "passed"
             },
             "line": 47,
@@ -2873,7 +2888,7 @@
           },
           {
             "result": {
-              "duration": 535702800,
+              "duration": 1166059800,
               "status": "passed"
             },
             "line": 49,
@@ -2885,8 +2900,9 @@
           },
           {
             "result": {
-              "duration": 3500900,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:50)\r\n",
+              "duration": 3001400,
+              "status": "failed"
             },
             "line": 50,
             "name": "the planet should not be added to the planetarium",
@@ -2909,7 +2925,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:50.248Z",
+        "start_timestamp": "2024-08-29T20:27:27.816Z",
         "line": 66,
         "name": "Planet Registration Non-unique Planet name without picture",
         "description": "",
@@ -2919,7 +2935,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104611800,
+              "duration": 139585400,
               "status": "passed"
             },
             "line": 58,
@@ -2931,7 +2947,7 @@
           },
           {
             "result": {
-              "duration": 172416600,
+              "duration": 588293000,
               "status": "passed"
             },
             "line": 59,
@@ -2943,7 +2959,7 @@
           },
           {
             "result": {
-              "duration": 23589500,
+              "duration": 23158300,
               "status": "passed"
             },
             "line": 60,
@@ -2961,7 +2977,7 @@
           },
           {
             "result": {
-              "duration": 1042348500,
+              "duration": 1114439100,
               "status": "passed"
             },
             "line": 61,
@@ -2973,8 +2989,9 @@
           },
           {
             "result": {
-              "duration": 3000100,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:62)\r\n",
+              "duration": 6507400,
+              "status": "failed"
             },
             "line": 62,
             "name": "the planet should not be added to the planetarium",
@@ -2997,7 +3014,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:51.596Z",
+        "start_timestamp": "2024-08-29T20:27:29.690Z",
         "line": 80,
         "name": "Planet Registration Valid Planet name with picture",
         "description": "",
@@ -3007,7 +3024,7 @@
         "steps": [
           {
             "result": {
-              "duration": 92886900,
+              "duration": 132424900,
               "status": "passed"
             },
             "line": 70,
@@ -3019,7 +3036,7 @@
           },
           {
             "result": {
-              "duration": 164358100,
+              "duration": 463726100,
               "status": "passed"
             },
             "line": 71,
@@ -3031,7 +3048,7 @@
           },
           {
             "result": {
-              "duration": 33544200,
+              "duration": 107068300,
               "status": "passed"
             },
             "line": 72,
@@ -3049,7 +3066,7 @@
           },
           {
             "result": {
-              "duration": 11520600,
+              "duration": 10013900,
               "status": "passed"
             },
             "line": 73,
@@ -3061,7 +3078,6 @@
           },
           {
             "result": {
-              "duration": 501600,
               "status": "passed"
             },
             "line": 74,
@@ -3079,7 +3095,7 @@
           },
           {
             "result": {
-              "duration": 1057210600,
+              "duration": 1168179600,
               "status": "passed"
             },
             "line": 75,
@@ -3091,8 +3107,9 @@
           },
           {
             "result": {
-              "duration": 2505900,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c2\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_be_added_to_the_planetarium(PlanetRegistrationSteps.java:55)\r\n\tat ✽.the planet should be added to the planetarium(classpath:features/PlanetRegistration.feature:76)\r\n",
+              "duration": 3053400,
+              "status": "failed"
             },
             "line": 76,
             "name": "the planet should be added to the planetarium",
@@ -3115,7 +3132,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:52.960Z",
+        "start_timestamp": "2024-08-29T20:27:31.577Z",
         "line": 83,
         "name": "Planet Registration Negative Scenario Null planet name without picture",
         "description": "\tif a user enters no planet name without a picture no planet is added to the planetarium",
@@ -3125,7 +3142,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103159400,
+              "duration": 131018400,
               "status": "passed"
             },
             "line": 85,
@@ -3137,7 +3154,7 @@
           },
           {
             "result": {
-              "duration": 162450100,
+              "duration": 464432200,
               "status": "passed"
             },
             "line": 86,
@@ -3149,7 +3166,7 @@
           },
           {
             "result": {
-              "duration": 23098700,
+              "duration": 73639200,
               "status": "passed"
             },
             "line": 87,
@@ -3161,7 +3178,7 @@
           },
           {
             "result": {
-              "duration": 1054995200,
+              "duration": 1179632300,
               "status": "passed"
             },
             "line": 88,
@@ -3173,8 +3190,9 @@
           },
           {
             "result": {
-              "duration": 3516600,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:89)\r\n",
+              "duration": 3000100,
+              "status": "failed"
             },
             "line": 89,
             "name": "the planet should not be added to the planetarium",
@@ -3197,7 +3215,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:54.309Z",
+        "start_timestamp": "2024-08-29T20:27:33.432Z",
         "line": 104,
         "name": "Planet Registration Negative Scenario Null planet name with picture",
         "description": "\tif a user enters no planet name with a picture no planet is added to the planetarium",
@@ -3207,7 +3225,7 @@
         "steps": [
           {
             "result": {
-              "duration": 105416500,
+              "duration": 127944400,
               "status": "passed"
             },
             "line": 94,
@@ -3219,7 +3237,7 @@
           },
           {
             "result": {
-              "duration": 164968800,
+              "duration": 421006300,
               "status": "passed"
             },
             "line": 95,
@@ -3231,7 +3249,7 @@
           },
           {
             "result": {
-              "duration": 19519200,
+              "duration": 19737600,
               "status": "passed"
             },
             "line": 96,
@@ -3243,7 +3261,7 @@
           },
           {
             "result": {
-              "duration": 9522700,
+              "duration": 66503300,
               "status": "passed"
             },
             "line": 97,
@@ -3272,7 +3290,7 @@
           },
           {
             "result": {
-              "duration": 546417600,
+              "duration": 1169577200,
               "status": "passed"
             },
             "line": 99,
@@ -3284,8 +3302,9 @@
           },
           {
             "result": {
-              "duration": 2505300,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c1\u003e but was:\u003c8\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.revature.step.PlanetRegistrationSteps.the_planet_should_not_be_added_to_the_planetarium(PlanetRegistrationSteps.java:61)\r\n\tat ✽.the planet should not be added to the planetarium(classpath:features/PlanetRegistration.feature:100)\r\n",
+              "duration": 3002500,
+              "status": "failed"
             },
             "line": 100,
             "name": "the planet should not be added to the planetarium",
@@ -3328,7 +3347,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:55.160Z",
+        "start_timestamp": "2024-08-29T20:27:35.243Z",
         "line": 14,
         "name": "Planet Removal Valid Planet name",
         "description": "",
@@ -3338,7 +3357,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107555600,
+              "duration": 146110600,
               "status": "passed"
             },
             "line": 6,
@@ -3350,7 +3369,7 @@
           },
           {
             "result": {
-              "duration": 164839900,
+              "duration": 466102500,
               "status": "passed"
             },
             "line": 7,
@@ -3362,7 +3381,7 @@
           },
           {
             "result": {
-              "duration": 34043000,
+              "duration": 124390600,
               "status": "passed"
             },
             "line": 8,
@@ -3380,7 +3399,7 @@
           },
           {
             "result": {
-              "duration": 15607700,
+              "duration": 14928100,
               "status": "passed"
             },
             "line": 9,
@@ -3393,7 +3412,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.revature.step.PlanetRemovalSteps.the_planet_should_be_removed_from_the_planetarium(PlanetRemovalSteps.java:38)\r\n\tat ✽.the planet should be removed from the planetarium(classpath:features/PlanetRemoval.feature:10)\r\n",
-              "duration": 36317500,
+              "duration": 457187800,
               "status": "failed"
             },
             "line": 10,
@@ -3417,7 +3436,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:55.522Z",
+        "start_timestamp": "2024-08-29T20:27:36.454Z",
         "line": 26,
         "name": "Planet Removal Invalid Planet name",
         "description": "",
@@ -3427,7 +3446,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100640600,
+              "duration": 119667400,
               "status": "passed"
             },
             "line": 18,
@@ -3439,7 +3458,7 @@
           },
           {
             "result": {
-              "duration": 172893300,
+              "duration": 423448600,
               "status": "passed"
             },
             "line": 19,
@@ -3451,7 +3470,7 @@
           },
           {
             "result": {
-              "duration": 23030200,
+              "duration": 29032700,
               "status": "passed"
             },
             "line": 20,
@@ -3469,7 +3488,7 @@
           },
           {
             "result": {
-              "duration": 15515500,
+              "duration": 80110400,
               "status": "passed"
             },
             "line": 21,
@@ -3481,7 +3500,7 @@
           },
           {
             "result": {
-              "duration": 508993100,
+              "duration": 503809200,
               "status": "passed"
             },
             "line": 22,
@@ -3505,7 +3524,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:56.345Z",
+        "start_timestamp": "2024-08-29T20:27:37.611Z",
         "line": 29,
         "name": "Planet Removal Negative Scenario Null planet name",
         "description": "\tIf user enters no planet name then no planets are removed",
@@ -3515,7 +3534,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109764000,
+              "duration": 119623000,
               "status": "passed"
             },
             "line": 31,
@@ -3527,7 +3546,7 @@
           },
           {
             "result": {
-              "duration": 180539900,
+              "duration": 471819900,
               "status": "passed"
             },
             "line": 32,
@@ -3539,7 +3558,7 @@
           },
           {
             "result": {
-              "duration": 20145200,
+              "duration": 85184500,
               "status": "passed"
             },
             "line": 33,
@@ -3551,7 +3570,7 @@
           },
           {
             "result": {
-              "duration": 24031300,
+              "duration": 25346000,
               "status": "passed"
             },
             "line": 34,
@@ -3563,7 +3582,7 @@
           },
           {
             "result": {
-              "duration": 518559900,
+              "duration": 4505800,
               "status": "passed"
             },
             "line": 35,
@@ -3604,7 +3623,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:11:57.200Z",
+        "start_timestamp": "2024-08-29T20:27:38.319Z",
         "line": 15,
         "name": "Registration Positive Scenario",
         "description": "\tgiven a valid username and password a user should be able to register with the planetarium",
@@ -3614,7 +3633,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16520400,
+              "duration": 12081600,
               "status": "passed"
             },
             "line": 7,
@@ -3626,7 +3645,7 @@
           },
           {
             "result": {
-              "duration": 49168800,
+              "duration": 42141200,
               "status": "passed"
             },
             "line": 8,
@@ -3638,7 +3657,7 @@
           },
           {
             "result": {
-              "duration": 34546600,
+              "duration": 64007300,
               "status": "passed"
             },
             "line": 9,
@@ -3656,7 +3675,7 @@
           },
           {
             "result": {
-              "duration": 33551200,
+              "duration": 73706800,
               "status": "passed"
             },
             "line": 10,
@@ -3674,7 +3693,7 @@
           },
           {
             "result": {
-              "duration": 544650200,
+              "duration": 1045247600,
               "status": "passed"
             },
             "line": 11,
@@ -3698,7 +3717,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:57.882Z",
+        "start_timestamp": "2024-08-29T20:27:39.559Z",
         "line": 28,
         "name": "Registration Username not unique",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -3708,7 +3727,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16526000,
+              "duration": 15767700,
               "status": "passed"
             },
             "line": 20,
@@ -3720,7 +3739,7 @@
           },
           {
             "result": {
-              "duration": 32030600,
+              "duration": 29061200,
               "status": "passed"
             },
             "line": 21,
@@ -3732,7 +3751,7 @@
           },
           {
             "result": {
-              "duration": 34590500,
+              "duration": 34246400,
               "status": "passed"
             },
             "line": 22,
@@ -3750,7 +3769,7 @@
           },
           {
             "result": {
-              "duration": 38042800,
+              "duration": 66068900,
               "status": "passed"
             },
             "line": 23,
@@ -3768,7 +3787,7 @@
           },
           {
             "result": {
-              "duration": 541996000,
+              "duration": 542599800,
               "status": "passed"
             },
             "line": 24,
@@ -3792,7 +3811,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:58.546Z",
+        "start_timestamp": "2024-08-29T20:27:40.249Z",
         "line": 41,
         "name": "Registration Username too long",
         "description": "\tgiven a too long username and valid password a user should not be able to register with the planetarium",
@@ -3802,7 +3821,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18028700,
+              "duration": 18183200,
               "status": "passed"
             },
             "line": 33,
@@ -3814,7 +3833,7 @@
           },
           {
             "result": {
-              "duration": 41628000,
+              "duration": 33713900,
               "status": "passed"
             },
             "line": 34,
@@ -3826,7 +3845,7 @@
           },
           {
             "result": {
-              "duration": 37041900,
+              "duration": 67509500,
               "status": "passed"
             },
             "line": 35,
@@ -3844,7 +3863,7 @@
           },
           {
             "result": {
-              "duration": 34030000,
+              "duration": 65789400,
               "status": "passed"
             },
             "line": 36,
@@ -3862,7 +3881,7 @@
           },
           {
             "result": {
-              "duration": 535650600,
+              "duration": 535053400,
               "status": "passed"
             },
             "line": 37,
@@ -3886,7 +3905,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:59.214Z",
+        "start_timestamp": "2024-08-29T20:27:40.971Z",
         "line": 54,
         "name": "Registration Password too long",
         "description": "\tgiven a valid username and a too long password a user should not be able to register with the planetarium",
@@ -3896,7 +3915,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16521600,
+              "duration": 16762800,
               "status": "passed"
             },
             "line": 46,
@@ -3908,7 +3927,7 @@
           },
           {
             "result": {
-              "duration": 34543300,
+              "duration": 39537300,
               "status": "passed"
             },
             "line": 47,
@@ -3920,7 +3939,7 @@
           },
           {
             "result": {
-              "duration": 41155200,
+              "duration": 65834100,
               "status": "passed"
             },
             "line": 48,
@@ -3938,7 +3957,7 @@
           },
           {
             "result": {
-              "duration": 37547200,
+              "duration": 63761400,
               "status": "passed"
             },
             "line": 49,
@@ -3956,7 +3975,7 @@
           },
           {
             "result": {
-              "duration": 534156200,
+              "duration": 28648400,
               "status": "passed"
             },
             "line": 50,
@@ -3980,7 +3999,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:11:59.879Z",
+        "start_timestamp": "2024-08-29T20:27:41.189Z",
         "line": 67,
         "name": "Registration User credentials too long",
         "description": "\tgiven a too long username and a too long password a user should not be able to register with the planetarium",
@@ -3990,7 +4009,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17522100,
+              "duration": 13593700,
               "status": "passed"
             },
             "line": 59,
@@ -4002,7 +4021,7 @@
           },
           {
             "result": {
-              "duration": 41652900,
+              "duration": 35770400,
               "status": "passed"
             },
             "line": 60,
@@ -4014,7 +4033,7 @@
           },
           {
             "result": {
-              "duration": 37281900,
+              "duration": 67233900,
               "status": "passed"
             },
             "line": 61,
@@ -4032,7 +4051,7 @@
           },
           {
             "result": {
-              "duration": 37102100,
+              "duration": 63645400,
               "status": "passed"
             },
             "line": 62,
@@ -4050,7 +4069,7 @@
           },
           {
             "result": {
-              "duration": 545343600,
+              "duration": 27505500,
               "status": "passed"
             },
             "line": 63,
@@ -4074,7 +4093,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:12:00.560Z",
+        "start_timestamp": "2024-08-29T20:27:41.399Z",
         "line": 80,
         "name": "Registration Username not unique and password too long",
         "description": "\tgiven a non unique username and valid password a user should not be able to register with the planetarium",
@@ -4084,7 +4103,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15510500,
+              "duration": 15008000,
               "status": "passed"
             },
             "line": 72,
@@ -4096,7 +4115,7 @@
           },
           {
             "result": {
-              "duration": 47446000,
+              "duration": 37389400,
               "status": "passed"
             },
             "line": 73,
@@ -4108,7 +4127,7 @@
           },
           {
             "result": {
-              "duration": 33201000,
+              "duration": 30763300,
               "status": "passed"
             },
             "line": 74,
@@ -4126,7 +4145,7 @@
           },
           {
             "result": {
-              "duration": 37554800,
+              "duration": 74889400,
               "status": "passed"
             },
             "line": 75,
@@ -4144,7 +4163,7 @@
           },
           {
             "result": {
-              "duration": 531575300,
+              "duration": 531220200,
               "status": "passed"
             },
             "line": 76,
@@ -4168,7 +4187,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:12:01.226Z",
+        "start_timestamp": "2024-08-29T20:27:42.089Z",
         "line": 93,
         "name": "Registration Negative Scenario Null username",
         "description": "\tgiven no username and a valid password a user should not be able to register with the planetarium",
@@ -4178,7 +4197,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17024300,
+              "duration": 16013200,
               "status": "passed"
             },
             "line": 85,
@@ -4190,7 +4209,7 @@
           },
           {
             "result": {
-              "duration": 45152400,
+              "duration": 37145100,
               "status": "passed"
             },
             "line": 86,
@@ -4202,7 +4221,7 @@
           },
           {
             "result": {
-              "duration": 21604600,
+              "duration": 19889500,
               "status": "passed"
             },
             "line": 87,
@@ -4214,7 +4233,7 @@
           },
           {
             "result": {
-              "duration": 31732300,
+              "duration": 74542300,
               "status": "passed"
             },
             "line": 88,
@@ -4232,7 +4251,7 @@
           },
           {
             "result": {
-              "duration": 533109600,
+              "duration": 28289300,
               "status": "passed"
             },
             "line": 89,
@@ -4253,7 +4272,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:12:01.877Z",
+        "start_timestamp": "2024-08-29T20:27:42.266Z",
         "line": 106,
         "name": "Registration Negative Scenario Null password",
         "description": "\tgiven Valid username and no password a user should not be able to register with the planetarium",
@@ -4263,7 +4282,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15531400,
+              "duration": 14030400,
               "status": "passed"
             },
             "line": 98,
@@ -4275,7 +4294,7 @@
           },
           {
             "result": {
-              "duration": 37632000,
+              "duration": 35947800,
               "status": "passed"
             },
             "line": 99,
@@ -4287,7 +4306,7 @@
           },
           {
             "result": {
-              "duration": 34040900,
+              "duration": 64485000,
               "status": "passed"
             },
             "line": 100,
@@ -4305,7 +4324,7 @@
           },
           {
             "result": {
-              "duration": 19591400,
+              "duration": 18627200,
               "status": "passed"
             },
             "line": 101,
@@ -4317,7 +4336,7 @@
           },
           {
             "result": {
-              "duration": 31028200,
+              "duration": 29138500,
               "status": "passed"
             },
             "line": 102,
@@ -4338,7 +4357,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-16T14:12:02.016Z",
+        "start_timestamp": "2024-08-29T20:27:42.430Z",
         "line": 109,
         "name": "Registration Negative Scenario Null username and password",
         "description": "\tgiven no username and no password a user should not be able to register with the planetarium",
@@ -4348,7 +4367,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15018400,
+              "duration": 14438400,
               "status": "passed"
             },
             "line": 111,
@@ -4360,7 +4379,7 @@
           },
           {
             "result": {
-              "duration": 33589500,
+              "duration": 37247100,
               "status": "passed"
             },
             "line": 112,
@@ -4372,7 +4391,7 @@
           },
           {
             "result": {
-              "duration": 20517400,
+              "duration": 23289300,
               "status": "passed"
             },
             "line": 113,
@@ -4384,7 +4403,7 @@
           },
           {
             "result": {
-              "duration": 19018500,
+              "duration": 20989900,
               "status": "passed"
             },
             "line": 114,
@@ -4396,7 +4415,7 @@
           },
           {
             "result": {
-              "duration": 544763300,
+              "duration": 28841400,
               "status": "passed"
             },
             "line": 115,
@@ -4437,7 +4456,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-16T14:12:02.652Z",
+        "start_timestamp": "2024-08-29T20:27:42.554Z",
         "line": 14,
         "name": "Planets and Moons View Valid login credentials",
         "description": "\tViewing the Planets and Moons",
@@ -4447,7 +4466,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16019300,
+              "duration": 12509300,
               "status": "passed"
             },
             "line": 7,
@@ -4459,7 +4478,7 @@
           },
           {
             "result": {
-              "duration": 32038700,
+              "duration": 36085100,
               "status": "passed"
             },
             "line": 8,
@@ -4477,7 +4496,7 @@
           },
           {
             "result": {
-              "duration": 30031500,
+              "duration": 50900600,
               "status": "passed"
             },
             "line": 9,
@@ -4495,7 +4514,7 @@
           },
           {
             "result": {
-              "duration": 527425700,
+              "duration": 565944900,
               "status": "passed"
             },
             "line": 10,

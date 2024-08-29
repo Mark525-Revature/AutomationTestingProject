@@ -13,7 +13,7 @@ public class PlanetariumRegistration {
 
     private WebDriver driver;
 
-    private String url = "http://localhost:8080";
+    private String url = "http://localhost:8081";
 
     @FindBy(xpath = "/html/body/div/form/a")
     private WebElement registrationLink;

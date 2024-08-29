@@ -21,7 +21,7 @@ public class PlanetariumHome {
     
     private WebDriver driver;
 
-    private String url = "http://localhost:8080";
+    private String url = "http://localhost:8081";
 
     @FindBy(id = "usernameInput")
     private WebElement usernameInput;
